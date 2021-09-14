@@ -43,6 +43,7 @@ extension UIColor {
     static let bPlaceHolderGray: UIColor = UIColor(named: "bGrayText") ?? .gray
     static let bTextGray: UIColor = UIColor(named: "bGrayText") ?? .gray
     static let bStrongGray: UIColor = UIColor(named: "bStrongGray") ?? .gray
+    static let bGray1: UIColor = UIColor(named: "bGray1") ?? .gray
     
     
     //white
@@ -51,7 +52,7 @@ extension UIColor {
     
     
     //red
-    static let bRed: UIColor = UIColor(named: "bRed") ?? .red
+    static let bRed: UIColor = UIColor(named: "bRedText") ?? .red
     
 }
 
@@ -74,6 +75,16 @@ extension NSAttributedString {
         let attrString = NSAttributedString(string: "", attributes: [
             NSAttributedString.Key.foregroundColor: UIColor.bBlack,
             NSAttributedString.Key.font: UIFont.font(name: .roboto_regular, size: .r15)
+        ])
+        
+        return attrString
+    }
+    
+    static func otpTextField() -> NSAttributedString {
+        
+        let attrString = NSAttributedString(string: "", attributes: [
+            NSAttributedString.Key.foregroundColor: UIColor.bRed,
+            NSAttributedString.Key.font: UIFont.font(name: .roboto_regular, size: .r24)
         ])
         
         return attrString
@@ -105,6 +116,16 @@ extension UITextField {
         setPaddings()
     }
     
+    func isValid(_ b: Bool) {
+        if b {
+            layer.borderColor = UIColor.bTextGray.cgColor
+        } else {
+            layer.borderColor = UIColor.bRed.cgColor
+            //vibrate
+            Vibration.error.vibrate()
+        }
+    }
+    
 }
 
 
@@ -124,6 +145,7 @@ extension UIButton {
 
 //MARK: - Tap Gesture
 extension UITapGestureRecognizer {
+    
     func didTapAttributedTextInLabel(label: UILabel, inRange targetRange: NSRange, edgeInset: UIEdgeInsets? = nil) -> Bool {
             // Create instances of NSLayoutManager, NSTextContainer and NSTextStorage
             let layoutManager = NSLayoutManager()
@@ -170,6 +192,7 @@ extension UITapGestureRecognizer {
 
             return NSLocationInRange(indexOfCharacter, targetRange)
         }
+
 }
 
 

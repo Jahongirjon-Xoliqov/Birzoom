@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -33,6 +33,8 @@
 		C33AADBF26EF6E1E007CF7B9 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33AADBE26EF6E1E007CF7B9 /* Keys.swift */; };
 		C360EA6926F065D900289A5C /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C360EA6726F065D900289A5C /* SignupVC.swift */; };
 		C360EA6A26F065D900289A5C /* SignupVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C360EA6826F065D900289A5C /* SignupVC.xib */; };
+		C360EA7B26F0C89300289A5C /* OTPVarifyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C360EA7926F0C89300289A5C /* OTPVarifyVC.swift */; };
+		C360EA7C26F0C89300289A5C /* OTPVarifyVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C360EA7A26F0C89300289A5C /* OTPVarifyVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +68,8 @@
 		C33AADBE26EF6E1E007CF7B9 /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		C360EA6726F065D900289A5C /* SignupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
 		C360EA6826F065D900289A5C /* SignupVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignupVC.xib; sourceTree = "<group>"; };
+		C360EA7926F0C89300289A5C /* OTPVarifyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPVarifyVC.swift; sourceTree = "<group>"; };
+		C360EA7A26F0C89300289A5C /* OTPVarifyVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OTPVarifyVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +139,8 @@
 			children = (
 				C360EA6726F065D900289A5C /* SignupVC.swift */,
 				C360EA6826F065D900289A5C /* SignupVC.xib */,
+				C360EA7926F0C89300289A5C /* OTPVarifyVC.swift */,
+				C360EA7A26F0C89300289A5C /* OTPVarifyVC.xib */,
 			);
 			path = Registration;
 			sourceTree = "<group>";
@@ -207,6 +213,7 @@
 				C33AAD6226EF2037007CF7B9 /* Sources */,
 				C33AAD6326EF2037007CF7B9 /* Frameworks */,
 				C33AAD6426EF2037007CF7B9 /* Resources */,
+				FDC7BB57F57326D7E5018D9A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -259,6 +266,7 @@
 				C33AADA726EF59E8007CF7B9 /* Roboto-Regular.ttf in Resources */,
 				C33AADA126EF59E8007CF7B9 /* Roboto-Bold.ttf in Resources */,
 				C33AAD9D26EF59E8007CF7B9 /* Roboto-LightItalic.ttf in Resources */,
+				C360EA7C26F0C89300289A5C /* OTPVarifyVC.xib in Resources */,
 				C33AADA526EF59E8007CF7B9 /* Roboto-Light.ttf in Resources */,
 				C33AADA626EF59E8007CF7B9 /* Roboto-Medium.ttf in Resources */,
 				C33AADA226EF59E8007CF7B9 /* Roboto-Thin.ttf in Resources */,
@@ -299,6 +307,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		FDC7BB57F57326D7E5018D9A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Birzoom/Pods-Birzoom-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Birzoom/Pods-Birzoom-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Birzoom/Pods-Birzoom-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -311,6 +336,7 @@
 				C33AAD6A26EF2037007CF7B9 /* AppDelegate.swift in Sources */,
 				C33AADAB26EF5A6C007CF7B9 /* Enums.swift in Sources */,
 				C33AAD8626EF367D007CF7B9 /* WelcomeVC.swift in Sources */,
+				C360EA7B26F0C89300289A5C /* OTPVarifyVC.swift in Sources */,
 				C33AADBF26EF6E1E007CF7B9 /* Keys.swift in Sources */,
 				C33AADB426EF6BB3007CF7B9 /* Cache.swift in Sources */,
 				C33AADAE26EF5D39007CF7B9 /* Extensions.swift in Sources */,

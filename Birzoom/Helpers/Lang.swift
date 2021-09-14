@@ -26,6 +26,11 @@ class Lang {
         case l_reg_signin
         case l_reg_signin_tap
         
+        //otp
+        case l_otp_confir_code
+        case b_otp_resend
+        
+        
         
     }
     
@@ -35,11 +40,13 @@ class Lang {
             
             switch component {
             
+            
             //welcome
             case .l_welcome: return "Endi ta'lim birzumda!"
             case .l_welcome_desc1: return "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa odio ut elitsit amet, consectetur adipiscing elit."
             case .l_welcome_title1: return "Online ta'lim"
             case .l_welcome_skip: return "O'tkazib yuborish"
+            
             
             //registration
             case .l_reg_signup: return "Ro'yxatdan o'tish"
@@ -51,8 +58,12 @@ class Lang {
             case .l_reg_signin_tap: return "Tizimga kirish"
                 
             
-            //
+            //otp
+            case .l_otp_confir_code: return "Tasdiqlash kodi"
+            case .b_otp_resend: return "Kodni qayta yuborish"
             
+                
+                
             }
             
             
