@@ -7,23 +7,65 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10ED4BE058E8E6B01F9C1D8C /* Pods_Birzoom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29396E119D49209D43537B22 /* Pods_Birzoom.framework */; };
 		C33AAD6A26EF2037007CF7B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33AAD6926EF2037007CF7B9 /* AppDelegate.swift */; };
-		C33AAD6C26EF2037007CF7B9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33AAD6B26EF2037007CF7B9 /* SceneDelegate.swift */; };
-		C33AAD6E26EF2037007CF7B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33AAD6D26EF2037007CF7B9 /* ViewController.swift */; };
-		C33AAD7126EF2037007CF7B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C33AAD6F26EF2037007CF7B9 /* Main.storyboard */; };
 		C33AAD7326EF2039007CF7B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C33AAD7226EF2039007CF7B9 /* Assets.xcassets */; };
 		C33AAD7626EF2039007CF7B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C33AAD7426EF2039007CF7B9 /* LaunchScreen.storyboard */; };
+		C33AAD8626EF367D007CF7B9 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33AAD8426EF367D007CF7B9 /* WelcomeVC.swift */; };
+		C33AAD8726EF367D007CF7B9 /* WelcomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C33AAD8526EF367D007CF7B9 /* WelcomeVC.xib */; };
+		C33AAD9B26EF59E8007CF7B9 /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C33AAD8E26EF59E7007CF7B9 /* Roboto-MediumItalic.ttf */; };
+		C33AAD9C26EF59E8007CF7B9 /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C33AAD8F26EF59E7007CF7B9 /* Roboto-Italic.ttf */; };
+		C33AAD9D26EF59E8007CF7B9 /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C33AAD9026EF59E7007CF7B9 /* Roboto-LightItalic.ttf */; };
+		C33AAD9E26EF59E8007CF7B9 /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C33AAD9126EF59E7007CF7B9 /* Roboto-BoldItalic.ttf */; };
+		C33AAD9F26EF59E8007CF7B9 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C33AAD9226EF59E7007CF7B9 /* Roboto-ThinItalic.ttf */; };
+		C33AADA026EF59E8007CF7B9 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C33AAD9326EF59E8007CF7B9 /* Roboto-Black.ttf */; };
+		C33AADA126EF59E8007CF7B9 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C33AAD9426EF59E8007CF7B9 /* Roboto-Bold.ttf */; };
+		C33AADA226EF59E8007CF7B9 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C33AAD9526EF59E8007CF7B9 /* Roboto-Thin.ttf */; };
+		C33AADA326EF59E8007CF7B9 /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C33AAD9626EF59E8007CF7B9 /* Roboto-BlackItalic.ttf */; };
+		C33AADA426EF59E8007CF7B9 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = C33AAD9726EF59E8007CF7B9 /* LICENSE.txt */; };
+		C33AADA526EF59E8007CF7B9 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C33AAD9826EF59E8007CF7B9 /* Roboto-Light.ttf */; };
+		C33AADA626EF59E8007CF7B9 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C33AAD9926EF59E8007CF7B9 /* Roboto-Medium.ttf */; };
+		C33AADA726EF59E8007CF7B9 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C33AAD9A26EF59E8007CF7B9 /* Roboto-Regular.ttf */; };
+		C33AADAB26EF5A6C007CF7B9 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33AADAA26EF5A6C007CF7B9 /* Enums.swift */; };
+		C33AADAE26EF5D39007CF7B9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33AADAD26EF5D39007CF7B9 /* Extensions.swift */; };
+		C33AADB126EF699A007CF7B9 /* Lang.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33AADB026EF699A007CF7B9 /* Lang.swift */; };
+		C33AADB426EF6BB3007CF7B9 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33AADB326EF6BB3007CF7B9 /* Cache.swift */; };
+		C33AADBF26EF6E1E007CF7B9 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33AADBE26EF6E1E007CF7B9 /* Keys.swift */; };
+		C360EA6926F065D900289A5C /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C360EA6726F065D900289A5C /* SignupVC.swift */; };
+		C360EA6A26F065D900289A5C /* SignupVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C360EA6826F065D900289A5C /* SignupVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		274EEDA4A30E59067AF80722 /* Pods-Birzoom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Birzoom.release.xcconfig"; path = "Target Support Files/Pods-Birzoom/Pods-Birzoom.release.xcconfig"; sourceTree = "<group>"; };
+		29396E119D49209D43537B22 /* Pods_Birzoom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Birzoom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBB9C0AC7934049803CA4819 /* Pods-Birzoom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Birzoom.debug.xcconfig"; path = "Target Support Files/Pods-Birzoom/Pods-Birzoom.debug.xcconfig"; sourceTree = "<group>"; };
 		C33AAD6626EF2037007CF7B9 /* Birzoom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Birzoom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C33AAD6926EF2037007CF7B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C33AAD6B26EF2037007CF7B9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C33AAD6D26EF2037007CF7B9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C33AAD7026EF2037007CF7B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C33AAD7226EF2039007CF7B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C33AAD7526EF2039007CF7B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C33AAD7726EF2039007CF7B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C33AAD8426EF367D007CF7B9 /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
+		C33AAD8526EF367D007CF7B9 /* WelcomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeVC.xib; sourceTree = "<group>"; };
+		C33AAD8E26EF59E7007CF7B9 /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		C33AAD8F26EF59E7007CF7B9 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		C33AAD9026EF59E7007CF7B9 /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		C33AAD9126EF59E7007CF7B9 /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		C33AAD9226EF59E7007CF7B9 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		C33AAD9326EF59E8007CF7B9 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		C33AAD9426EF59E8007CF7B9 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		C33AAD9526EF59E8007CF7B9 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		C33AAD9626EF59E8007CF7B9 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		C33AAD9726EF59E8007CF7B9 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		C33AAD9826EF59E8007CF7B9 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		C33AAD9926EF59E8007CF7B9 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		C33AAD9A26EF59E8007CF7B9 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		C33AADAA26EF5A6C007CF7B9 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		C33AADAD26EF5D39007CF7B9 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C33AADB026EF699A007CF7B9 /* Lang.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lang.swift; sourceTree = "<group>"; };
+		C33AADB326EF6BB3007CF7B9 /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
+		C33AADBE26EF6E1E007CF7B9 /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		C360EA6726F065D900289A5C /* SignupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
+		C360EA6826F065D900289A5C /* SignupVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignupVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +73,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10ED4BE058E8E6B01F9C1D8C /* Pods_Birzoom.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0253D3317D8838D6FB9FF426 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29396E119D49209D43537B22 /* Pods_Birzoom.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9B9D32462A8271F307F79624 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BBB9C0AC7934049803CA4819 /* Pods-Birzoom.debug.xcconfig */,
+				274EEDA4A30E59067AF80722 /* Pods-Birzoom.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C33AAD5D26EF2037007CF7B9 = {
 			isa = PBXGroup;
 			children = (
 				C33AAD6826EF2037007CF7B9 /* Birzoom */,
 				C33AAD6726EF2037007CF7B9 /* Products */,
+				9B9D32462A8271F307F79624 /* Pods */,
+				0253D3317D8838D6FB9FF426 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +118,82 @@
 		C33AAD6826EF2037007CF7B9 /* Birzoom */ = {
 			isa = PBXGroup;
 			children = (
+				C33AADA926EF5A2D007CF7B9 /* Helpers */,
+				C33AAD8A26EF399E007CF7B9 /* Utils */,
+				C33AAD8326EF29A5007CF7B9 /* Welcome */,
+				C33AAD8126EF2240007CF7B9 /* Registration */,
 				C33AAD6926EF2037007CF7B9 /* AppDelegate.swift */,
-				C33AAD6B26EF2037007CF7B9 /* SceneDelegate.swift */,
-				C33AAD6D26EF2037007CF7B9 /* ViewController.swift */,
-				C33AAD6F26EF2037007CF7B9 /* Main.storyboard */,
 				C33AAD7226EF2039007CF7B9 /* Assets.xcassets */,
 				C33AAD7426EF2039007CF7B9 /* LaunchScreen.storyboard */,
 				C33AAD7726EF2039007CF7B9 /* Info.plist */,
 			);
 			path = Birzoom;
+			sourceTree = "<group>";
+		};
+		C33AAD8126EF2240007CF7B9 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				C360EA6726F065D900289A5C /* SignupVC.swift */,
+				C360EA6826F065D900289A5C /* SignupVC.xib */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		C33AAD8326EF29A5007CF7B9 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				C33AAD8426EF367D007CF7B9 /* WelcomeVC.swift */,
+				C33AAD8526EF367D007CF7B9 /* WelcomeVC.xib */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		C33AAD8A26EF399E007CF7B9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C33AAD8B26EF39A7007CF7B9 /* Fonts */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		C33AAD8B26EF39A7007CF7B9 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C33AAD8D26EF59D8007CF7B9 /* Roboto */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		C33AAD8D26EF59D8007CF7B9 /* Roboto */ = {
+			isa = PBXGroup;
+			children = (
+				C33AAD9726EF59E8007CF7B9 /* LICENSE.txt */,
+				C33AAD9326EF59E8007CF7B9 /* Roboto-Black.ttf */,
+				C33AAD9626EF59E8007CF7B9 /* Roboto-BlackItalic.ttf */,
+				C33AAD9426EF59E8007CF7B9 /* Roboto-Bold.ttf */,
+				C33AAD9126EF59E7007CF7B9 /* Roboto-BoldItalic.ttf */,
+				C33AAD8F26EF59E7007CF7B9 /* Roboto-Italic.ttf */,
+				C33AAD9826EF59E8007CF7B9 /* Roboto-Light.ttf */,
+				C33AAD9026EF59E7007CF7B9 /* Roboto-LightItalic.ttf */,
+				C33AAD9926EF59E8007CF7B9 /* Roboto-Medium.ttf */,
+				C33AAD8E26EF59E7007CF7B9 /* Roboto-MediumItalic.ttf */,
+				C33AAD9A26EF59E8007CF7B9 /* Roboto-Regular.ttf */,
+				C33AAD9526EF59E8007CF7B9 /* Roboto-Thin.ttf */,
+				C33AAD9226EF59E7007CF7B9 /* Roboto-ThinItalic.ttf */,
+			);
+			path = Roboto;
+			sourceTree = "<group>";
+		};
+		C33AADA926EF5A2D007CF7B9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C33AADAA26EF5A6C007CF7B9 /* Enums.swift */,
+				C33AADAD26EF5D39007CF7B9 /* Extensions.swift */,
+				C33AADB026EF699A007CF7B9 /* Lang.swift */,
+				C33AADB326EF6BB3007CF7B9 /* Cache.swift */,
+				C33AADBE26EF6E1E007CF7B9 /* Keys.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +203,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C33AAD7A26EF2039007CF7B9 /* Build configuration list for PBXNativeTarget "Birzoom" */;
 			buildPhases = (
+				A9E74F36FA011B705B38EB3A /* [CP] Check Pods Manifest.lock */,
 				C33AAD6226EF2037007CF7B9 /* Sources */,
 				C33AAD6326EF2037007CF7B9 /* Frameworks */,
 				C33AAD6426EF2037007CF7B9 /* Resources */,
@@ -124,36 +254,72 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C33AAD9B26EF59E8007CF7B9 /* Roboto-MediumItalic.ttf in Resources */,
 				C33AAD7626EF2039007CF7B9 /* LaunchScreen.storyboard in Resources */,
+				C33AADA726EF59E8007CF7B9 /* Roboto-Regular.ttf in Resources */,
+				C33AADA126EF59E8007CF7B9 /* Roboto-Bold.ttf in Resources */,
+				C33AAD9D26EF59E8007CF7B9 /* Roboto-LightItalic.ttf in Resources */,
+				C33AADA526EF59E8007CF7B9 /* Roboto-Light.ttf in Resources */,
+				C33AADA626EF59E8007CF7B9 /* Roboto-Medium.ttf in Resources */,
+				C33AADA226EF59E8007CF7B9 /* Roboto-Thin.ttf in Resources */,
+				C360EA6A26F065D900289A5C /* SignupVC.xib in Resources */,
+				C33AADA426EF59E8007CF7B9 /* LICENSE.txt in Resources */,
+				C33AAD9C26EF59E8007CF7B9 /* Roboto-Italic.ttf in Resources */,
+				C33AAD9F26EF59E8007CF7B9 /* Roboto-ThinItalic.ttf in Resources */,
+				C33AADA326EF59E8007CF7B9 /* Roboto-BlackItalic.ttf in Resources */,
+				C33AADA026EF59E8007CF7B9 /* Roboto-Black.ttf in Resources */,
+				C33AAD8726EF367D007CF7B9 /* WelcomeVC.xib in Resources */,
+				C33AAD9E26EF59E8007CF7B9 /* Roboto-BoldItalic.ttf in Resources */,
 				C33AAD7326EF2039007CF7B9 /* Assets.xcassets in Resources */,
-				C33AAD7126EF2037007CF7B9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A9E74F36FA011B705B38EB3A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Birzoom-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C33AAD6226EF2037007CF7B9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C33AAD6E26EF2037007CF7B9 /* ViewController.swift in Sources */,
+				C360EA6926F065D900289A5C /* SignupVC.swift in Sources */,
+				C33AADB126EF699A007CF7B9 /* Lang.swift in Sources */,
 				C33AAD6A26EF2037007CF7B9 /* AppDelegate.swift in Sources */,
-				C33AAD6C26EF2037007CF7B9 /* SceneDelegate.swift in Sources */,
+				C33AADAB26EF5A6C007CF7B9 /* Enums.swift in Sources */,
+				C33AAD8626EF367D007CF7B9 /* WelcomeVC.swift in Sources */,
+				C33AADBF26EF6E1E007CF7B9 /* Keys.swift in Sources */,
+				C33AADB426EF6BB3007CF7B9 /* Cache.swift in Sources */,
+				C33AADAE26EF5D39007CF7B9 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C33AAD6F26EF2037007CF7B9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C33AAD7026EF2037007CF7B9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C33AAD7426EF2039007CF7B9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -283,12 +449,14 @@
 		};
 		C33AAD7B26EF2039007CF7B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBB9C0AC7934049803CA4819 /* Pods-Birzoom.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L4PP343Y28;
 				INFOPLIST_FILE = Birzoom/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,12 +470,14 @@
 		};
 		C33AAD7C26EF2039007CF7B9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 274EEDA4A30E59067AF80722 /* Pods-Birzoom.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L4PP343Y28;
 				INFOPLIST_FILE = Birzoom/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
