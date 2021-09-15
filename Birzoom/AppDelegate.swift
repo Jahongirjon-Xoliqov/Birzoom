@@ -15,7 +15,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         window = UIWindow()
-        window?.rootViewController = OTPVarifyVC(nibName: "OTPVarifyVC", bundle: nil)
+        
+        let vc = SignupVC(nibName: "SignupVC", bundle: nil)
+        let navVC = UINavigationController(rootViewController: vc)
+        navVC.navigationBar.isHidden = true
+        window?.rootViewController = navVC
         window?.makeKeyAndVisible()
         
         return true

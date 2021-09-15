@@ -27,7 +27,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="wh0-2N-r3c">
-                    <rect key="frame" x="119" y="0.0" width="295" height="224"/>
+                    <rect key="frame" x="119" y="0.0" width="295" height="205"/>
                 </imageView>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SXH-D2-fIp">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -139,7 +139,6 @@
                 <constraint firstAttribute="trailing" secondItem="wh0-2N-r3c" secondAttribute="trailing" id="69Z-ma-ShB"/>
                 <constraint firstAttribute="bottom" secondItem="SXH-D2-fIp" secondAttribute="bottom" id="8qa-fY-fpu"/>
                 <constraint firstItem="SXH-D2-fIp" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="CCt-rv-blL"/>
-                <constraint firstItem="wh0-2N-r3c" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.25" id="GHi-Xu-Zlp"/>
                 <constraint firstItem="wh0-2N-r3c" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="IJe-aP-9tV"/>
                 <constraint firstItem="71r-vV-XiF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="fnO-Yc-QQQ"/>
                 <constraint firstAttribute="trailing" secondItem="SXH-D2-fIp" secondAttribute="trailing" id="o82-Ll-4zj"/>

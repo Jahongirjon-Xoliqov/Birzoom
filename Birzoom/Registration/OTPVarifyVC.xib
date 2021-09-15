@@ -176,6 +176,9 @@
                         <constraint firstAttribute="width" constant="40" id="Ckr-ZF-9s8"/>
                     </constraints>
                     <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="backButtonTapped:" destination="-1" eventType="touchUpInside" id="L2E-Ge-QH3"/>
+                    </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

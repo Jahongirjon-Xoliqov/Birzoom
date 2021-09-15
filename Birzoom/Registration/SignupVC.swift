@@ -56,7 +56,8 @@ class SignupVC: UIViewController {
             for i in 0..<userInfoTextFields.count {
                 userInfoTextFields[i].activateUI(for: .registration)
                 userInfoTextFields[i].attributedPlaceholder = .bPlaceHolder(text: ps[i])
-                userInfoTextFields[i].attributedText = .bTextField()
+                userInfoTextFields[i].font = .font(name: .roboto_regular, size: .r15)
+                userInfoTextFields[i].textColor = .bBlack
                 userInfoTextFields[i].delegate = self
             }
         }
@@ -91,7 +92,7 @@ class SignupVC: UIViewController {
         
         if sender.didTapAttributedTextInLabel(label: signinLabel, inRange: range) {
             ///move to sign in page
-            print("open sign in page")
+            navigate(to: .signin)
         }
         
     }
@@ -105,7 +106,7 @@ class SignupVC: UIViewController {
         
         if isUserInfoValid() {
             ///open up next page
-            
+            navigate(to: .otp)
         } else {
             ///show alert
         }

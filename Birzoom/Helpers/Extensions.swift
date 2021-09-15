@@ -39,7 +39,7 @@ extension UIColor {
     
     
     //gray
-    static let bGray: UIColor = UIColor(named: "bGray") ?? .gray
+    static let bGray: UIColor = UIColor(named: "bGray") ?? .red
     static let bPlaceHolderGray: UIColor = UIColor(named: "bGrayText") ?? .gray
     static let bTextGray: UIColor = UIColor(named: "bGrayText") ?? .gray
     static let bStrongGray: UIColor = UIColor(named: "bStrongGray") ?? .gray
@@ -96,14 +96,28 @@ extension NSAttributedString {
 //MARK: - UITextField
 extension UITextField {
     
-    func setPaddings() {
-        // Create a padding view for padding on left
-        self.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 16, height: 30))
-        self.leftViewMode = .always
+    func setPaddings(for type: TextFieldType) {
+        
+        switch type {
+        
+        case .registration:
+            // Create a padding view for padding on left
+            self.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 16, height: 30))
+            self.leftViewMode = .always
 
-        // Create a padding view for padding on right
-        self.rightView = UIView(frame: CGRect(x: 0, y: 0, width: 16, height: 30))
-        self.rightViewMode = .always
+            // Create a padding view for padding on right
+            self.rightView = UIView(frame: CGRect(x: 0, y: 0, width: 16, height: 30))
+            self.rightViewMode = .always
+        case .password:
+            // Create a padding view for padding on left
+            self.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 16, height: 30))
+            self.leftViewMode = .always
+
+            // Create a padding view for padding on right
+            self.rightView = UIView(frame: CGRect(x: 0, y: 0, width: 50, height: 30))
+            self.rightViewMode = .always
+        }
+        
 
     }
     
@@ -113,7 +127,7 @@ extension UITextField {
         layer.borderColor = UIColor.bTextGray.cgColor
         layer.cornerRadius = 8
 
-        setPaddings()
+        setPaddings(for: type)
     }
     
     func isValid(_ b: Bool) {
@@ -193,6 +207,80 @@ extension UITapGestureRecognizer {
             return NSLocationInRange(indexOfCharacter, targetRange)
         }
 
+}
+
+
+//MARK: - VC
+extension UIViewController {
+    
+    //if view controller only
+    func coordinate(to vc: VControllers) {
+        
+        switch vc {
+        case .signup:
+            let vc = SignupVC(nibName: "SignupVC", bundle: nil)
+            present(vc, animated: true)
+        case .signin:
+            let vc = SigninVC(nibName: "SigninVC", bundle: nil)
+            present(vc, animated: true)
+        case .otp:
+            let vc = OTPVarifyVC(nibName: "OTPVarifyVC", bundle: nil)
+            present(vc, animated: true)
+        case .password:
+            let vc = PasswordRecoveryVC(nibName: "PasswordRecoveryVC", bundle: nil)
+            present(vc, animated: true)
+        case .otppassword:
+            let vc = PasswordOTPVarifyVC(nibName: "PasswordOTPVarifyVC", bundle: nil)
+            present(vc, animated: true)
+        case .newpassword:
+            let vc = NewPasswordVC(nibName: "NewPasswordVC", bundle: nil)
+            present(vc, animated: true)
+        }
+        
+    }
+    
+    func coordinateBackward() {
+        dismiss(animated: true)
+    }
+    
+    //if with navigation controller
+    func navigate(to vc: VControllers) {
+        guard let navController = navigationController else {
+            coordinate(to: vc)
+            return
+        }
+        
+        switch vc {
+        case .signup:
+            let vc = SignupVC(nibName: "SignupVC", bundle: nil)
+            navController.pushViewController(vc, animated: true)
+        case .signin:
+            let vc = SigninVC(nibName: "SigninVC", bundle: nil)
+            navController.pushViewController(vc, animated: true)
+        case .otp:
+            let vc = OTPVarifyVC(nibName: "OTPVarifyVC", bundle: nil)
+            navController.pushViewController(vc, animated: true)
+        case .password:
+            let vc = PasswordRecoveryVC(nibName: "PasswordRecoveryVC", bundle: nil)
+            navController.pushViewController(vc, animated: true)
+        case .otppassword:
+            let vc = PasswordOTPVarifyVC(nibName: "PasswordOTPVarifyVC", bundle: nil)
+            navController.pushViewController(vc, animated: true)
+        case .newpassword:
+            let vc = NewPasswordVC(nibName: "NewPasswordVC", bundle: nil)
+            navController.pushViewController(vc, animated: true)
+        }
+        
+    }
+    
+    func navigateBackward() {
+        navigationController?.popViewController(animated: true)
+    }
+    
+    func navigateBackToSignup() {
+        navigationController?.popToRootViewController(animated: true)
+    }
+    
 }
 
 

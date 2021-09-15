@@ -1,14 +1,15 @@
 //
-//  OTPVarifyVC.swift
+//  PasswordOTPVarifyVC.swift
 //  Birzoom
 //
-//  Created by Administrator on 14/09/21.
+//  Created by Administrator on 15/09/21.
 //
 
 import UIKit
+
 import IQKeyboardManagerSwift
 
-class OTPVarifyVC: UIViewController {
+class PasswordOTPVarifyVC: UIViewController {
 
     @IBOutlet weak var backButton: UIButton! {
         didSet {
@@ -18,11 +19,11 @@ class OTPVarifyVC: UIViewController {
         }
     }
     
-    @IBOutlet weak var confCodeLabel: UILabel! {
+    @IBOutlet weak var passwordForgetLabel: UILabel! {
         didSet {
-            confCodeLabel.text = Lang.get(valueFor: .l_otp_confir_code)
-            confCodeLabel.font = .font(name: .roboto_medium, size: .r24)
-            confCodeLabel.textColor = UIColor.bBlack
+            passwordForgetLabel.text = Lang.get(valueFor: .l_pass_forget)
+            passwordForgetLabel.font = .font(name: .roboto_medium, size: .r24)
+            passwordForgetLabel.textColor = UIColor.bBlack
         }
         
     }
@@ -46,6 +47,20 @@ class OTPVarifyVC: UIViewController {
         }
     }
     
+    @IBOutlet var otpTFields: [OTPTextfield]! {
+        didSet {
+            for i in 0..<otpTFields.count {
+                otpTFields[i].activateUI(for: .registration)
+                otpTFields[i].font = .font(name: .roboto_bold, size: .r24)
+                otpTFields[i].textColor = .bBlack
+                otpTFields[i].delegate = self
+                otpTFields[i].bDelegate = self
+                otpTFields[i].textAlignment = .center
+                otpTFields[i].tag = i
+            }
+        }
+    }
+    
     @IBOutlet weak var continueButton: UIButton! {
         didSet {
             continueButton.design(as: .mainGray)
@@ -61,24 +76,12 @@ class OTPVarifyVC: UIViewController {
         }
     }
     
-    @IBOutlet var otpTFields: [OTPTextfield]! {
-        didSet {
-            for i in 0..<otpTFields.count {
-                otpTFields[i].activateUI(for: .registration)
-                otpTFields[i].font = .font(name: .roboto_bold, size: .r24)
-                otpTFields[i].textColor = .bBlack
-                otpTFields[i].delegate = self
-                otpTFields[i].bDelegate = self
-                otpTFields[i].textAlignment = .center
-                otpTFields[i].tag = i
-            }
-        }
-    }
     
     
     ///fileprivate variables
     private
     var OTP: String = ""
+    
     
     
     
@@ -101,6 +104,7 @@ class OTPVarifyVC: UIViewController {
     
     
     
+    
     @IBAction func backButtonTapped(_ sender: UIButton) {
         navigateBackward()
     }
@@ -108,7 +112,6 @@ class OTPVarifyVC: UIViewController {
     @IBAction func continueButtonTapped(_ sender: UIButton) {
         if isOTPValid() {
             print(OTP)
-            navigate(to: .newpassword)
         } else {
             for tf in otpTFields {
                 tf.textColor = .bRed
@@ -118,17 +121,17 @@ class OTPVarifyVC: UIViewController {
     }
     
     @IBAction func resendButtonTapped(_ sender: UIButton) {
-    
+        
     }
     
     
 }
 
 
-extension OTPVarifyVC: UITextFieldDelegate, OTPTFieldDelegate {
+extension PasswordOTPVarifyVC: UITextFieldDelegate, OTPTFieldDelegate {
     
     func didPressedBackward(at tag: Int) {
-        
+    
         if tag == 0 {
             otpTFields[0].resignFirstResponder()
             return
@@ -254,3 +257,4 @@ extension OTPVarifyVC: UITextFieldDelegate, OTPTFieldDelegate {
     }
     
 }
+

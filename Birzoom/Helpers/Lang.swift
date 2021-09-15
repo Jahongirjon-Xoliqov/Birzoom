@@ -30,7 +30,19 @@ class Lang {
         case l_otp_confir_code
         case b_otp_resend
         
+        //signin
+        case l_signin
+        case l_signin_forget
+        case p_signin_password
         
+        //password revovery
+        case l_pass_forget
+        case l_pass_instructor
+        case l_pass_signup
+        
+        //new password
+        case p_newpass
+        case p_newpass_repeat
         
     }
     
@@ -62,7 +74,20 @@ class Lang {
             case .l_otp_confir_code: return "Tasdiqlash kodi"
             case .b_otp_resend: return "Kodni qayta yuborish"
             
+            //signin
+            case .l_signin: return "Tizimga kirish"
+            case .l_signin_forget: return "Parolni unutdingizmi?"
+            case .p_signin_password: return "Parol"
                 
+                
+            //password revovery
+            case .l_pass_forget: return "Parolni unutdingizmi?"
+            case .l_pass_instructor: return "Profilingizni tiklash uchun ro'yhatdan \no'tgan telefon nomeringizni kiriting"
+            case .l_pass_signup: return "Yangi profil ochish"
+                
+            //new password
+            case .p_newpass: return "Yangi parol"
+            case .p_newpass_repeat: return "Parolni qayta kiriting"
                 
             }
             

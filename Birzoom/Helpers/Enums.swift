@@ -66,6 +66,7 @@ enum AppLanguage: String {
 
 enum TextFieldType {
     case registration
+    case password
 }
 
 
@@ -77,6 +78,18 @@ enum BButtonType {
 enum BImage: String {
     case topBack = "back"
     case chevBack = "lChevron"
+    case eye = "eye"
+    case eyecross = "eyecross"
+}
+
+
+enum VControllers {
+    case signup
+    case signin
+    case otp
+    case password
+    case otppassword
+    case newpassword
 }
 
 
