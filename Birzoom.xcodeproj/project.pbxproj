@@ -35,6 +35,7 @@
 		C360EA6A26F065D900289A5C /* SignupVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C360EA6826F065D900289A5C /* SignupVC.xib */; };
 		C360EA7B26F0C89300289A5C /* OTPVarifyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C360EA7926F0C89300289A5C /* OTPVarifyVC.swift */; };
 		C360EA7C26F0C89300289A5C /* OTPVarifyVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C360EA7A26F0C89300289A5C /* OTPVarifyVC.xib */; };
+		C3F5376326F1B14E004BBF00 /* OTPTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F5376226F1B14E004BBF00 /* OTPTextfield.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 		C360EA6826F065D900289A5C /* SignupVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignupVC.xib; sourceTree = "<group>"; };
 		C360EA7926F0C89300289A5C /* OTPVarifyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPVarifyVC.swift; sourceTree = "<group>"; };
 		C360EA7A26F0C89300289A5C /* OTPVarifyVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OTPVarifyVC.xib; sourceTree = "<group>"; };
+		C3F5376226F1B14E004BBF00 /* OTPTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPTextfield.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 		C33AAD6826EF2037007CF7B9 /* Birzoom */ = {
 			isa = PBXGroup;
 			children = (
+				C3F5376126F1B10F004BBF00 /* Customs */,
 				C33AADA926EF5A2D007CF7B9 /* Helpers */,
 				C33AAD8A26EF399E007CF7B9 /* Utils */,
 				C33AAD8326EF29A5007CF7B9 /* Welcome */,
@@ -200,6 +203,14 @@
 				C33AADBE26EF6E1E007CF7B9 /* Keys.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C3F5376126F1B10F004BBF00 /* Customs */ = {
+			isa = PBXGroup;
+			children = (
+				C3F5376226F1B14E004BBF00 /* OTPTextfield.swift */,
+			);
+			path = Customs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,6 +345,7 @@
 				C360EA6926F065D900289A5C /* SignupVC.swift in Sources */,
 				C33AADB126EF699A007CF7B9 /* Lang.swift in Sources */,
 				C33AAD6A26EF2037007CF7B9 /* AppDelegate.swift in Sources */,
+				C3F5376326F1B14E004BBF00 /* OTPTextfield.swift in Sources */,
 				C33AADAB26EF5A6C007CF7B9 /* Enums.swift in Sources */,
 				C33AAD8626EF367D007CF7B9 /* WelcomeVC.swift in Sources */,
 				C360EA7B26F0C89300289A5C /* OTPVarifyVC.swift in Sources */,

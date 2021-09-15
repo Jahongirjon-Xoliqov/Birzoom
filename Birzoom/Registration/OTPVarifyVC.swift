@@ -61,19 +61,25 @@ class OTPVarifyVC: UIViewController {
         }
     }
     
-    @IBOutlet var otpTFields: [UITextField]! {
+    
+    @IBOutlet var otpTFields: [OTPTextfield]! {
         didSet {
             for i in 0..<otpTFields.count {
                 otpTFields[i].activateUI(for: .registration)
                 otpTFields[i].font = .font(name: .roboto_bold, size: .r24)
                 otpTFields[i].textColor = .bBlack
                 otpTFields[i].delegate = self
+                otpTFields[i].bDelegate = self
                 otpTFields[i].textAlignment = .center
+                otpTFields[i].tag = i
             }
         }
     }
     
     
+    ///fileprivate variables
+    private
+    var OTP: String = ""
     
     
     override func viewDidLoad() {
@@ -93,12 +99,152 @@ class OTPVarifyVC: UIViewController {
         IQKeyboardManager.shared.enable = true
     }
     
+    @IBAction func continueButtonTapped(_ sender: UIButton) {
+        if isOTPValid() {
+            print(OTP)
+        } else {
+            print("otp is incorrect")
+            for tf in otpTFields {
+                tf.textColor = .bRed
+            }
+            Vibration.error.vibrate()
+        }
+    }
     
+    @IBAction func resendButtonTapped(_ sender: UIButton) {
+    
+    }
     
     
 }
 
 
-extension OTPVarifyVC: UITextFieldDelegate {
+extension OTPVarifyVC: UITextFieldDelegate, OTPTFieldDelegate {
+    
+    func didPressedBackward(at tag: Int) {
+        print("back")
+        if tag == 0 {
+            otpTFields[0].resignFirstResponder()
+            return
+        }
+        
+        if tag == 1 {
+            otpTFields[1].resignFirstResponder()
+            otpTFields[0].becomeFirstResponder()
+            otpTFields[0].text?.removeAll()
+            return
+        }
+        
+        if tag == 2 {
+            otpTFields[2].resignFirstResponder()
+            otpTFields[1].becomeFirstResponder()
+            otpTFields[1].text?.removeAll()
+            return
+        }
+        
+        if tag == 3 {
+            otpTFields[3].resignFirstResponder()
+            otpTFields[2].becomeFirstResponder()
+            otpTFields[2].text?.removeAll()
+            return
+        }
+        
+        
+    }
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        //guard let text = textField.text else { return true }
+
+        
+        if textField.tag == 0 {
+            if let text = otpTFields[1].text, !text.isEmpty {
+                textField.text = string
+                textField.resignFirstResponder()
+                return true
+            }
+        }
+        
+        if textField.tag == 1 {
+            if let text = otpTFields[2].text, !text.isEmpty {
+                textField.text = string
+                textField.resignFirstResponder()
+                return true
+            }
+        }
+        
+        if textField.tag == 2 {
+            if let text = otpTFields[3].text, !text.isEmpty {
+                textField.text = string
+                textField.resignFirstResponder()
+                return true
+            }
+        }
+        
+        if textField.tag == 3 && !string.isEmpty {
+            textField.text = string
+            textField.resignFirstResponder()
+        }
+        
+        
+        
+        if textField.tag == 0 {
+            otpTFields[0].resignFirstResponder()
+            otpTFields[1].becomeFirstResponder()
+            textField.text = string
+            
+        }
+        
+        if textField.tag == 1 {
+            otpTFields[1].resignFirstResponder()
+            otpTFields[2].becomeFirstResponder()
+            textField.text = string
+            
+        }
+        
+        if textField.tag == 2 {
+            otpTFields[2].resignFirstResponder()
+            otpTFields[3].becomeFirstResponder()
+            textField.text = string
+            
+        }
+        
+        if textField.tag == 3 {
+            otpTFields[3].resignFirstResponder()
+            textField.text = string
+            
+        }
+       
+        
+        return false
+    }
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        textField.text?.removeAll()
+        continueButton.backgroundColor = .bGray
+        for tf in otpTFields {
+            tf.textColor = .bBlack
+        }
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        if isOTPValid() {
+            continueButton.backgroundColor = .bBlue
+        } else {
+            continueButton.backgroundColor = .bGray
+        }
+    }
+    
+    fileprivate
+    func isOTPValid() -> Bool {
+        OTP.removeAll()
+        for i in otpTFields {
+            if let text = i.text {
+                OTP.append(text)
+            } else {
+                return false
+            }
+        }
+        return OTP.count == 4
+    }
     
 }

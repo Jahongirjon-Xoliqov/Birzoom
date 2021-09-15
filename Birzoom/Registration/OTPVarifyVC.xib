@@ -17,10 +17,10 @@
                 <outlet property="instructorLabel" destination="nXl-ji-JEu" id="kNd-bJ-2f7"/>
                 <outlet property="resendButton" destination="E4l-9b-X8l" id="cew-Hm-7p9"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
-                <outletCollection property="otpTFields" destination="lY5-gt-QfR" collectionClass="NSMutableArray" id="ROG-vc-qRX"/>
-                <outletCollection property="otpTFields" destination="K96-o7-ucl" collectionClass="NSMutableArray" id="8rd-qn-Lbn"/>
-                <outletCollection property="otpTFields" destination="osc-zF-64Y" collectionClass="NSMutableArray" id="XnS-UI-44j"/>
-                <outletCollection property="otpTFields" destination="bia-xK-xwv" collectionClass="NSMutableArray" id="wpP-vS-HB9"/>
+                <outletCollection property="otpTFields" destination="bia-xK-xwv" collectionClass="NSMutableArray" id="zP7-ZB-c0Y"/>
+                <outletCollection property="otpTFields" destination="lY5-gt-QfR" collectionClass="NSMutableArray" id="nBC-Dl-Ml8"/>
+                <outletCollection property="otpTFields" destination="K96-o7-ucl" collectionClass="NSMutableArray" id="A3O-Hk-8xN"/>
+                <outletCollection property="otpTFields" destination="osc-zF-64Y" collectionClass="NSMutableArray" id="8Sr-H4-wuc"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -66,7 +66,7 @@
                                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="PhC-HC-aMo">
                                                             <rect key="frame" x="58.5" y="0.0" width="217" height="48.5"/>
                                                             <subviews>
-                                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bia-xK-xwv">
+                                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bia-xK-xwv" customClass="OTPTextfield" customModule="Birzoom" customModuleProvider="target">
                                                                     <rect key="frame" x="0.0" y="0.0" width="48" height="48.5"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" secondItem="bia-xK-xwv" secondAttribute="height" id="cR5-ll-37B"/>
@@ -74,17 +74,17 @@
                                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                     <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                                 </textField>
-                                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lY5-gt-QfR">
+                                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lY5-gt-QfR" customClass="OTPTextfield" customModule="Birzoom" customModuleProvider="target">
                                                                     <rect key="frame" x="56" y="0.0" width="48.5" height="48.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                     <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                                 </textField>
-                                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K96-o7-ucl">
+                                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K96-o7-ucl" customClass="OTPTextfield" customModule="Birzoom" customModuleProvider="target">
                                                                     <rect key="frame" x="112.5" y="0.0" width="48.5" height="48.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                     <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                                 </textField>
-                                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="osc-zF-64Y">
+                                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="osc-zF-64Y" customClass="OTPTextfield" customModule="Birzoom" customModuleProvider="target">
                                                                     <rect key="frame" x="169" y="0.0" width="48" height="48.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                     <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -110,6 +110,9 @@
                                                                 <constraint firstAttribute="width" secondItem="gFq-xF-AI1" secondAttribute="height" multiplier="311:45" id="4Xg-oW-qe6"/>
                                                             </constraints>
                                                             <state key="normal" title="Button"/>
+                                                            <connections>
+                                                                <action selector="continueButtonTapped:" destination="-1" eventType="touchUpInside" id="ex4-pV-Agd"/>
+                                                            </connections>
                                                         </button>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dam-DH-EIN">
                                                             <rect key="frame" x="0.0" y="72" width="334" height="49.5"/>
@@ -117,6 +120,9 @@
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E4l-9b-X8l">
                                                                     <rect key="frame" x="10" y="0.0" width="46" height="39.5"/>
                                                                     <state key="normal" title="Button"/>
+                                                                    <connections>
+                                                                        <action selector="resendButtonTapped:" destination="-1" eventType="touchUpInside" id="dpm-gW-rEy"/>
+                                                                    </connections>
                                                                 </button>
                                                             </subviews>
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
