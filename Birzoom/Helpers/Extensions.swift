@@ -36,7 +36,7 @@ extension UIColor {
     static let bBlue: UIColor = UIColor(named: "bBlue") ?? .blue
     static let bHalfBlue: UIColor = UIColor(named: "bHalfBlue") ?? UIColor.blue.withAlphaComponent(0.2)
     static let bTextBlue: UIColor = UIColor(named: "bBlueText") ?? .blue
-    
+    static let bSelectionBlue: UIColor = UIColor(named: "bSelectionBlue") ?? .blue
     
     //gray
     static let bGray: UIColor = UIColor(named: "bGray") ?? .red
@@ -44,6 +44,7 @@ extension UIColor {
     static let bTextGray: UIColor = UIColor(named: "bGrayText") ?? .gray
     static let bStrongGray: UIColor = UIColor(named: "bStrongGray") ?? .gray
     static let bGray1: UIColor = UIColor(named: "bGray1") ?? .gray
+    static let bShadowGray: UIColor = UIColor(named: "bShadowGray") ?? .gray
     
     
     //white
@@ -235,6 +236,9 @@ extension UIViewController {
         case .newpassword:
             let vc = NewPasswordVC(nibName: "NewPasswordVC", bundle: nil)
             present(vc, animated: true)
+        case .languageChoose:
+            let vc = LanguageVC(nibName: "LanguageVC", bundle: nil)
+            present(vc, animated: true)
         }
         
     }
@@ -268,6 +272,9 @@ extension UIViewController {
             navController.pushViewController(vc, animated: true)
         case .newpassword:
             let vc = NewPasswordVC(nibName: "NewPasswordVC", bundle: nil)
+            navController.pushViewController(vc, animated: true)
+        case .languageChoose:
+            let vc = LanguageVC(nibName: "LanguageVC", bundle: nil)
             navController.pushViewController(vc, animated: true)
         }
         

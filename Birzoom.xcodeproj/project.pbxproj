@@ -35,6 +35,8 @@
 		C360EA6A26F065D900289A5C /* SignupVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C360EA6826F065D900289A5C /* SignupVC.xib */; };
 		C360EA7B26F0C89300289A5C /* OTPVarifyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C360EA7926F0C89300289A5C /* OTPVarifyVC.swift */; };
 		C360EA7C26F0C89300289A5C /* OTPVarifyVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C360EA7A26F0C89300289A5C /* OTPVarifyVC.xib */; };
+		C3B15A6D26F3069700B9D76E /* LanguageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B15A6B26F3069700B9D76E /* LanguageVC.swift */; };
+		C3B15A6E26F3069700B9D76E /* LanguageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3B15A6C26F3069700B9D76E /* LanguageVC.xib */; };
 		C3F5376326F1B14E004BBF00 /* OTPTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F5376226F1B14E004BBF00 /* OTPTextfield.swift */; };
 		C3F5376726F1BF25004BBF00 /* SigninVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F5376526F1BF25004BBF00 /* SigninVC.swift */; };
 		C3F5376826F1BF25004BBF00 /* SigninVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3F5376626F1BF25004BBF00 /* SigninVC.xib */; };
@@ -80,6 +82,8 @@
 		C360EA6826F065D900289A5C /* SignupVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignupVC.xib; sourceTree = "<group>"; };
 		C360EA7926F0C89300289A5C /* OTPVarifyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPVarifyVC.swift; sourceTree = "<group>"; };
 		C360EA7A26F0C89300289A5C /* OTPVarifyVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OTPVarifyVC.xib; sourceTree = "<group>"; };
+		C3B15A6B26F3069700B9D76E /* LanguageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageVC.swift; sourceTree = "<group>"; };
+		C3B15A6C26F3069700B9D76E /* LanguageVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LanguageVC.xib; sourceTree = "<group>"; };
 		C3F5376226F1B14E004BBF00 /* OTPTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPTextfield.swift; sourceTree = "<group>"; };
 		C3F5376526F1BF25004BBF00 /* SigninVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninVC.swift; sourceTree = "<group>"; };
 		C3F5376626F1BF25004BBF00 /* SigninVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SigninVC.xib; sourceTree = "<group>"; };
@@ -142,11 +146,10 @@
 		C33AAD6826EF2037007CF7B9 /* Birzoom */ = {
 			isa = PBXGroup;
 			children = (
+				C3B15A6926F3063800B9D76E /* VCs */,
 				C3F5376126F1B10F004BBF00 /* Customs */,
 				C33AADA926EF5A2D007CF7B9 /* Helpers */,
 				C33AAD8A26EF399E007CF7B9 /* Utils */,
-				C33AAD8326EF29A5007CF7B9 /* Welcome */,
-				C33AAD8126EF2240007CF7B9 /* Registration */,
 				C33AAD6926EF2037007CF7B9 /* AppDelegate.swift */,
 				C33AAD7226EF2039007CF7B9 /* Assets.xcassets */,
 				C33AAD7426EF2039007CF7B9 /* LaunchScreen.storyboard */,
@@ -229,6 +232,25 @@
 				C33AADBE26EF6E1E007CF7B9 /* Keys.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C3B15A6826F3061100B9D76E /* Interests */ = {
+			isa = PBXGroup;
+			children = (
+				C3B15A6B26F3069700B9D76E /* LanguageVC.swift */,
+				C3B15A6C26F3069700B9D76E /* LanguageVC.xib */,
+			);
+			path = Interests;
+			sourceTree = "<group>";
+		};
+		C3B15A6926F3063800B9D76E /* VCs */ = {
+			isa = PBXGroup;
+			children = (
+				C33AAD8326EF29A5007CF7B9 /* Welcome */,
+				C33AAD8126EF2240007CF7B9 /* Registration */,
+				C3B15A6826F3061100B9D76E /* Interests */,
+			);
+			path = VCs;
 			sourceTree = "<group>";
 		};
 		C3F5376126F1B10F004BBF00 /* Customs */ = {
@@ -317,6 +339,7 @@
 				C33AAD9F26EF59E8007CF7B9 /* Roboto-ThinItalic.ttf in Resources */,
 				C33AADA326EF59E8007CF7B9 /* Roboto-BlackItalic.ttf in Resources */,
 				C33AADA026EF59E8007CF7B9 /* Roboto-Black.ttf in Resources */,
+				C3B15A6E26F3069700B9D76E /* LanguageVC.xib in Resources */,
 				C33AAD8726EF367D007CF7B9 /* WelcomeVC.xib in Resources */,
 				C3F5377526F21287004BBF00 /* PasswordOTPVarifyVC.xib in Resources */,
 				C33AAD9E26EF59E8007CF7B9 /* Roboto-BoldItalic.ttf in Resources */,
@@ -381,6 +404,7 @@
 				C33AADAB26EF5A6C007CF7B9 /* Enums.swift in Sources */,
 				C33AAD8626EF367D007CF7B9 /* WelcomeVC.swift in Sources */,
 				C360EA7B26F0C89300289A5C /* OTPVarifyVC.swift in Sources */,
+				C3B15A6D26F3069700B9D76E /* LanguageVC.swift in Sources */,
 				C33AADBF26EF6E1E007CF7B9 /* Keys.swift in Sources */,
 				C33AADB426EF6BB3007CF7B9 /* Cache.swift in Sources */,
 				C33AADAE26EF5D39007CF7B9 /* Extensions.swift in Sources */,

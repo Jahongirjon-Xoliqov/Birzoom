@@ -44,6 +44,15 @@ class Lang {
         case p_newpass
         case p_newpass_repeat
         
+        
+        //lang
+        case l_lang_chooseLanguage
+        case b_lang_en
+        case b_lang_ru
+        case l_lang_helper
+        case l_lang_helper_part
+        
+        
     }
     
     static func get(valueFor component: Component) -> String {
@@ -88,6 +97,14 @@ class Lang {
             //new password
             case .p_newpass: return "Yangi parol"
             case .p_newpass_repeat: return "Parolni qayta kiriting"
+                
+                
+            //lang
+            case .l_lang_chooseLanguage: return "Qaysi tilni o'rganishni \nxoxlaysiz?"
+            case .b_lang_en: return "Engliz tili"
+            case .b_lang_ru: return "Rus tili"
+            case .l_lang_helper: return "Tanlangan tilni istalgan vaqtda Sozlamalar \n orqali o'zgartirish mumkin"
+            case .l_lang_helper_part: return "Sozlamalar" ///.l_lang_helper "Sozlamalar" part
                 
             }
             

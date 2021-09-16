@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow()
         
-        let vc = SignupVC(nibName: "SignupVC", bundle: nil)
+        let vc = LanguageVC(nibName: "LanguageVC", bundle: nil)
         let navVC = UINavigationController(rootViewController: vc)
         navVC.navigationBar.isHidden = true
         window?.rootViewController = navVC

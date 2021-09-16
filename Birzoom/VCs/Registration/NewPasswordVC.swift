@@ -98,7 +98,8 @@ class NewPasswordVC: UIViewController {
     @IBAction func continueButtonTapped(_ sender: UIButton) {
         
         if isUserInfoValid() {
-            ///open up next page
+            ///open up language choosing page
+            navigate(to: .languageChoose)
             
         } else {
             ///show alert
