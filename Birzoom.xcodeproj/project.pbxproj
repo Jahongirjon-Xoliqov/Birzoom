@@ -37,6 +37,12 @@
 		C360EA7C26F0C89300289A5C /* OTPVarifyVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C360EA7A26F0C89300289A5C /* OTPVarifyVC.xib */; };
 		C3B15A6D26F3069700B9D76E /* LanguageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B15A6B26F3069700B9D76E /* LanguageVC.swift */; };
 		C3B15A6E26F3069700B9D76E /* LanguageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3B15A6C26F3069700B9D76E /* LanguageVC.xib */; };
+		C3B15A7426F34B3700B9D76E /* InterestsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B15A7226F34B3700B9D76E /* InterestsVC.swift */; };
+		C3B15A7526F34B3700B9D76E /* InterestsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3B15A7326F34B3700B9D76E /* InterestsVC.xib */; };
+		C3B15A7826F34B6400B9D76E /* HashtagLikeCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B15A7726F34B6400B9D76E /* HashtagLikeCollectionViewFlowLayout.swift */; };
+		C3B15A7C26F34C1300B9D76E /* InterestsCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B15A7A26F34C1300B9D76E /* InterestsCVC.swift */; };
+		C3B15A7D26F34C1300B9D76E /* InterestsCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3B15A7B26F34C1300B9D76E /* InterestsCVC.xib */; };
+		C3B15A8526F362A200B9D76E /* InterestTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B15A8426F362A200B9D76E /* InterestTag.swift */; };
 		C3F5376326F1B14E004BBF00 /* OTPTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F5376226F1B14E004BBF00 /* OTPTextfield.swift */; };
 		C3F5376726F1BF25004BBF00 /* SigninVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F5376526F1BF25004BBF00 /* SigninVC.swift */; };
 		C3F5376826F1BF25004BBF00 /* SigninVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3F5376626F1BF25004BBF00 /* SigninVC.xib */; };
@@ -84,6 +90,12 @@
 		C360EA7A26F0C89300289A5C /* OTPVarifyVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OTPVarifyVC.xib; sourceTree = "<group>"; };
 		C3B15A6B26F3069700B9D76E /* LanguageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageVC.swift; sourceTree = "<group>"; };
 		C3B15A6C26F3069700B9D76E /* LanguageVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LanguageVC.xib; sourceTree = "<group>"; };
+		C3B15A7226F34B3700B9D76E /* InterestsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestsVC.swift; sourceTree = "<group>"; };
+		C3B15A7326F34B3700B9D76E /* InterestsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InterestsVC.xib; sourceTree = "<group>"; };
+		C3B15A7726F34B6400B9D76E /* HashtagLikeCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashtagLikeCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		C3B15A7A26F34C1300B9D76E /* InterestsCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestsCVC.swift; sourceTree = "<group>"; };
+		C3B15A7B26F34C1300B9D76E /* InterestsCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InterestsCVC.xib; sourceTree = "<group>"; };
+		C3B15A8426F362A200B9D76E /* InterestTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestTag.swift; sourceTree = "<group>"; };
 		C3F5376226F1B14E004BBF00 /* OTPTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPTextfield.swift; sourceTree = "<group>"; };
 		C3F5376526F1BF25004BBF00 /* SigninVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninVC.swift; sourceTree = "<group>"; };
 		C3F5376626F1BF25004BBF00 /* SigninVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SigninVC.xib; sourceTree = "<group>"; };
@@ -146,6 +158,7 @@
 		C33AAD6826EF2037007CF7B9 /* Birzoom */ = {
 			isa = PBXGroup;
 			children = (
+				C3B15A8326F3627F00B9D76E /* Models */,
 				C3B15A6926F3063800B9D76E /* VCs */,
 				C3F5376126F1B10F004BBF00 /* Customs */,
 				C33AADA926EF5A2D007CF7B9 /* Helpers */,
@@ -237,8 +250,11 @@
 		C3B15A6826F3061100B9D76E /* Interests */ = {
 			isa = PBXGroup;
 			children = (
-				C3B15A6B26F3069700B9D76E /* LanguageVC.swift */,
-				C3B15A6C26F3069700B9D76E /* LanguageVC.xib */,
+				C3B15A7226F34B3700B9D76E /* InterestsVC.swift */,
+				C3B15A7326F34B3700B9D76E /* InterestsVC.xib */,
+				C3B15A7726F34B6400B9D76E /* HashtagLikeCollectionViewFlowLayout.swift */,
+				C3B15A7A26F34C1300B9D76E /* InterestsCVC.swift */,
+				C3B15A7B26F34C1300B9D76E /* InterestsCVC.xib */,
 			);
 			path = Interests;
 			sourceTree = "<group>";
@@ -246,11 +262,29 @@
 		C3B15A6926F3063800B9D76E /* VCs */ = {
 			isa = PBXGroup;
 			children = (
+				C3B15A7126F34B0100B9D76E /* Language */,
 				C33AAD8326EF29A5007CF7B9 /* Welcome */,
 				C33AAD8126EF2240007CF7B9 /* Registration */,
 				C3B15A6826F3061100B9D76E /* Interests */,
 			);
 			path = VCs;
+			sourceTree = "<group>";
+		};
+		C3B15A7126F34B0100B9D76E /* Language */ = {
+			isa = PBXGroup;
+			children = (
+				C3B15A6B26F3069700B9D76E /* LanguageVC.swift */,
+				C3B15A6C26F3069700B9D76E /* LanguageVC.xib */,
+			);
+			path = Language;
+			sourceTree = "<group>";
+		};
+		C3B15A8326F3627F00B9D76E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C3B15A8426F362A200B9D76E /* InterestTag.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		C3F5376126F1B10F004BBF00 /* Customs */ = {
@@ -323,6 +357,7 @@
 			files = (
 				C33AAD9B26EF59E8007CF7B9 /* Roboto-MediumItalic.ttf in Resources */,
 				C3F5376826F1BF25004BBF00 /* SigninVC.xib in Resources */,
+				C3B15A7526F34B3700B9D76E /* InterestsVC.xib in Resources */,
 				C3F5377026F2039D004BBF00 /* PasswordRecoveryVC.xib in Resources */,
 				C33AAD7626EF2039007CF7B9 /* LaunchScreen.storyboard in Resources */,
 				C33AADA726EF59E8007CF7B9 /* Roboto-Regular.ttf in Resources */,
@@ -343,6 +378,7 @@
 				C33AAD8726EF367D007CF7B9 /* WelcomeVC.xib in Resources */,
 				C3F5377526F21287004BBF00 /* PasswordOTPVarifyVC.xib in Resources */,
 				C33AAD9E26EF59E8007CF7B9 /* Roboto-BoldItalic.ttf in Resources */,
+				C3B15A7D26F34C1300B9D76E /* InterestsCVC.xib in Resources */,
 				C33AAD7326EF2039007CF7B9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,9 +433,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C360EA6926F065D900289A5C /* SignupVC.swift in Sources */,
+				C3B15A7426F34B3700B9D76E /* InterestsVC.swift in Sources */,
 				C33AADB126EF699A007CF7B9 /* Lang.swift in Sources */,
+				C3B15A7C26F34C1300B9D76E /* InterestsCVC.swift in Sources */,
 				C3F5376B26F1D3AE004BBF00 /* PasswordTextField.swift in Sources */,
 				C33AAD6A26EF2037007CF7B9 /* AppDelegate.swift in Sources */,
+				C3B15A8526F362A200B9D76E /* InterestTag.swift in Sources */,
 				C3F5376326F1B14E004BBF00 /* OTPTextfield.swift in Sources */,
 				C33AADAB26EF5A6C007CF7B9 /* Enums.swift in Sources */,
 				C33AAD8626EF367D007CF7B9 /* WelcomeVC.swift in Sources */,
@@ -407,6 +446,7 @@
 				C3B15A6D26F3069700B9D76E /* LanguageVC.swift in Sources */,
 				C33AADBF26EF6E1E007CF7B9 /* Keys.swift in Sources */,
 				C33AADB426EF6BB3007CF7B9 /* Cache.swift in Sources */,
+				C3B15A7826F34B6400B9D76E /* HashtagLikeCollectionViewFlowLayout.swift in Sources */,
 				C33AADAE26EF5D39007CF7B9 /* Extensions.swift in Sources */,
 				C3F5376726F1BF25004BBF00 /* SigninVC.swift in Sources */,
 				C3F5377926F21B5E004BBF00 /* NewPasswordVC.swift in Sources */,

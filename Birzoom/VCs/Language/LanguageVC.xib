@@ -29,7 +29,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ti6-tv-IM8">
-                            <rect key="frame" x="20" y="0.0" width="374" height="956"/>
+                            <rect key="frame" x="20" y="0.0" width="374" height="586"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g89-wz-dWh">
                                     <rect key="frame" x="0.0" y="66" width="374" height="500"/>
@@ -77,7 +77,7 @@
                             <constraints>
                                 <constraint firstAttribute="trailing" secondItem="g89-wz-dWh" secondAttribute="trailing" id="Aga-Wu-zWI"/>
                                 <constraint firstAttribute="width" relation="lessThanOrEqual" constant="375" id="b4U-fV-38T"/>
-                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="g89-wz-dWh" secondAttribute="bottom" priority="999" constant="20" id="cUk-0N-DIl"/>
+                                <constraint firstAttribute="bottom" secondItem="g89-wz-dWh" secondAttribute="bottom" constant="20" id="cUk-0N-DIl"/>
                                 <constraint firstItem="g89-wz-dWh" firstAttribute="leading" secondItem="Ti6-tv-IM8" secondAttribute="leading" id="dJr-xo-7Kj"/>
                                 <constraint firstItem="g89-wz-dWh" firstAttribute="top" secondItem="Ti6-tv-IM8" secondAttribute="top" constant="66" id="jhx-xi-yON"/>
                             </constraints>
@@ -88,8 +88,7 @@
                         <constraint firstItem="Ti6-tv-IM8" firstAttribute="top" secondItem="DgJ-TZ-YkP" secondAttribute="top" priority="999" id="LCy-O5-2tf"/>
                         <constraint firstItem="Ti6-tv-IM8" firstAttribute="leading" secondItem="DgJ-TZ-YkP" secondAttribute="leading" priority="999" constant="20" id="MIa-34-7Jx"/>
                         <constraint firstAttribute="trailing" secondItem="Ti6-tv-IM8" secondAttribute="trailing" priority="999" constant="20" id="h7y-dJ-t2j"/>
-                        <constraint firstAttribute="bottom" secondItem="Ti6-tv-IM8" secondAttribute="bottom" priority="999" id="r7J-uZ-5A7"/>
-                        <constraint firstItem="Ti6-tv-IM8" firstAttribute="centerY" secondItem="DgJ-TZ-YkP" secondAttribute="centerY" constant="30" id="sRj-48-xik"/>
+                        <constraint firstAttribute="bottom" secondItem="Ti6-tv-IM8" secondAttribute="bottom" id="r7J-uZ-5A7"/>
                     </constraints>
                 </scrollView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SLb-Gh-v0c">

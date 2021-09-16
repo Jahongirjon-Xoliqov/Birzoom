@@ -239,6 +239,9 @@ extension UIViewController {
         case .languageChoose:
             let vc = LanguageVC(nibName: "LanguageVC", bundle: nil)
             present(vc, animated: true)
+        case .interest:
+            let vc = InterestsVC(nibName: "InterestsVC", bundle: nil)
+            present(vc, animated: true)
         }
         
     }
@@ -276,6 +279,9 @@ extension UIViewController {
         case .languageChoose:
             let vc = LanguageVC(nibName: "LanguageVC", bundle: nil)
             navController.pushViewController(vc, animated: true)
+        case .interest:
+            let vc = InterestsVC(nibName: "InterestsVC", bundle: nil)
+            navController.pushViewController(vc, animated: true)
         }
         
     }
@@ -290,5 +296,43 @@ extension UIViewController {
     
 }
 
+
+
+///extension for string is used to get content width
+///string size - content size
+extension String {
+    
+    func widthOfString(usingFont font: UIFont) -> CGFloat {
+        let fontAttributes = [NSAttributedString.Key.font: font]
+        let size = self.size(withAttributes: fontAttributes)
+        return size.width
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//MARK: - Cell
+extension InterestsCVC {
+    static let identifier = "InterestsCVC"
+    static func nib() -> UINib {
+        UINib(nibName: "InterestsCVC", bundle: nil)
+    }
+}
 
 

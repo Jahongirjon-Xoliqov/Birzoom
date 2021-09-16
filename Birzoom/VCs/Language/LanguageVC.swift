@@ -44,7 +44,6 @@ class LanguageVC: UIViewController {
         }
     }
     
-    
     @IBOutlet weak var chooseLanguageLabel: UILabel! {
         didSet {
             chooseLanguageLabel.numberOfLines = 0
@@ -115,6 +114,7 @@ class LanguageVC: UIViewController {
     }
     
     @IBAction func continueButtonTapped(_ sender: UIButton) {
+        navigate(to: .interest)
     }
     
     @IBAction func enButtonTapped(_ sender: UIButton) {

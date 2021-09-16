@@ -52,6 +52,9 @@ class Lang {
         case l_lang_helper
         case l_lang_helper_part
         
+        //interests
+        case l_interest
+        
         
     }
     
@@ -106,6 +109,10 @@ class Lang {
             case .l_lang_helper: return "Tanlangan tilni istalgan vaqtda Sozlamalar \n orqali o'zgartirish mumkin"
             case .l_lang_helper_part: return "Sozlamalar" ///.l_lang_helper "Sozlamalar" part
                 
+            
+            //interest
+            case .l_interest: return "Sizning qiziqishlaringiz"
+            
             }
             
             

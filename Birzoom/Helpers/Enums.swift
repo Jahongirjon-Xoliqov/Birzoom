@@ -84,6 +84,20 @@ enum BImage: String {
     case eyecross = "eyecross"
     case russia = "russia"
     case uk = "uk"
+    case animal = "dog"
+    case it = "it"
+    case sport = "basketball"
+    case travel = "travel"
+    case car = "car"
+    case book = "book"
+    case economic = "economic"
+    case movie = "movie"
+    case plant = "plant"
+    case dance = "dancer"
+    case music = "music"
+    case politics = "politic"
+    case burger = "burger"
+    case dress = "dress"
 }
 
 
@@ -95,6 +109,7 @@ enum VControllers {
     case otppassword
     case newpassword
     case languageChoose
+    case interest
 }
 
 
