@@ -37,6 +37,7 @@ extension UIColor {
     static let bHalfBlue: UIColor = UIColor(named: "bHalfBlue") ?? UIColor.blue.withAlphaComponent(0.2)
     static let bTextBlue: UIColor = UIColor(named: "bBlueText") ?? .blue
     static let bSelectionBlue: UIColor = UIColor(named: "bSelectionBlue") ?? .blue
+    static let bBorderBlue: UIColor = UIColor(named: "bBorderBlue") ?? .blue
     
     //gray
     static let bGray: UIColor = UIColor(named: "bGray") ?? .red
@@ -45,7 +46,9 @@ extension UIColor {
     static let bStrongGray: UIColor = UIColor(named: "bStrongGray") ?? .gray
     static let bGray1: UIColor = UIColor(named: "bGray1") ?? .gray
     static let bShadowGray: UIColor = UIColor(named: "bShadowGray") ?? .gray
-    
+    static let bBorderGray: UIColor = UIColor(named: "bBorderGray") ?? .gray
+    static let bEyeGay: UIColor = UIColor(named: "bEyeGray") ?? .gray
+    static let bButtonGray: UIColor = UIColor(named: "bButtonGray") ?? .gray
     
     //white
     static let bBackground: UIColor = UIColor(named: "bBackground") ?? .white
@@ -125,7 +128,7 @@ extension UITextField {
     func activateUI(for type: TextFieldType) {
         
         layer.borderWidth = 1
-        layer.borderColor = UIColor.bTextGray.cgColor
+        layer.borderColor = UIColor.bBorderGray.cgColor
         layer.cornerRadius = 8
 
         setPaddings(for: type)
@@ -133,7 +136,7 @@ extension UITextField {
     
     func isValid(_ b: Bool) {
         if b {
-            layer.borderColor = UIColor.bTextGray.cgColor
+            layer.borderColor = UIColor.bBorderGray.cgColor
         } else {
             layer.borderColor = UIColor.bRed.cgColor
             //vibrate

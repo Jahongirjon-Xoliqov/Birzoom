@@ -47,7 +47,7 @@ class InterestsVC: UIViewController {
             skipButton.clipsToBounds = true
             skipButton.layer.cornerRadius = 8
             skipButton.layer.borderWidth = 1
-            skipButton.layer.borderColor = UIColor.bBlue.cgColor
+            skipButton.layer.borderColor = UIColor.bBorderBlue.cgColor
             skipButton.titleLabel?.font = .font(name: .roboto_medium, size: .r16)
             skipButton.setTitle(Lang.get(valueFor: .l_welcome_skip), for: .normal)
             skipButton.setTitleColor(.bBlue, for: .normal)

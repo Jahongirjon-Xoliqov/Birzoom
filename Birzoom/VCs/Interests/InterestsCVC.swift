@@ -28,7 +28,7 @@ class InterestsCVC: UICollectionViewCell {
         
         nameLabel.text = tag.name
         iconImageView.image = UIImage(named: tag.image)
-        backView.backgroundColor = tag.isSelected ? .bSelectionBlue : .bBackground
+        backView.backgroundColor = tag.isSelected ? .bSelectionBlue : .bButtonGray
         
     }
     
@@ -37,7 +37,7 @@ class InterestsCVC: UICollectionViewCell {
         if isSelected {
             backView.backgroundColor = .bSelectionBlue
         } else {
-            backView.backgroundColor = .bBackground
+            backView.backgroundColor = .bButtonGray
         }
         
     }

@@ -104,7 +104,7 @@ class Lang {
                 
             //lang
             case .l_lang_chooseLanguage: return "Qaysi tilni o'rganishni \nxoxlaysiz?"
-            case .b_lang_en: return "Engliz tili"
+            case .b_lang_en: return "Ingliz tili"
             case .b_lang_ru: return "Rus tili"
             case .l_lang_helper: return "Tanlangan tilni istalgan vaqtda Sozlamalar \n orqali o'zgartirish mumkin"
             case .l_lang_helper_part: return "Sozlamalar" ///.l_lang_helper "Sozlamalar" part

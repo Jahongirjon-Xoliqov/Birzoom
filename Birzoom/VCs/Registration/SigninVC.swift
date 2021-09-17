@@ -66,7 +66,7 @@ class SigninVC: UIViewController {
         didSet {
             eyeButton.setTitle("", for: .normal)
             eyeButton.setImage(UIImage.image(name: .eye), for: .normal)
-            eyeButton.tintColor = .bGray
+            eyeButton.tintColor = .bEyeGay
             eyeButton.isHidden = true
         }
     }

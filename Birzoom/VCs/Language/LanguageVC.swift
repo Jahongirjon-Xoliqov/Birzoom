@@ -55,7 +55,7 @@ class LanguageVC: UIViewController {
     
     @IBOutlet weak var ruButton: UIButton! {
         didSet {
-            ruButton.backgroundColor = .bBackground
+            ruButton.backgroundColor = .bButtonGray
             ruButton.layer.masksToBounds = false
             ruButton.layer.cornerRadius = 8
             ruButton.layer.shadowColor = #colorLiteral(red: 0.3411764706, green: 0.3411764706, blue: 0.3411764706, alpha: 1).cgColor
@@ -64,7 +64,7 @@ class LanguageVC: UIViewController {
             ruButton.layer.shadowOpacity = 0.06
             ruButton.setImage(.image(name: .russia), for: .normal)
             ruButton.titleLabel?.font = .font(name: .roboto_medium, size: .r16)
-            ruButton.setTitle(Lang.get(valueFor: .b_lang_en), for: .normal)
+            ruButton.setTitle(Lang.get(valueFor: .b_lang_ru), for: .normal)
             ruButton.setTitleColor(.bBlack, for: .normal)
             ruButton.contentEdgeInsets = UIEdgeInsets(top: 20, left: 16, bottom: 20, right: 16)
             ruButton.imageEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
@@ -77,7 +77,7 @@ class LanguageVC: UIViewController {
     
     @IBOutlet weak var enButton: UIButton! {
         didSet {
-            enButton.backgroundColor = .bBackground
+            enButton.backgroundColor = .bButtonGray
             enButton.layer.masksToBounds = false
             enButton.layer.cornerRadius = 8
             enButton.layer.shadowColor = #colorLiteral(red: 0.3411764706, green: 0.3411764706, blue: 0.3411764706, alpha: 1).cgColor
@@ -86,7 +86,7 @@ class LanguageVC: UIViewController {
             enButton.layer.shadowOpacity = 0.06
             enButton.setImage(.image(name: .uk), for: .normal)
             enButton.titleLabel?.font = .font(name: .roboto_medium, size: .r16)
-            enButton.setTitle(Lang.get(valueFor: .b_lang_ru), for: .normal)
+            enButton.setTitle(Lang.get(valueFor: .b_lang_en), for: .normal)
             enButton.setTitleColor(.bBlack, for: .normal)
             enButton.contentEdgeInsets = UIEdgeInsets(top: 20, left: 16, bottom: 20, right: 16)
             enButton.imageEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
@@ -120,14 +120,14 @@ class LanguageVC: UIViewController {
     @IBAction func enButtonTapped(_ sender: UIButton) {
         UIView.animate(withDuration: 0.3) { [self] in
             enButton.backgroundColor = .bSelectionBlue
-            ruButton.backgroundColor = .bBackground
+            ruButton.backgroundColor = .bButtonGray
             continueButton.backgroundColor = .bBlue
         }
     }
     
     @IBAction func ruButtonTapped(_ sender: UIButton) {
         UIView.animate(withDuration: 0.3) { [self] in
-            enButton.backgroundColor = .bBackground
+            enButton.backgroundColor = .bButtonGray
             ruButton.backgroundColor = .bSelectionBlue
             continueButton.backgroundColor = .bBlue
         }

@@ -57,7 +57,7 @@ class NewPasswordVC: UIViewController {
         didSet {
             eyeButton.setTitle("", for: .normal)
             eyeButton.setImage(UIImage.image(name: .eye), for: .normal)
-            eyeButton.tintColor = .bGray
+            eyeButton.tintColor = .bEyeGay
             eyeButton.isHidden = false
         }
     }
@@ -66,7 +66,7 @@ class NewPasswordVC: UIViewController {
         didSet {
             repeatEyeButton.setTitle("", for: .normal)
             repeatEyeButton.setImage(UIImage.image(name: .eye), for: .normal)
-            repeatEyeButton.tintColor = .bGray
+            repeatEyeButton.tintColor = .bEyeGay
             repeatEyeButton.isHidden = false
         }
     }
@@ -164,7 +164,6 @@ extension NewPasswordVC: UITextFieldDelegate {
         }
         
     }
-    
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         
