@@ -55,6 +55,14 @@ class Lang {
         //interests
         case l_interest
         
+        //popup
+        case b_popup_buy
+        
+        
+        //home
+        case l_home
+        case b_home_begin_test
+        
         
     }
     
@@ -113,6 +121,13 @@ class Lang {
             //interest
             case .l_interest: return "Sizning qiziqishlaringiz"
             
+            //popup
+            case .b_popup_buy: return "Sotib Olish"
+            
+            //home
+            case .l_home: return "Bosh sahifa"
+            case .b_home_begin_test: return "Testni boshlash"
+                
             }
             
             

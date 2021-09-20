@@ -31,6 +31,8 @@ extension UIColor {
     
     //black
     static let bBlack: UIColor = UIColor(named: "bBlack") ?? .black
+    static let bHomeBackground: UIColor = UIColor(named: "bHomeBackground") ?? .bBackground
+    static let bHomeNavBackground: UIColor = UIColor(named: "bHomeNavBackground") ?? .black
     
     //blue
     static let bBlue: UIColor = UIColor(named: "bBlue") ?? .blue
@@ -49,6 +51,9 @@ extension UIColor {
     static let bBorderGray: UIColor = UIColor(named: "bBorderGray") ?? .gray
     static let bEyeGay: UIColor = UIColor(named: "bEyeGray") ?? .gray
     static let bButtonGray: UIColor = UIColor(named: "bButtonGray") ?? .gray
+    static let bHomeNavTint: UIColor = UIColor(named: "bHomeNavTint") ?? .gray
+    
+    
     
     //white
     static let bBackground: UIColor = UIColor(named: "bBackground") ?? .white
@@ -57,6 +62,10 @@ extension UIColor {
     
     //red
     static let bRed: UIColor = UIColor(named: "bRedText") ?? .red
+    
+    
+    //purple
+    static let bHomePurple: UIColor = UIColor(named: "bHomePurple") ?? .purple
     
 }
 

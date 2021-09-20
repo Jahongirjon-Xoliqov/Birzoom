@@ -43,6 +43,9 @@
 		C3B15A7C26F34C1300B9D76E /* InterestsCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B15A7A26F34C1300B9D76E /* InterestsCVC.swift */; };
 		C3B15A7D26F34C1300B9D76E /* InterestsCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3B15A7B26F34C1300B9D76E /* InterestsCVC.xib */; };
 		C3B15A8526F362A200B9D76E /* InterestTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B15A8426F362A200B9D76E /* InterestTag.swift */; };
+		C3B7775326F5B4660020DE16 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B7775226F5B4660020DE16 /* MainTabBarController.swift */; };
+		C3B7775726F5B5760020DE16 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B7775526F5B5760020DE16 /* HomeVC.swift */; };
+		C3B7775826F5B5760020DE16 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3B7775626F5B5760020DE16 /* HomeVC.xib */; };
 		C3F5376326F1B14E004BBF00 /* OTPTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F5376226F1B14E004BBF00 /* OTPTextfield.swift */; };
 		C3F5376726F1BF25004BBF00 /* SigninVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F5376526F1BF25004BBF00 /* SigninVC.swift */; };
 		C3F5376826F1BF25004BBF00 /* SigninVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3F5376626F1BF25004BBF00 /* SigninVC.xib */; };
@@ -53,6 +56,8 @@
 		C3F5377526F21287004BBF00 /* PasswordOTPVarifyVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3F5377326F21287004BBF00 /* PasswordOTPVarifyVC.xib */; };
 		C3F5377926F21B5E004BBF00 /* NewPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F5377726F21B5E004BBF00 /* NewPasswordVC.swift */; };
 		C3F5377A26F21B5E004BBF00 /* NewPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3F5377826F21B5E004BBF00 /* NewPasswordVC.xib */; };
+		C3F58A7526F4A1EA0039E30F /* DiscardPopupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F58A7326F4A1EA0039E30F /* DiscardPopupVC.swift */; };
+		C3F58A7626F4A1EA0039E30F /* DiscardPopupVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3F58A7426F4A1EA0039E30F /* DiscardPopupVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,6 +101,9 @@
 		C3B15A7A26F34C1300B9D76E /* InterestsCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestsCVC.swift; sourceTree = "<group>"; };
 		C3B15A7B26F34C1300B9D76E /* InterestsCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InterestsCVC.xib; sourceTree = "<group>"; };
 		C3B15A8426F362A200B9D76E /* InterestTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestTag.swift; sourceTree = "<group>"; };
+		C3B7775226F5B4660020DE16 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		C3B7775526F5B5760020DE16 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		C3B7775626F5B5760020DE16 /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
 		C3F5376226F1B14E004BBF00 /* OTPTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPTextfield.swift; sourceTree = "<group>"; };
 		C3F5376526F1BF25004BBF00 /* SigninVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninVC.swift; sourceTree = "<group>"; };
 		C3F5376626F1BF25004BBF00 /* SigninVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SigninVC.xib; sourceTree = "<group>"; };
@@ -106,6 +114,8 @@
 		C3F5377326F21287004BBF00 /* PasswordOTPVarifyVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PasswordOTPVarifyVC.xib; sourceTree = "<group>"; };
 		C3F5377726F21B5E004BBF00 /* NewPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPasswordVC.swift; sourceTree = "<group>"; };
 		C3F5377826F21B5E004BBF00 /* NewPasswordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewPasswordVC.xib; sourceTree = "<group>"; };
+		C3F58A7326F4A1EA0039E30F /* DiscardPopupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscardPopupVC.swift; sourceTree = "<group>"; };
+		C3F58A7426F4A1EA0039E30F /* DiscardPopupVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiscardPopupVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -262,6 +272,7 @@
 		C3B15A6926F3063800B9D76E /* VCs */ = {
 			isa = PBXGroup;
 			children = (
+				C3F58A7126F49E360039E30F /* Home */,
 				C3B15A7126F34B0100B9D76E /* Language */,
 				C33AAD8326EF29A5007CF7B9 /* Welcome */,
 				C33AAD8126EF2240007CF7B9 /* Registration */,
@@ -294,6 +305,18 @@
 				C3F5376A26F1D3AE004BBF00 /* PasswordTextField.swift */,
 			);
 			path = Customs;
+			sourceTree = "<group>";
+		};
+		C3F58A7126F49E360039E30F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C3F58A7326F4A1EA0039E30F /* DiscardPopupVC.swift */,
+				C3F58A7426F4A1EA0039E30F /* DiscardPopupVC.xib */,
+				C3B7775226F5B4660020DE16 /* MainTabBarController.swift */,
+				C3B7775526F5B5760020DE16 /* HomeVC.swift */,
+				C3B7775626F5B5760020DE16 /* HomeVC.xib */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -371,11 +394,13 @@
 				C3F5377A26F21B5E004BBF00 /* NewPasswordVC.xib in Resources */,
 				C33AADA426EF59E8007CF7B9 /* LICENSE.txt in Resources */,
 				C33AAD9C26EF59E8007CF7B9 /* Roboto-Italic.ttf in Resources */,
+				C3F58A7626F4A1EA0039E30F /* DiscardPopupVC.xib in Resources */,
 				C33AAD9F26EF59E8007CF7B9 /* Roboto-ThinItalic.ttf in Resources */,
 				C33AADA326EF59E8007CF7B9 /* Roboto-BlackItalic.ttf in Resources */,
 				C33AADA026EF59E8007CF7B9 /* Roboto-Black.ttf in Resources */,
 				C3B15A6E26F3069700B9D76E /* LanguageVC.xib in Resources */,
 				C33AAD8726EF367D007CF7B9 /* WelcomeVC.xib in Resources */,
+				C3B7775826F5B5760020DE16 /* HomeVC.xib in Resources */,
 				C3F5377526F21287004BBF00 /* PasswordOTPVarifyVC.xib in Resources */,
 				C33AAD9E26EF59E8007CF7B9 /* Roboto-BoldItalic.ttf in Resources */,
 				C3B15A7D26F34C1300B9D76E /* InterestsCVC.xib in Resources */,
@@ -434,15 +459,18 @@
 			files = (
 				C360EA6926F065D900289A5C /* SignupVC.swift in Sources */,
 				C3B15A7426F34B3700B9D76E /* InterestsVC.swift in Sources */,
+				C3B7775326F5B4660020DE16 /* MainTabBarController.swift in Sources */,
 				C33AADB126EF699A007CF7B9 /* Lang.swift in Sources */,
 				C3B15A7C26F34C1300B9D76E /* InterestsCVC.swift in Sources */,
 				C3F5376B26F1D3AE004BBF00 /* PasswordTextField.swift in Sources */,
 				C33AAD6A26EF2037007CF7B9 /* AppDelegate.swift in Sources */,
 				C3B15A8526F362A200B9D76E /* InterestTag.swift in Sources */,
+				C3F58A7526F4A1EA0039E30F /* DiscardPopupVC.swift in Sources */,
 				C3F5376326F1B14E004BBF00 /* OTPTextfield.swift in Sources */,
 				C33AADAB26EF5A6C007CF7B9 /* Enums.swift in Sources */,
 				C33AAD8626EF367D007CF7B9 /* WelcomeVC.swift in Sources */,
 				C360EA7B26F0C89300289A5C /* OTPVarifyVC.swift in Sources */,
+				C3B7775726F5B5760020DE16 /* HomeVC.swift in Sources */,
 				C3B15A6D26F3069700B9D76E /* LanguageVC.swift in Sources */,
 				C33AADBF26EF6E1E007CF7B9 /* Keys.swift in Sources */,
 				C33AADB426EF6BB3007CF7B9 /* Cache.swift in Sources */,

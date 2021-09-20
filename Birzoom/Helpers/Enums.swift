@@ -30,6 +30,8 @@ enum BFontSize {
     case r15
     case r24
     case r16
+    case r20
+    case r18
 }
 
 extension CGFloat {
@@ -48,6 +50,8 @@ extension CGFloat {
         case .r15: return 15*scSize.width/uiSize.width
         case .r24: return 24*scSize.width/uiSize.width
         case .r16: return 16*scSize.width/uiSize.width
+        case .r20: return 20*scSize.width/uiSize.width
+        case .r18: return 18*scSize.width/uiSize.width
         }
         
     }
@@ -78,6 +82,7 @@ enum BButtonType {
 
 
 enum BImage: String {
+    ///registration
     case topBack = "back"
     case chevBack = "lChevron"
     case eye = "eye"
@@ -98,6 +103,19 @@ enum BImage: String {
     case politics = "politic"
     case burger = "burger"
     case dress = "dress"
+    case dissmis = "dissmis"
+    
+    ///home
+    case bell = "bell"
+    case lamp = "lamp"
+    case crown = "crown"
+    case discardback = "discardback"
+    case disforward = "disforward"
+    case forwardblue = "forwardblue"
+    case newlesson = "newlesson"
+    case zoom = "zoom"
+    case letsdoit = "letsdo"
+    
 }
 
 
