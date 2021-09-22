@@ -132,6 +132,8 @@ enum VControllers {
     case newpassword
     case languageChoose
     case interest
+    case home
+    case guide
 }
 
 

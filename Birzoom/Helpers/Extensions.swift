@@ -258,6 +258,12 @@ extension UIViewController {
         case .interest:
             let vc = InterestsVC(nibName: "InterestsVC", bundle: nil)
             present(vc, animated: true)
+        case .home:
+            let vc = HomeVC(nibName: "HomeVC", bundle: nil)
+            present(vc, animated: true)
+        case .guide:
+            let vc = GuideVC(nibName: "GuideVC", bundle: nil)
+            present(vc, animated: true)
         }
         
     }
@@ -298,6 +304,12 @@ extension UIViewController {
         case .interest:
             let vc = InterestsVC(nibName: "InterestsVC", bundle: nil)
             navController.pushViewController(vc, animated: true)
+        case .home:
+            let vc = HomeVC(nibName: "HomeVC", bundle: nil)
+            navController.pushViewController(vc, animated: true)
+        case .guide:
+            let vc = GuideVC(nibName: "GuideVC", bundle: nil)
+            navController.pushViewController(vc, animated: true)
         }
         
     }
@@ -312,6 +324,29 @@ extension UIViewController {
     
 }
 
+
+extension CALayer {
+    //video like in youtube
+    //dimming view
+    func dim() {
+        let colourAnim = CABasicAnimation(keyPath: "backgroundColor")
+        colourAnim.fromValue = backgroundColor
+        colourAnim.toValue = UIColor.black.withAlphaComponent(0.5).cgColor
+        colourAnim.duration = 1.0
+        add(colourAnim, forKey: "colourAnimation")
+        backgroundColor = UIColor.black.withAlphaComponent(0.5).cgColor
+    }
+    
+    func undim() {
+        let colourAnim = CABasicAnimation(keyPath: "backgroundColor")
+        colourAnim.fromValue = backgroundColor
+        colourAnim.toValue = UIColor.clear.cgColor
+        colourAnim.duration = 1.0
+        add(colourAnim, forKey: "colourAnimation")
+        backgroundColor = UIColor.clear.cgColor
+    }
+    
+}
 
 
 ///extension for string is used to get content width

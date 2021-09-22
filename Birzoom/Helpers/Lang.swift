@@ -70,6 +70,9 @@ class Lang {
         case l_home_news
         case l_home_videos
         
+        //guide
+        case l_guide
+        
         
     }
     
@@ -141,6 +144,12 @@ class Lang {
             case .l_home_lesson: return "Darslar"
             case .l_home_news: return "Yangiliklar"
             case .l_home_videos: return "Video"
+                
+            //guide
+            case .l_guide: return "Qo'llanma"
+                
+                
+                
             }
             
             

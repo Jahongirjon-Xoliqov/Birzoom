@@ -37,6 +37,9 @@
 		C34CB56626FAFB3C00FF15C2 /* NewsCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C34CB56426FAFB3B00FF15C2 /* NewsCVC.xib */; };
 		C34CB56A26FB0C7C00FF15C2 /* VideosCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34CB56826FB0C7C00FF15C2 /* VideosCVC.swift */; };
 		C34CB56B26FB0C7C00FF15C2 /* VideosCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C34CB56926FB0C7C00FF15C2 /* VideosCVC.xib */; };
+		C34CB57026FB37B200FF15C2 /* GuideVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34CB56E26FB37B100FF15C2 /* GuideVC.swift */; };
+		C34CB57126FB37B200FF15C2 /* GuideVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C34CB56F26FB37B100FF15C2 /* GuideVC.xib */; };
+		C34CB57626FB47AC00FF15C2 /* bigbuck.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C34CB57526FB47AC00FF15C2 /* bigbuck.mp4 */; };
 		C360EA6926F065D900289A5C /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C360EA6726F065D900289A5C /* SignupVC.swift */; };
 		C360EA6A26F065D900289A5C /* SignupVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C360EA6826F065D900289A5C /* SignupVC.xib */; };
 		C360EA7B26F0C89300289A5C /* OTPVarifyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C360EA7926F0C89300289A5C /* OTPVarifyVC.swift */; };
@@ -101,6 +104,9 @@
 		C34CB56426FAFB3B00FF15C2 /* NewsCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsCVC.xib; sourceTree = "<group>"; };
 		C34CB56826FB0C7C00FF15C2 /* VideosCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosCVC.swift; sourceTree = "<group>"; };
 		C34CB56926FB0C7C00FF15C2 /* VideosCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideosCVC.xib; sourceTree = "<group>"; };
+		C34CB56E26FB37B100FF15C2 /* GuideVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideVC.swift; sourceTree = "<group>"; };
+		C34CB56F26FB37B100FF15C2 /* GuideVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GuideVC.xib; sourceTree = "<group>"; };
+		C34CB57526FB47AC00FF15C2 /* bigbuck.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = bigbuck.mp4; sourceTree = "<group>"; };
 		C360EA6726F065D900289A5C /* SignupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
 		C360EA6826F065D900289A5C /* SignupVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignupVC.xib; sourceTree = "<group>"; };
 		C360EA7926F0C89300289A5C /* OTPVarifyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPVarifyVC.swift; sourceTree = "<group>"; };
@@ -224,6 +230,7 @@
 		C33AAD8A26EF399E007CF7B9 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				C34CB57426FB479300FF15C2 /* Video */,
 				C33AAD8B26EF39A7007CF7B9 /* Fonts */,
 			);
 			path = Utils;
@@ -269,6 +276,23 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		C34CB56D26FB183F00FF15C2 /* Guide */ = {
+			isa = PBXGroup;
+			children = (
+				C34CB56E26FB37B100FF15C2 /* GuideVC.swift */,
+				C34CB56F26FB37B100FF15C2 /* GuideVC.xib */,
+			);
+			path = Guide;
+			sourceTree = "<group>";
+		};
+		C34CB57426FB479300FF15C2 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				C34CB57526FB47AC00FF15C2 /* bigbuck.mp4 */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
 		C3B15A6826F3061100B9D76E /* Interests */ = {
 			isa = PBXGroup;
 			children = (
@@ -284,6 +308,7 @@
 		C3B15A6926F3063800B9D76E /* VCs */ = {
 			isa = PBXGroup;
 			children = (
+				C34CB56D26FB183F00FF15C2 /* Guide */,
 				C3F58A7126F49E360039E30F /* Home */,
 				C3B15A7126F34B0100B9D76E /* Language */,
 				C33AAD8326EF29A5007CF7B9 /* Welcome */,
@@ -397,6 +422,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C33AAD9B26EF59E8007CF7B9 /* Roboto-MediumItalic.ttf in Resources */,
+				C34CB57626FB47AC00FF15C2 /* bigbuck.mp4 in Resources */,
 				C3F5376826F1BF25004BBF00 /* SigninVC.xib in Resources */,
 				C3B15A7526F34B3700B9D76E /* InterestsVC.xib in Resources */,
 				C3F5377026F2039D004BBF00 /* PasswordRecoveryVC.xib in Resources */,
@@ -405,6 +431,7 @@
 				C33AADA726EF59E8007CF7B9 /* Roboto-Regular.ttf in Resources */,
 				C33AADA126EF59E8007CF7B9 /* Roboto-Bold.ttf in Resources */,
 				C33AAD9D26EF59E8007CF7B9 /* Roboto-LightItalic.ttf in Resources */,
+				C34CB57126FB37B200FF15C2 /* GuideVC.xib in Resources */,
 				C360EA7C26F0C89300289A5C /* OTPVarifyVC.xib in Resources */,
 				C33AADA526EF59E8007CF7B9 /* Roboto-Light.ttf in Resources */,
 				C33AADA626EF59E8007CF7B9 /* Roboto-Medium.ttf in Resources */,
@@ -490,6 +517,7 @@
 				C3B15A8526F362A200B9D76E /* InterestTag.swift in Sources */,
 				C3F58A7526F4A1EA0039E30F /* DiscardPopupVC.swift in Sources */,
 				C3F5376326F1B14E004BBF00 /* OTPTextfield.swift in Sources */,
+				C34CB57026FB37B200FF15C2 /* GuideVC.swift in Sources */,
 				C33AADAB26EF5A6C007CF7B9 /* Enums.swift in Sources */,
 				C33AAD8626EF367D007CF7B9 /* WelcomeVC.swift in Sources */,
 				C34CB56A26FB0C7C00FF15C2 /* VideosCVC.swift in Sources */,
