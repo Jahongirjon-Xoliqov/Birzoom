@@ -26,6 +26,7 @@ enum BFont: String {
 ///375/812
 //birzoom
 enum BFontSize {
+    case r10
     case r14
     case r15
     case r24
@@ -46,6 +47,7 @@ extension CGFloat {
     static func relative(for size: BFontSize) -> CGFloat {
         
         switch size {
+        case .r10: return 10*scSize.width/uiSize.width
         case .r14: return 15*scSize.width/uiSize.width
         case .r15: return 15*scSize.width/uiSize.width
         case .r24: return 24*scSize.width/uiSize.width
@@ -115,6 +117,8 @@ enum BImage: String {
     case newlesson = "newlesson"
     case zoom = "zoom"
     case letsdoit = "letsdo"
+    case uparrow = "uparrow"
+    case rightChevron = "rightchevron"
     
 }
 

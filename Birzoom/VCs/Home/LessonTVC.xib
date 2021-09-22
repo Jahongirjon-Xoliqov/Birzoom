@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="95" id="KGk-i7-Jjw" customClass="LessonTVC" customModule="Birzoom" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="95"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="95"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H3U-CW-2Rp">
+                        <rect key="frame" x="16" y="0.0" width="288" height="1"/>
+                        <color key="backgroundColor" name="bHomeSeparator"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Jet-qF-hHi"/>
+                        </constraints>
+                    </view>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="udA-Hr-Ff5">
+                        <rect key="frame" x="16" y="16" width="288" height="63"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="girl" translatesAutoresizingMaskIntoConstraints="NO" id="1Ig-1c-svY">
+                                <rect key="frame" x="0.0" y="0.0" width="63" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="1Ig-1c-svY" secondAttribute="height" id="v2d-Q1-0mL"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="XSv-y7-2yf">
+                                <rect key="frame" x="71" y="0.0" width="217" height="63"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zIt-O4-Pe6">
+                                        <rect key="frame" x="0.0" y="0.0" width="183" height="63"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="tRs-lT-G4U">
+                                                <rect key="frame" x="0.0" y="9" width="183" height="45"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I7I-a7-PfD">
+                                                        <rect key="frame" x="0.0" y="0.0" width="183" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k0i-QM-Glc">
+                                                        <rect key="frame" x="0.0" y="24.5" width="183" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="tRs-lT-G4U" firstAttribute="leading" secondItem="zIt-O4-Pe6" secondAttribute="leading" id="8VT-Vl-hgD"/>
+                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="tRs-lT-G4U" secondAttribute="bottom" id="Vhc-xJ-Bkg"/>
+                                            <constraint firstItem="tRs-lT-G4U" firstAttribute="centerY" secondItem="zIt-O4-Pe6" secondAttribute="centerY" id="X1e-gq-jBQ"/>
+                                            <constraint firstItem="tRs-lT-G4U" firstAttribute="top" relation="greaterThanOrEqual" secondItem="zIt-O4-Pe6" secondAttribute="top" id="lFS-NW-ReR"/>
+                                            <constraint firstAttribute="trailing" secondItem="tRs-lT-G4U" secondAttribute="trailing" id="vDx-Qz-RMM"/>
+                                        </constraints>
+                                    </view>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lock" translatesAutoresizingMaskIntoConstraints="NO" id="DC1-uq-23V">
+                                        <rect key="frame" x="193" y="0.0" width="24" height="63"/>
+                                        <color key="tintColor" name="bHomeNavTint"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="24" id="Jcz-P4-tvw"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="udA-Hr-Ff5" firstAttribute="top" secondItem="H3U-CW-2Rp" secondAttribute="bottom" constant="15" id="E01-Bn-j2B"/>
+                    <constraint firstItem="udA-Hr-Ff5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="V4S-6z-Jzb"/>
+                    <constraint firstAttribute="bottom" secondItem="udA-Hr-Ff5" secondAttribute="bottom" constant="16" id="bLK-xw-Yhn"/>
+                    <constraint firstItem="H3U-CW-2Rp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="djv-Ek-O9D"/>
+                    <constraint firstAttribute="trailing" secondItem="H3U-CW-2Rp" secondAttribute="trailing" constant="16" id="fVg-To-Wh3"/>
+                    <constraint firstAttribute="trailing" secondItem="udA-Hr-Ff5" secondAttribute="trailing" constant="16" id="gLT-PS-b3X"/>
+                    <constraint firstItem="H3U-CW-2Rp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="v8O-xE-4Il"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="lessonDescriptionLabel" destination="k0i-QM-Glc" id="xNk-VJ-u6Y"/>
+                <outlet property="lessonImageView" destination="1Ig-1c-svY" id="Ob9-5G-19N"/>
+                <outlet property="lessonTitleLabel" destination="I7I-a7-PfD" id="9yl-aq-wvz"/>
+                <outlet property="lockImageView" destination="DC1-uq-23V" id="l08-fw-mVc"/>
+            </connections>
+            <point key="canvasLocation" x="-94.20289855072464" y="138.95089285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="girl" width="275" height="183"/>
+        <image name="lock" width="24" height="24"/>
+        <namedColor name="bHomeNavTint">
+            <color red="0.74117647058823533" green="0.74117647058823533" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="bHomeSeparator">
+            <color red="0.8784313725490196" green="0.8784313725490196" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

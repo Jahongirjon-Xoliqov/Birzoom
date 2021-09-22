@@ -62,6 +62,13 @@ class Lang {
         //home
         case l_home
         case b_home_begin_test
+        case l_home_results
+        case l_home_stars
+        case l_home_dictionary
+        case l_home_place
+        case l_home_lesson
+        case l_home_news
+        case l_home_videos
         
         
     }
@@ -127,7 +134,13 @@ class Lang {
             //home
             case .l_home: return "Bosh sahifa"
             case .b_home_begin_test: return "Testni boshlash"
-                
+            case .l_home_results: return "Natijalar"
+            case .l_home_stars: return "Yulduzlar"
+            case .l_home_dictionary: return "Lug'at"
+            case .l_home_place: return "O'rin"
+            case .l_home_lesson: return "Darslar"
+            case .l_home_news: return "Yangiliklar"
+            case .l_home_videos: return "Video"
             }
             
             

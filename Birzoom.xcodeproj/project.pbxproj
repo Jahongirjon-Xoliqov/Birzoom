@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		10ED4BE058E8E6B01F9C1D8C /* Pods_Birzoom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29396E119D49209D43537B22 /* Pods_Birzoom.framework */; };
+		C30607C526F8CCA600D2A88A /* LessonTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30607C326F8CCA600D2A88A /* LessonTVC.swift */; };
+		C30607C626F8CCA600D2A88A /* LessonTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C30607C426F8CCA600D2A88A /* LessonTVC.xib */; };
 		C33AAD6A26EF2037007CF7B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33AAD6926EF2037007CF7B9 /* AppDelegate.swift */; };
 		C33AAD7326EF2039007CF7B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C33AAD7226EF2039007CF7B9 /* Assets.xcassets */; };
 		C33AAD7626EF2039007CF7B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C33AAD7426EF2039007CF7B9 /* LaunchScreen.storyboard */; };
@@ -31,6 +33,10 @@
 		C33AADB126EF699A007CF7B9 /* Lang.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33AADB026EF699A007CF7B9 /* Lang.swift */; };
 		C33AADB426EF6BB3007CF7B9 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33AADB326EF6BB3007CF7B9 /* Cache.swift */; };
 		C33AADBF26EF6E1E007CF7B9 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33AADBE26EF6E1E007CF7B9 /* Keys.swift */; };
+		C34CB56526FAFB3C00FF15C2 /* NewsCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34CB56326FAFB3B00FF15C2 /* NewsCVC.swift */; };
+		C34CB56626FAFB3C00FF15C2 /* NewsCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C34CB56426FAFB3B00FF15C2 /* NewsCVC.xib */; };
+		C34CB56A26FB0C7C00FF15C2 /* VideosCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34CB56826FB0C7C00FF15C2 /* VideosCVC.swift */; };
+		C34CB56B26FB0C7C00FF15C2 /* VideosCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C34CB56926FB0C7C00FF15C2 /* VideosCVC.xib */; };
 		C360EA6926F065D900289A5C /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C360EA6726F065D900289A5C /* SignupVC.swift */; };
 		C360EA6A26F065D900289A5C /* SignupVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C360EA6826F065D900289A5C /* SignupVC.xib */; };
 		C360EA7B26F0C89300289A5C /* OTPVarifyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C360EA7926F0C89300289A5C /* OTPVarifyVC.swift */; };
@@ -64,6 +70,8 @@
 		274EEDA4A30E59067AF80722 /* Pods-Birzoom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Birzoom.release.xcconfig"; path = "Target Support Files/Pods-Birzoom/Pods-Birzoom.release.xcconfig"; sourceTree = "<group>"; };
 		29396E119D49209D43537B22 /* Pods_Birzoom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Birzoom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBB9C0AC7934049803CA4819 /* Pods-Birzoom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Birzoom.debug.xcconfig"; path = "Target Support Files/Pods-Birzoom/Pods-Birzoom.debug.xcconfig"; sourceTree = "<group>"; };
+		C30607C326F8CCA600D2A88A /* LessonTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonTVC.swift; sourceTree = "<group>"; };
+		C30607C426F8CCA600D2A88A /* LessonTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LessonTVC.xib; sourceTree = "<group>"; };
 		C33AAD6626EF2037007CF7B9 /* Birzoom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Birzoom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C33AAD6926EF2037007CF7B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C33AAD7226EF2039007CF7B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -89,6 +97,10 @@
 		C33AADB026EF699A007CF7B9 /* Lang.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lang.swift; sourceTree = "<group>"; };
 		C33AADB326EF6BB3007CF7B9 /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
 		C33AADBE26EF6E1E007CF7B9 /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		C34CB56326FAFB3B00FF15C2 /* NewsCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCVC.swift; sourceTree = "<group>"; };
+		C34CB56426FAFB3B00FF15C2 /* NewsCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsCVC.xib; sourceTree = "<group>"; };
+		C34CB56826FB0C7C00FF15C2 /* VideosCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosCVC.swift; sourceTree = "<group>"; };
+		C34CB56926FB0C7C00FF15C2 /* VideosCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideosCVC.xib; sourceTree = "<group>"; };
 		C360EA6726F065D900289A5C /* SignupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
 		C360EA6826F065D900289A5C /* SignupVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignupVC.xib; sourceTree = "<group>"; };
 		C360EA7926F0C89300289A5C /* OTPVarifyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPVarifyVC.swift; sourceTree = "<group>"; };
@@ -315,6 +327,12 @@
 				C3B7775226F5B4660020DE16 /* MainTabBarController.swift */,
 				C3B7775526F5B5760020DE16 /* HomeVC.swift */,
 				C3B7775626F5B5760020DE16 /* HomeVC.xib */,
+				C30607C326F8CCA600D2A88A /* LessonTVC.swift */,
+				C30607C426F8CCA600D2A88A /* LessonTVC.xib */,
+				C34CB56326FAFB3B00FF15C2 /* NewsCVC.swift */,
+				C34CB56426FAFB3B00FF15C2 /* NewsCVC.xib */,
+				C34CB56826FB0C7C00FF15C2 /* VideosCVC.swift */,
+				C34CB56926FB0C7C00FF15C2 /* VideosCVC.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -382,6 +400,7 @@
 				C3F5376826F1BF25004BBF00 /* SigninVC.xib in Resources */,
 				C3B15A7526F34B3700B9D76E /* InterestsVC.xib in Resources */,
 				C3F5377026F2039D004BBF00 /* PasswordRecoveryVC.xib in Resources */,
+				C34CB56626FAFB3C00FF15C2 /* NewsCVC.xib in Resources */,
 				C33AAD7626EF2039007CF7B9 /* LaunchScreen.storyboard in Resources */,
 				C33AADA726EF59E8007CF7B9 /* Roboto-Regular.ttf in Resources */,
 				C33AADA126EF59E8007CF7B9 /* Roboto-Bold.ttf in Resources */,
@@ -395,12 +414,14 @@
 				C33AADA426EF59E8007CF7B9 /* LICENSE.txt in Resources */,
 				C33AAD9C26EF59E8007CF7B9 /* Roboto-Italic.ttf in Resources */,
 				C3F58A7626F4A1EA0039E30F /* DiscardPopupVC.xib in Resources */,
+				C34CB56B26FB0C7C00FF15C2 /* VideosCVC.xib in Resources */,
 				C33AAD9F26EF59E8007CF7B9 /* Roboto-ThinItalic.ttf in Resources */,
 				C33AADA326EF59E8007CF7B9 /* Roboto-BlackItalic.ttf in Resources */,
 				C33AADA026EF59E8007CF7B9 /* Roboto-Black.ttf in Resources */,
 				C3B15A6E26F3069700B9D76E /* LanguageVC.xib in Resources */,
 				C33AAD8726EF367D007CF7B9 /* WelcomeVC.xib in Resources */,
 				C3B7775826F5B5760020DE16 /* HomeVC.xib in Resources */,
+				C30607C626F8CCA600D2A88A /* LessonTVC.xib in Resources */,
 				C3F5377526F21287004BBF00 /* PasswordOTPVarifyVC.xib in Resources */,
 				C33AAD9E26EF59E8007CF7B9 /* Roboto-BoldItalic.ttf in Resources */,
 				C3B15A7D26F34C1300B9D76E /* InterestsCVC.xib in Resources */,
@@ -460,15 +481,18 @@
 				C360EA6926F065D900289A5C /* SignupVC.swift in Sources */,
 				C3B15A7426F34B3700B9D76E /* InterestsVC.swift in Sources */,
 				C3B7775326F5B4660020DE16 /* MainTabBarController.swift in Sources */,
+				C30607C526F8CCA600D2A88A /* LessonTVC.swift in Sources */,
 				C33AADB126EF699A007CF7B9 /* Lang.swift in Sources */,
 				C3B15A7C26F34C1300B9D76E /* InterestsCVC.swift in Sources */,
 				C3F5376B26F1D3AE004BBF00 /* PasswordTextField.swift in Sources */,
+				C34CB56526FAFB3C00FF15C2 /* NewsCVC.swift in Sources */,
 				C33AAD6A26EF2037007CF7B9 /* AppDelegate.swift in Sources */,
 				C3B15A8526F362A200B9D76E /* InterestTag.swift in Sources */,
 				C3F58A7526F4A1EA0039E30F /* DiscardPopupVC.swift in Sources */,
 				C3F5376326F1B14E004BBF00 /* OTPTextfield.swift in Sources */,
 				C33AADAB26EF5A6C007CF7B9 /* Enums.swift in Sources */,
 				C33AAD8626EF367D007CF7B9 /* WelcomeVC.swift in Sources */,
+				C34CB56A26FB0C7C00FF15C2 /* VideosCVC.swift in Sources */,
 				C360EA7B26F0C89300289A5C /* OTPVarifyVC.swift in Sources */,
 				C3B7775726F5B5760020DE16 /* HomeVC.swift in Sources */,
 				C3B15A6D26F3069700B9D76E /* LanguageVC.swift in Sources */,

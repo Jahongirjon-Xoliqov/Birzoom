@@ -40,6 +40,7 @@ extension UIColor {
     static let bTextBlue: UIColor = UIColor(named: "bBlueText") ?? .blue
     static let bSelectionBlue: UIColor = UIColor(named: "bSelectionBlue") ?? .blue
     static let bBorderBlue: UIColor = UIColor(named: "bBorderBlue") ?? .blue
+    static let bHomeExpbBlue: UIColor = UIColor(named: "bHomeExpbBlue") ?? .blue
     
     //gray
     static let bGray: UIColor = UIColor(named: "bGray") ?? .red
@@ -52,12 +53,15 @@ extension UIColor {
     static let bEyeGay: UIColor = UIColor(named: "bEyeGray") ?? .gray
     static let bButtonGray: UIColor = UIColor(named: "bButtonGray") ?? .gray
     static let bHomeNavTint: UIColor = UIColor(named: "bHomeNavTint") ?? .gray
+    static let bHomeTextGray: UIColor = UIColor(named: "bHomeTextGray") ?? .gray
+    static let bHomeBorderGray: UIColor = UIColor(named: "bHomeBorderGray") ?? .gray
+    static let bHomeShadowGray: UIColor = UIColor(named: "bHomeShadowGray") ?? .gray
     
     
     
     //white
     static let bBackground: UIColor = UIColor(named: "bBackground") ?? .white
-    
+    static let bHomeProgressWhite: UIColor = UIColor(named: "bHomeProgressWhite") ?? .white
     
     
     //red
@@ -323,9 +327,18 @@ extension String {
 }
 
 
+extension UITableView {
+    static let lessonsRowHeight: CGFloat = (112/375)*CGFloat.scSize.width
+}
+// 
 
 
-
+extension UICollectionView {
+    static let newsItemHeight: CGSize = CGSize(width: (240/375)*CGFloat.scSize.width, height: (217/375)*CGFloat.scSize.width)
+    
+    static let videosItemHeight: CGSize = CGSize(width: (300/375)*CGFloat.scSize.width, height: (238/375)*CGFloat.scSize.width)
+    
+}
 
 
 
@@ -347,4 +360,23 @@ extension InterestsCVC {
     }
 }
 
+extension LessonTVC {
+    static let identifier = "LessonTVC"
+    static func nib() -> UINib {
+        UINib(nibName: "LessonTVC", bundle: nil)
+    }
+}
 
+extension NewsCVC {
+    static let identifier = "NewsCVC"
+    static func nib() -> UINib {
+        UINib(nibName: "NewsCVC", bundle: nil)
+    }
+}
+
+extension VideosCVC {
+    static let identifier = "VideosCVC"
+    static func nib() -> UINib {
+        UINib(nibName: "VideosCVC", bundle: nil)
+    }
+}
