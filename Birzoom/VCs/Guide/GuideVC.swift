@@ -119,7 +119,7 @@ class GuideVC: UIViewController {
     
     
     
-    
+    ///filprivates
     private var videoPlayer: AVPlayer!
     
     private var videoPlayerLayer: AVPlayerLayer!
@@ -140,7 +140,6 @@ class GuideVC: UIViewController {
         
     }
     
-    
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         videoPlayerLayer.frame = videoView.bounds
@@ -148,11 +147,18 @@ class GuideVC: UIViewController {
         
     }
     
+    
+    
+    
+    
     @IBAction func videoTapped(_ sender: UITapGestureRecognizer) {
         
     }
     
     
+    @IBAction func backButtonTapped(_ sender: UIButton) {
+        navigateBackward()
+    }
     
     
 }

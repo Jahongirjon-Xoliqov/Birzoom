@@ -44,6 +44,16 @@
 		C360EA6A26F065D900289A5C /* SignupVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C360EA6826F065D900289A5C /* SignupVC.xib */; };
 		C360EA7B26F0C89300289A5C /* OTPVarifyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C360EA7926F0C89300289A5C /* OTPVarifyVC.swift */; };
 		C360EA7C26F0C89300289A5C /* OTPVarifyVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C360EA7A26F0C89300289A5C /* OTPVarifyVC.xib */; };
+		C3A203AE26FDA7B100506DBC /* NewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A203AC26FDA7B100506DBC /* NewsVC.swift */; };
+		C3A203AF26FDA7B100506DBC /* NewsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3A203AD26FDA7B100506DBC /* NewsVC.xib */; };
+		C3A203B326FDAC8600506DBC /* NewsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A203B126FDAC8600506DBC /* NewsTVC.swift */; };
+		C3A203B426FDAC8600506DBC /* NewsTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3A203B226FDAC8600506DBC /* NewsTVC.xib */; };
+		C3A203B826FDDDA900506DBC /* NewsDetailedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A203B626FDDDA800506DBC /* NewsDetailedVC.swift */; };
+		C3A203B926FDDDA900506DBC /* NewsDetailedVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3A203B726FDDDA800506DBC /* NewsDetailedVC.xib */; };
+		C3A203BD26FDDDFC00506DBC /* NewsMainDetailedTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A203BB26FDDDFC00506DBC /* NewsMainDetailedTVC.swift */; };
+		C3A203BE26FDDDFC00506DBC /* NewsMainDetailedTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3A203BC26FDDDFC00506DBC /* NewsMainDetailedTVC.xib */; };
+		C3A203C226FDDE1C00506DBC /* NewsAdditionalTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A203C026FDDE1C00506DBC /* NewsAdditionalTVC.swift */; };
+		C3A203C326FDDE1C00506DBC /* NewsAdditionalTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3A203C126FDDE1C00506DBC /* NewsAdditionalTVC.xib */; };
 		C3B15A6D26F3069700B9D76E /* LanguageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B15A6B26F3069700B9D76E /* LanguageVC.swift */; };
 		C3B15A6E26F3069700B9D76E /* LanguageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3B15A6C26F3069700B9D76E /* LanguageVC.xib */; };
 		C3B15A7426F34B3700B9D76E /* InterestsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B15A7226F34B3700B9D76E /* InterestsVC.swift */; };
@@ -111,6 +121,16 @@
 		C360EA6826F065D900289A5C /* SignupVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignupVC.xib; sourceTree = "<group>"; };
 		C360EA7926F0C89300289A5C /* OTPVarifyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPVarifyVC.swift; sourceTree = "<group>"; };
 		C360EA7A26F0C89300289A5C /* OTPVarifyVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OTPVarifyVC.xib; sourceTree = "<group>"; };
+		C3A203AC26FDA7B100506DBC /* NewsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsVC.swift; sourceTree = "<group>"; };
+		C3A203AD26FDA7B100506DBC /* NewsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsVC.xib; sourceTree = "<group>"; };
+		C3A203B126FDAC8600506DBC /* NewsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTVC.swift; sourceTree = "<group>"; };
+		C3A203B226FDAC8600506DBC /* NewsTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsTVC.xib; sourceTree = "<group>"; };
+		C3A203B626FDDDA800506DBC /* NewsDetailedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailedVC.swift; sourceTree = "<group>"; };
+		C3A203B726FDDDA800506DBC /* NewsDetailedVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsDetailedVC.xib; sourceTree = "<group>"; };
+		C3A203BB26FDDDFC00506DBC /* NewsMainDetailedTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsMainDetailedTVC.swift; sourceTree = "<group>"; };
+		C3A203BC26FDDDFC00506DBC /* NewsMainDetailedTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsMainDetailedTVC.xib; sourceTree = "<group>"; };
+		C3A203C026FDDE1C00506DBC /* NewsAdditionalTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAdditionalTVC.swift; sourceTree = "<group>"; };
+		C3A203C126FDDE1C00506DBC /* NewsAdditionalTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsAdditionalTVC.xib; sourceTree = "<group>"; };
 		C3B15A6B26F3069700B9D76E /* LanguageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageVC.swift; sourceTree = "<group>"; };
 		C3B15A6C26F3069700B9D76E /* LanguageVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LanguageVC.xib; sourceTree = "<group>"; };
 		C3B15A7226F34B3700B9D76E /* InterestsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestsVC.swift; sourceTree = "<group>"; };
@@ -293,6 +313,23 @@
 			path = Video;
 			sourceTree = "<group>";
 		};
+		C352145626FC9B9B0073185A /* News */ = {
+			isa = PBXGroup;
+			children = (
+				C3A203AC26FDA7B100506DBC /* NewsVC.swift */,
+				C3A203AD26FDA7B100506DBC /* NewsVC.xib */,
+				C3A203B126FDAC8600506DBC /* NewsTVC.swift */,
+				C3A203B226FDAC8600506DBC /* NewsTVC.xib */,
+				C3A203B626FDDDA800506DBC /* NewsDetailedVC.swift */,
+				C3A203B726FDDDA800506DBC /* NewsDetailedVC.xib */,
+				C3A203BB26FDDDFC00506DBC /* NewsMainDetailedTVC.swift */,
+				C3A203BC26FDDDFC00506DBC /* NewsMainDetailedTVC.xib */,
+				C3A203C026FDDE1C00506DBC /* NewsAdditionalTVC.swift */,
+				C3A203C126FDDE1C00506DBC /* NewsAdditionalTVC.xib */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
 		C3B15A6826F3061100B9D76E /* Interests */ = {
 			isa = PBXGroup;
 			children = (
@@ -308,6 +345,7 @@
 		C3B15A6926F3063800B9D76E /* VCs */ = {
 			isa = PBXGroup;
 			children = (
+				C352145626FC9B9B0073185A /* News */,
 				C34CB56D26FB183F00FF15C2 /* Guide */,
 				C3F58A7126F49E360039E30F /* Home */,
 				C3B15A7126F34B0100B9D76E /* Language */,
@@ -425,6 +463,7 @@
 				C34CB57626FB47AC00FF15C2 /* bigbuck.mp4 in Resources */,
 				C3F5376826F1BF25004BBF00 /* SigninVC.xib in Resources */,
 				C3B15A7526F34B3700B9D76E /* InterestsVC.xib in Resources */,
+				C3A203B426FDAC8600506DBC /* NewsTVC.xib in Resources */,
 				C3F5377026F2039D004BBF00 /* PasswordRecoveryVC.xib in Resources */,
 				C34CB56626FAFB3C00FF15C2 /* NewsCVC.xib in Resources */,
 				C33AAD7626EF2039007CF7B9 /* LaunchScreen.storyboard in Resources */,
@@ -438,6 +477,7 @@
 				C33AADA226EF59E8007CF7B9 /* Roboto-Thin.ttf in Resources */,
 				C360EA6A26F065D900289A5C /* SignupVC.xib in Resources */,
 				C3F5377A26F21B5E004BBF00 /* NewPasswordVC.xib in Resources */,
+				C3A203B926FDDDA900506DBC /* NewsDetailedVC.xib in Resources */,
 				C33AADA426EF59E8007CF7B9 /* LICENSE.txt in Resources */,
 				C33AAD9C26EF59E8007CF7B9 /* Roboto-Italic.ttf in Resources */,
 				C3F58A7626F4A1EA0039E30F /* DiscardPopupVC.xib in Resources */,
@@ -449,8 +489,11 @@
 				C33AAD8726EF367D007CF7B9 /* WelcomeVC.xib in Resources */,
 				C3B7775826F5B5760020DE16 /* HomeVC.xib in Resources */,
 				C30607C626F8CCA600D2A88A /* LessonTVC.xib in Resources */,
+				C3A203C326FDDE1C00506DBC /* NewsAdditionalTVC.xib in Resources */,
 				C3F5377526F21287004BBF00 /* PasswordOTPVarifyVC.xib in Resources */,
+				C3A203BE26FDDDFC00506DBC /* NewsMainDetailedTVC.xib in Resources */,
 				C33AAD9E26EF59E8007CF7B9 /* Roboto-BoldItalic.ttf in Resources */,
+				C3A203AF26FDA7B100506DBC /* NewsVC.xib in Resources */,
 				C3B15A7D26F34C1300B9D76E /* InterestsCVC.xib in Resources */,
 				C33AAD7326EF2039007CF7B9 /* Assets.xcassets in Resources */,
 			);
@@ -506,12 +549,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				C360EA6926F065D900289A5C /* SignupVC.swift in Sources */,
+				C3A203BD26FDDDFC00506DBC /* NewsMainDetailedTVC.swift in Sources */,
 				C3B15A7426F34B3700B9D76E /* InterestsVC.swift in Sources */,
 				C3B7775326F5B4660020DE16 /* MainTabBarController.swift in Sources */,
 				C30607C526F8CCA600D2A88A /* LessonTVC.swift in Sources */,
 				C33AADB126EF699A007CF7B9 /* Lang.swift in Sources */,
+				C3A203B826FDDDA900506DBC /* NewsDetailedVC.swift in Sources */,
 				C3B15A7C26F34C1300B9D76E /* InterestsCVC.swift in Sources */,
 				C3F5376B26F1D3AE004BBF00 /* PasswordTextField.swift in Sources */,
+				C3A203B326FDAC8600506DBC /* NewsTVC.swift in Sources */,
 				C34CB56526FAFB3C00FF15C2 /* NewsCVC.swift in Sources */,
 				C33AAD6A26EF2037007CF7B9 /* AppDelegate.swift in Sources */,
 				C3B15A8526F362A200B9D76E /* InterestTag.swift in Sources */,
@@ -522,6 +568,8 @@
 				C33AAD8626EF367D007CF7B9 /* WelcomeVC.swift in Sources */,
 				C34CB56A26FB0C7C00FF15C2 /* VideosCVC.swift in Sources */,
 				C360EA7B26F0C89300289A5C /* OTPVarifyVC.swift in Sources */,
+				C3A203AE26FDA7B100506DBC /* NewsVC.swift in Sources */,
+				C3A203C226FDDE1C00506DBC /* NewsAdditionalTVC.swift in Sources */,
 				C3B7775726F5B5760020DE16 /* HomeVC.swift in Sources */,
 				C3B15A6D26F3069700B9D76E /* LanguageVC.swift in Sources */,
 				C33AADBF26EF6E1E007CF7B9 /* Keys.swift in Sources */,

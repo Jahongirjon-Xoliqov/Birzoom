@@ -136,6 +136,9 @@ class HomeVC: UIViewController {
         }
     }
     
+    @IBOutlet weak var resultsHidableView: UIView!
+    
+    
     @IBOutlet weak var resultsLabel: UILabel! {
         didSet {
             resultsLabel.font = .font(name: .roboto_medium, size: .r20)
@@ -252,6 +255,7 @@ class HomeVC: UIViewController {
         }
     }
     
+    @IBOutlet weak var userAspectConstraint: NSLayoutConstraint!
     
     
     ///lessons
@@ -294,6 +298,7 @@ class HomeVC: UIViewController {
         }
     }
     
+    @IBOutlet weak var lessonsAspectConstraint: NSLayoutConstraint!
     
     
     ///news
@@ -387,12 +392,15 @@ class HomeVC: UIViewController {
     
     
     @IBAction func lampButtonTapped(_ sender: UIButton) {
+        navigate(to: .guide)
     }
     
     @IBAction func bellButtonTapped(_ sender: UIButton) {
+        navigate(to: .news)
     }
     
     @IBAction func discountButtonTapped(_ sender: UIButton) {
+        coordinate(to: .discountPopup)
     }
     
     @IBAction func calldownButtonTapped(_ sender: UIButton) {
@@ -400,6 +408,15 @@ class HomeVC: UIViewController {
     
     @IBAction func beginTestButtonTapped(_ sender: UIButton) {
     }
+    
+    @IBAction func userExpendableButtonTapped(_ sender: UIButton) {
+        
+    }
+    
+    
+    @IBAction func lessonExpendableButtonTapped(_ sender: UIButton) {
+    }
+    
     
 }
 
@@ -451,6 +468,17 @@ extension HomeVC: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         16
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        if collectionView == newsCollectionView {
+            navigate(to: .newsDetailed)
+        } else {
+            navigate(to: .guide)
+        }
+        
+    }
+    
 }
 
 

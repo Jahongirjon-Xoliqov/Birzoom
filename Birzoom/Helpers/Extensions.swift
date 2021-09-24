@@ -56,7 +56,7 @@ extension UIColor {
     static let bHomeTextGray: UIColor = UIColor(named: "bHomeTextGray") ?? .gray
     static let bHomeBorderGray: UIColor = UIColor(named: "bHomeBorderGray") ?? .gray
     static let bHomeShadowGray: UIColor = UIColor(named: "bHomeShadowGray") ?? .gray
-    
+    static let bHomeScriptGray: UIColor = UIColor(named: "bHomeScriptGray") ?? .gray
     
     
     //white
@@ -264,6 +264,16 @@ extension UIViewController {
         case .guide:
             let vc = GuideVC(nibName: "GuideVC", bundle: nil)
             present(vc, animated: true)
+        case .news:
+            let vc = NewsVC(nibName: "NewsVC", bundle: nil)
+            present(vc, animated: true)
+        case .newsDetailed:
+            let vc = NewsDetailedVC(nibName: "NewsDetailedVC", bundle: nil)
+            present(vc, animated: true)
+        case .discountPopup:
+            let vc = DiscardPopupVC(nibName: "DiscardPopupVC", bundle: nil)
+            vc.modalPresentationStyle = .overFullScreen
+            present(vc, animated: false)
         }
         
     }
@@ -309,6 +319,15 @@ extension UIViewController {
             navController.pushViewController(vc, animated: true)
         case .guide:
             let vc = GuideVC(nibName: "GuideVC", bundle: nil)
+            navController.pushViewController(vc, animated: true)
+        case .news:
+            let vc = NewsVC(nibName: "NewsVC", bundle: nil)
+            navController.pushViewController(vc, animated: true)
+        case .newsDetailed:
+            let vc = NewsDetailedVC(nibName: "NewsDetailedVC", bundle: nil)
+            navController.pushViewController(vc, animated: true)
+        case .discountPopup:
+            let vc = DiscardPopupVC(nibName: "DiscardPopupVC", bundle: nil)
             navController.pushViewController(vc, animated: true)
         }
         
@@ -365,7 +384,6 @@ extension String {
 extension UITableView {
     static let lessonsRowHeight: CGFloat = (112/375)*CGFloat.scSize.width
 }
-// 
 
 
 extension UICollectionView {
@@ -413,5 +431,27 @@ extension VideosCVC {
     static let identifier = "VideosCVC"
     static func nib() -> UINib {
         UINib(nibName: "VideosCVC", bundle: nil)
+    }
+}
+
+extension NewsTVC {
+    static let identifier = "NewsTVC"
+    static func nib() -> UINib {
+        UINib(nibName: "NewsTVC", bundle: nil)
+    }
+}
+
+
+extension NewsMainDetailedTVC {
+    static let identifier = "NewsMainDetailedTVC"
+    static func nib() -> UINib {
+        UINib(nibName: "NewsMainDetailedTVC", bundle: nil)
+    }
+}
+
+extension NewsAdditionalTVC {
+    static let identifier = "NewsAdditionalTVC"
+    static func nib() -> UINib {
+        UINib(nibName: "NewsAdditionalTVC", bundle: nil)
     }
 }

@@ -29,10 +29,11 @@ enum BFontSize {
     case r10
     case r14
     case r15
-    case r24
     case r16
-    case r20
     case r18
+    case r20
+    case r22
+    case r24
 }
 
 extension CGFloat {
@@ -54,6 +55,7 @@ extension CGFloat {
         case .r16: return 16*scSize.width/uiSize.width
         case .r20: return 20*scSize.width/uiSize.width
         case .r18: return 18*scSize.width/uiSize.width
+        case .r22: return 22*scSize.width/uiSize.width
         }
         
     }
@@ -134,6 +136,9 @@ enum VControllers {
     case interest
     case home
     case guide
+    case news
+    case newsDetailed
+    case discountPopup
 }
 
 

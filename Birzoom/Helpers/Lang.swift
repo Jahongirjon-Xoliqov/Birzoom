@@ -73,6 +73,9 @@ class Lang {
         //guide
         case l_guide
         
+        //news
+        case l_news
+        
         
     }
     
@@ -148,7 +151,8 @@ class Lang {
             //guide
             case .l_guide: return "Qo'llanma"
                 
-                
+            //news
+            case .l_news: return "Yangiliklar"
                 
             }
             
