@@ -36,6 +36,7 @@
                 <outlet property="testDescriptionLabel" destination="E6r-vL-jaX" id="kwo-h3-Qa6"/>
                 <outlet property="testView" destination="npB-r2-SaX" id="3Jh-bY-CoG"/>
                 <outlet property="topStatusBarView" destination="N2K-Q0-CaK" id="rmx-s3-FeC"/>
+                <outlet property="userAspectConstraint" destination="ZFr-w8-FoO" id="erb-bo-WK7"/>
                 <outlet property="userDictionaryCountLabel" destination="1sx-si-TEr" id="r2T-yT-njw"/>
                 <outlet property="userDictionaryHintLabel" destination="l8G-Dj-2qt" id="ZTk-rr-V3w"/>
                 <outlet property="userImageView" destination="yCT-Sv-mou" id="fkn-VY-zUI"/>
@@ -328,10 +329,10 @@
                                                                             </subviews>
                                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                             <constraints>
-                                                                                <constraint firstAttribute="height" constant="60" id="GPZ-4k-UqF"/>
                                                                                 <constraint firstItem="FmF-Ue-zJK" firstAttribute="leading" secondItem="SVU-BE-had" secondAttribute="leading" constant="16" id="O2e-MB-NFc"/>
                                                                                 <constraint firstItem="H4P-TN-hhQ" firstAttribute="top" secondItem="SVU-BE-had" secondAttribute="top" constant="13" id="XZ4-NN-96U"/>
                                                                                 <constraint firstAttribute="bottom" secondItem="FmF-Ue-zJK" secondAttribute="bottom" id="Zvx-c2-OLd"/>
+                                                                                <constraint firstAttribute="height" constant="60" id="ekB-x2-Agh"/>
                                                                                 <constraint firstItem="H4P-TN-hhQ" firstAttribute="leading" secondItem="FmF-Ue-zJK" secondAttribute="trailing" id="fHq-7S-5Kn"/>
                                                                                 <constraint firstAttribute="bottom" secondItem="H4P-TN-hhQ" secondAttribute="bottom" constant="13" id="flU-Zn-FJg"/>
                                                                                 <constraint firstItem="FmF-Ue-zJK" firstAttribute="top" secondItem="SVU-BE-had" secondAttribute="top" id="t5Y-hl-qNA"/>

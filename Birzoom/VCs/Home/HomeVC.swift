@@ -410,7 +410,13 @@ class HomeVC: UIViewController {
     }
     
     @IBAction func userExpendableButtonTapped(_ sender: UIButton) {
-        
+//        if resultsHidableView.isHidden {
+//            //userAspectConstraint.isActive = true
+//            //resultsHidableView.isHidden = false
+//        } else {
+//            resultsHidableView.isHidden = true
+//            userAspectConstraint.isActive = false
+//        }
     }
     
     

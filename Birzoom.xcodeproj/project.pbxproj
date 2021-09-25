@@ -40,6 +40,8 @@
 		C34CB57026FB37B200FF15C2 /* GuideVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34CB56E26FB37B100FF15C2 /* GuideVC.swift */; };
 		C34CB57126FB37B200FF15C2 /* GuideVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C34CB56F26FB37B100FF15C2 /* GuideVC.xib */; };
 		C34CB57626FB47AC00FF15C2 /* bigbuck.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C34CB57526FB47AC00FF15C2 /* bigbuck.mp4 */; };
+		C35905C126FEFCC400790F6B /* CuponVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35905BF26FEFCC400790F6B /* CuponVC.swift */; };
+		C35905C226FEFCC400790F6B /* CuponVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C35905C026FEFCC400790F6B /* CuponVC.xib */; };
 		C360EA6926F065D900289A5C /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C360EA6726F065D900289A5C /* SignupVC.swift */; };
 		C360EA6A26F065D900289A5C /* SignupVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C360EA6826F065D900289A5C /* SignupVC.xib */; };
 		C360EA7B26F0C89300289A5C /* OTPVarifyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C360EA7926F0C89300289A5C /* OTPVarifyVC.swift */; };
@@ -117,6 +119,8 @@
 		C34CB56E26FB37B100FF15C2 /* GuideVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideVC.swift; sourceTree = "<group>"; };
 		C34CB56F26FB37B100FF15C2 /* GuideVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GuideVC.xib; sourceTree = "<group>"; };
 		C34CB57526FB47AC00FF15C2 /* bigbuck.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = bigbuck.mp4; sourceTree = "<group>"; };
+		C35905BF26FEFCC400790F6B /* CuponVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuponVC.swift; sourceTree = "<group>"; };
+		C35905C026FEFCC400790F6B /* CuponVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CuponVC.xib; sourceTree = "<group>"; };
 		C360EA6726F065D900289A5C /* SignupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
 		C360EA6826F065D900289A5C /* SignupVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignupVC.xib; sourceTree = "<group>"; };
 		C360EA7926F0C89300289A5C /* OTPVarifyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPVarifyVC.swift; sourceTree = "<group>"; };
@@ -330,6 +334,15 @@
 			path = News;
 			sourceTree = "<group>";
 		};
+		C35905BD26FEEC4700790F6B /* Courses */ = {
+			isa = PBXGroup;
+			children = (
+				C35905BF26FEFCC400790F6B /* CuponVC.swift */,
+				C35905C026FEFCC400790F6B /* CuponVC.xib */,
+			);
+			path = Courses;
+			sourceTree = "<group>";
+		};
 		C3B15A6826F3061100B9D76E /* Interests */ = {
 			isa = PBXGroup;
 			children = (
@@ -345,6 +358,7 @@
 		C3B15A6926F3063800B9D76E /* VCs */ = {
 			isa = PBXGroup;
 			children = (
+				C35905BD26FEEC4700790F6B /* Courses */,
 				C352145626FC9B9B0073185A /* News */,
 				C34CB56D26FB183F00FF15C2 /* Guide */,
 				C3F58A7126F49E360039E30F /* Home */,
@@ -491,6 +505,7 @@
 				C30607C626F8CCA600D2A88A /* LessonTVC.xib in Resources */,
 				C3A203C326FDDE1C00506DBC /* NewsAdditionalTVC.xib in Resources */,
 				C3F5377526F21287004BBF00 /* PasswordOTPVarifyVC.xib in Resources */,
+				C35905C226FEFCC400790F6B /* CuponVC.xib in Resources */,
 				C3A203BE26FDDDFC00506DBC /* NewsMainDetailedTVC.xib in Resources */,
 				C33AAD9E26EF59E8007CF7B9 /* Roboto-BoldItalic.ttf in Resources */,
 				C3A203AF26FDA7B100506DBC /* NewsVC.xib in Resources */,
@@ -556,6 +571,7 @@
 				C33AADB126EF699A007CF7B9 /* Lang.swift in Sources */,
 				C3A203B826FDDDA900506DBC /* NewsDetailedVC.swift in Sources */,
 				C3B15A7C26F34C1300B9D76E /* InterestsCVC.swift in Sources */,
+				C35905C126FEFCC400790F6B /* CuponVC.swift in Sources */,
 				C3F5376B26F1D3AE004BBF00 /* PasswordTextField.swift in Sources */,
 				C3A203B326FDAC8600506DBC /* NewsTVC.swift in Sources */,
 				C34CB56526FAFB3C00FF15C2 /* NewsCVC.swift in Sources */,

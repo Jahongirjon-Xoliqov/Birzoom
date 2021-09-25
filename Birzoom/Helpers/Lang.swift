@@ -76,6 +76,9 @@ class Lang {
         //news
         case l_news
         
+        //cupon
+        case b_getcupon
+        
         
     }
     
@@ -153,6 +156,9 @@ class Lang {
                 
             //news
             case .l_news: return "Yangiliklar"
+                
+            //cupon
+            case .b_getcupon: return "Kuponni Olish"
                 
             }
             

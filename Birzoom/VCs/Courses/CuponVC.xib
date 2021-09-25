@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CuponVC" customModule="Birzoom" customModuleProvider="target">
+            <connections>
+                <outlet property="buyButton" destination="E5H-X4-goU" id="0U4-ez-YBl"/>
+                <outlet property="dismissButton" destination="bme-AH-aFb" id="ekP-NO-KWt"/>
+                <outlet property="popupImageView" destination="RZh-H1-voP" id="gMZ-1a-G0z"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZTW-lJ-bMh">
+                    <rect key="frame" x="16" y="314" width="382" height="268"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tempCupon" translatesAutoresizingMaskIntoConstraints="NO" id="RZh-H1-voP">
+                            <rect key="frame" x="0.0" y="0.0" width="382" height="268"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E5H-X4-goU">
+                            <rect key="frame" x="20" y="185" width="342" height="53"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="E5H-X4-goU" secondAttribute="height" multiplier="311:48" id="83l-ru-bTi"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bme-AH-aFb">
+                            <rect key="frame" x="332" y="10" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="N13-JF-i6c"/>
+                                <constraint firstAttribute="height" constant="40" id="eEe-IY-82G"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" name="bBackground"/>
+                    <constraints>
+                        <constraint firstItem="E5H-X4-goU" firstAttribute="centerX" secondItem="ZTW-lJ-bMh" secondAttribute="centerX" id="0zP-u3-GBM"/>
+                        <constraint firstAttribute="bottom" secondItem="RZh-H1-voP" secondAttribute="bottom" id="963-v4-elj"/>
+                        <constraint firstAttribute="trailing" secondItem="E5H-X4-goU" secondAttribute="trailing" constant="20" id="BJk-WW-PPk"/>
+                        <constraint firstItem="E5H-X4-goU" firstAttribute="leading" secondItem="ZTW-lJ-bMh" secondAttribute="leading" constant="20" id="IJH-Ce-2gh"/>
+                        <constraint firstAttribute="bottom" secondItem="E5H-X4-goU" secondAttribute="bottom" constant="30" id="K7p-h6-XAI"/>
+                        <constraint firstItem="RZh-H1-voP" firstAttribute="top" secondItem="ZTW-lJ-bMh" secondAttribute="top" id="MTk-lX-j57"/>
+                        <constraint firstAttribute="width" secondItem="ZTW-lJ-bMh" secondAttribute="height" multiplier="345:242" id="OOZ-1N-ZOX"/>
+                        <constraint firstItem="RZh-H1-voP" firstAttribute="leading" secondItem="ZTW-lJ-bMh" secondAttribute="leading" id="PEP-ev-Opj"/>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="500" id="XeL-Cp-jiX"/>
+                        <constraint firstAttribute="trailing" secondItem="bme-AH-aFb" secondAttribute="trailing" constant="10" id="gRc-Bs-9I7"/>
+                        <constraint firstItem="bme-AH-aFb" firstAttribute="top" secondItem="ZTW-lJ-bMh" secondAttribute="top" constant="10" id="guZ-KT-QB4"/>
+                        <constraint firstAttribute="trailing" secondItem="RZh-H1-voP" secondAttribute="trailing" id="uMx-2Z-aP0"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.20215945212256831" colorSpace="custom" customColorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="ZTW-lJ-bMh" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="a3S-dt-yVZ"/>
+                <constraint firstItem="ZTW-lJ-bMh" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="h2N-oi-aXH"/>
+                <constraint firstAttribute="trailing" secondItem="ZTW-lJ-bMh" secondAttribute="trailing" priority="999" constant="16" id="hx0-mw-ZFk"/>
+                <constraint firstItem="ZTW-lJ-bMh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" priority="999" constant="16" id="kVC-Ii-wrU"/>
+            </constraints>
+            <point key="canvasLocation" x="65" y="123"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="tempCupon" width="345" height="242"/>
+        <namedColor name="bBackground">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>
