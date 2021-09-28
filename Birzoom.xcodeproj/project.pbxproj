@@ -33,6 +33,10 @@
 		C33AADB126EF699A007CF7B9 /* Lang.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33AADB026EF699A007CF7B9 /* Lang.swift */; };
 		C33AADB426EF6BB3007CF7B9 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33AADB326EF6BB3007CF7B9 /* Cache.swift */; };
 		C33AADBF26EF6E1E007CF7B9 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33AADBE26EF6E1E007CF7B9 /* Keys.swift */; };
+		C340C87C27031C0B001A14C2 /* NotificationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C340C87A27031C0B001A14C2 /* NotificationsVC.swift */; };
+		C340C87D27031C0B001A14C2 /* NotificationsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C340C87B27031C0B001A14C2 /* NotificationsVC.xib */; };
+		C340C88227031FE5001A14C2 /* NotificationTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C340C88027031FE5001A14C2 /* NotificationTVC.swift */; };
+		C340C88327031FE5001A14C2 /* NotificationTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C340C88127031FE5001A14C2 /* NotificationTVC.xib */; };
 		C34CB56526FAFB3C00FF15C2 /* NewsCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34CB56326FAFB3B00FF15C2 /* NewsCVC.swift */; };
 		C34CB56626FAFB3C00FF15C2 /* NewsCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C34CB56426FAFB3B00FF15C2 /* NewsCVC.xib */; };
 		C34CB56A26FB0C7C00FF15C2 /* VideosCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34CB56826FB0C7C00FF15C2 /* VideosCVC.swift */; };
@@ -112,6 +116,10 @@
 		C33AADB026EF699A007CF7B9 /* Lang.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lang.swift; sourceTree = "<group>"; };
 		C33AADB326EF6BB3007CF7B9 /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
 		C33AADBE26EF6E1E007CF7B9 /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		C340C87A27031C0B001A14C2 /* NotificationsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsVC.swift; sourceTree = "<group>"; };
+		C340C87B27031C0B001A14C2 /* NotificationsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationsVC.xib; sourceTree = "<group>"; };
+		C340C88027031FE5001A14C2 /* NotificationTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTVC.swift; sourceTree = "<group>"; };
+		C340C88127031FE5001A14C2 /* NotificationTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationTVC.xib; sourceTree = "<group>"; };
 		C34CB56326FAFB3B00FF15C2 /* NewsCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCVC.swift; sourceTree = "<group>"; };
 		C34CB56426FAFB3B00FF15C2 /* NewsCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsCVC.xib; sourceTree = "<group>"; };
 		C34CB56826FB0C7C00FF15C2 /* VideosCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosCVC.swift; sourceTree = "<group>"; };
@@ -300,6 +308,17 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		C340C87927031541001A14C2 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				C340C87A27031C0B001A14C2 /* NotificationsVC.swift */,
+				C340C87B27031C0B001A14C2 /* NotificationsVC.xib */,
+				C340C88027031FE5001A14C2 /* NotificationTVC.swift */,
+				C340C88127031FE5001A14C2 /* NotificationTVC.xib */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
 		C34CB56D26FB183F00FF15C2 /* Guide */ = {
 			isa = PBXGroup;
 			children = (
@@ -358,6 +377,7 @@
 		C3B15A6926F3063800B9D76E /* VCs */ = {
 			isa = PBXGroup;
 			children = (
+				C340C87927031541001A14C2 /* Notifications */,
 				C35905BD26FEEC4700790F6B /* Courses */,
 				C352145626FC9B9B0073185A /* News */,
 				C34CB56D26FB183F00FF15C2 /* Guide */,
@@ -473,6 +493,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C340C88327031FE5001A14C2 /* NotificationTVC.xib in Resources */,
 				C33AAD9B26EF59E8007CF7B9 /* Roboto-MediumItalic.ttf in Resources */,
 				C34CB57626FB47AC00FF15C2 /* bigbuck.mp4 in Resources */,
 				C3F5376826F1BF25004BBF00 /* SigninVC.xib in Resources */,
@@ -499,6 +520,7 @@
 				C33AAD9F26EF59E8007CF7B9 /* Roboto-ThinItalic.ttf in Resources */,
 				C33AADA326EF59E8007CF7B9 /* Roboto-BlackItalic.ttf in Resources */,
 				C33AADA026EF59E8007CF7B9 /* Roboto-Black.ttf in Resources */,
+				C340C87D27031C0B001A14C2 /* NotificationsVC.xib in Resources */,
 				C3B15A6E26F3069700B9D76E /* LanguageVC.xib in Resources */,
 				C33AAD8726EF367D007CF7B9 /* WelcomeVC.xib in Resources */,
 				C3B7775826F5B5760020DE16 /* HomeVC.xib in Resources */,
@@ -572,6 +594,7 @@
 				C3A203B826FDDDA900506DBC /* NewsDetailedVC.swift in Sources */,
 				C3B15A7C26F34C1300B9D76E /* InterestsCVC.swift in Sources */,
 				C35905C126FEFCC400790F6B /* CuponVC.swift in Sources */,
+				C340C87C27031C0B001A14C2 /* NotificationsVC.swift in Sources */,
 				C3F5376B26F1D3AE004BBF00 /* PasswordTextField.swift in Sources */,
 				C3A203B326FDAC8600506DBC /* NewsTVC.swift in Sources */,
 				C34CB56526FAFB3C00FF15C2 /* NewsCVC.swift in Sources */,
@@ -593,6 +616,7 @@
 				C3B15A7826F34B6400B9D76E /* HashtagLikeCollectionViewFlowLayout.swift in Sources */,
 				C33AADAE26EF5D39007CF7B9 /* Extensions.swift in Sources */,
 				C3F5376726F1BF25004BBF00 /* SigninVC.swift in Sources */,
+				C340C88227031FE5001A14C2 /* NotificationTVC.swift in Sources */,
 				C3F5377926F21B5E004BBF00 /* NewPasswordVC.swift in Sources */,
 				C3F5377426F21287004BBF00 /* PasswordOTPVarifyVC.swift in Sources */,
 				C3F5376F26F2039D004BBF00 /* PasswordRecoveryVC.swift in Sources */,

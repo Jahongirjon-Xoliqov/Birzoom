@@ -79,6 +79,13 @@ class Lang {
         //cupon
         case b_getcupon
         
+        //notifications
+        case l_notifications
+        case l_notifications_options
+        case b_notifications_return_home
+        case l_notifications_teaching_satisfy
+        
+        
         
     }
     
@@ -159,6 +166,14 @@ class Lang {
                 
             //cupon
             case .b_getcupon: return "Kuponni Olish"
+                
+            //notifications
+            case .l_notifications: return "Xabarnoma"
+            ///do not add space between commas
+            ///commas needed to split func
+            case .l_notifications_options: return "Darsga kirdim,Darsga kira olmadim,Dars yarmida tugadi"
+            case .b_notifications_return_home: return "Bosh Sahifaga Qaytish"
+            case .l_notifications_teaching_satisfy: return "Ustozingizni bugungi darslaridan \nqanchalik qoniqdingiz?"
                 
             }
             

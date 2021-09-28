@@ -16,10 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow()
         
-        let vc = CuponVC(nibName: "CuponVC", bundle: nil)
-//        let navVC = UINavigationController(rootViewController: vc)
-//        navVC.navigationBar.isHidden = true
-        window?.rootViewController = vc //navVC
+        let vc = NotificationsVC(nibName: "NotificationsVC", bundle: nil)
+        let navVC = UINavigationController(rootViewController: vc)
+        navVC.navigationBar.isHidden = true
+        window?.rootViewController = navVC
         window?.makeKeyAndVisible()
         
         return true

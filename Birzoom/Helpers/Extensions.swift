@@ -274,6 +274,13 @@ extension UIViewController {
             let vc = DiscardPopupVC(nibName: "DiscardPopupVC", bundle: nil)
             vc.modalPresentationStyle = .overFullScreen
             present(vc, animated: false)
+        case .cupon:
+            let vc = CuponVC(nibName: "CuponVC", bundle: nil)
+            vc.modalPresentationStyle = .overFullScreen
+            present(vc, animated: false)
+        case .notifications:
+            let vc = NotificationsVC(nibName: "NotificationsVC", bundle: nil)
+            present(vc, animated: true)
         }
         
     }
@@ -328,6 +335,12 @@ extension UIViewController {
             navController.pushViewController(vc, animated: true)
         case .discountPopup:
             let vc = DiscardPopupVC(nibName: "DiscardPopupVC", bundle: nil)
+            navController.pushViewController(vc, animated: true)
+        case .cupon:
+            let vc = DiscardPopupVC(nibName: "DiscardPopupVC", bundle: nil)
+            navController.pushViewController(vc, animated: true)
+        case .notifications:
+            let vc = NotificationsVC(nibName: "NotificationsVC", bundle: nil)
             navController.pushViewController(vc, animated: true)
         }
         
@@ -453,5 +466,12 @@ extension NewsAdditionalTVC {
     static let identifier = "NewsAdditionalTVC"
     static func nib() -> UINib {
         UINib(nibName: "NewsAdditionalTVC", bundle: nil)
+    }
+}
+
+extension NotificationTVC {
+    static let identifier = "NotificationTVC"
+    static func nib() -> UINib {
+        UINib(nibName: "NotificationTVC", bundle: nil)
     }
 }

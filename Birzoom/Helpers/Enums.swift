@@ -122,6 +122,13 @@ enum BImage: String {
     case uparrow = "uparrow"
     case rightChevron = "rightchevron"
     
+    //notifications
+    case circle = "circleEmpty"
+    case circleFill = "circleFill"
+    case starsfill = "stars.fill"
+    case starshalf = "stars.half"
+    case starsempty = "starsEmpty"
+    
 }
 
 
@@ -139,6 +146,8 @@ enum VControllers {
     case news
     case newsDetailed
     case discountPopup
+    case cupon
+    case notifications
 }
 
 
