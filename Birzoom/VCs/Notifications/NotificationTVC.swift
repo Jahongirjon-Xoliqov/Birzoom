@@ -7,6 +7,11 @@
 
 import UIKit
 
+protocol LessonRateNotificationDelegate {
+    func didTappedToRateLesson()
+}
+
+
 class NotificationTVC: UITableViewCell {
 
     @IBOutlet weak var dateButton: UIButton! {
@@ -68,6 +73,9 @@ class NotificationTVC: UITableViewCell {
         }
     }
     
+    //public variables
+    var lessonRateDelegate: LessonRateNotificationDelegate!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -107,7 +115,7 @@ class NotificationTVC: UITableViewCell {
     }
     
     @IBAction func continueButtonTapped(_ sender: UIButton) {
-        
+        lessonRateDelegate.didTappedToRateLesson()
     }
     
     

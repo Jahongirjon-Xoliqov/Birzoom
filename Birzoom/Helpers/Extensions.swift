@@ -390,6 +390,22 @@ extension String {
         let size = self.size(withAttributes: fontAttributes)
         return size.width
     }
+    
+    mutating func setThankgiving(to name: String) {
+        
+        switch Cache.getAppLanguage() {
+        case .uz:
+            let text = "Javoblaringiz uchun rahmat \(name), keyingi darsda kutib qolamiz, ungacha o'z ustingizda ishlashda davom eting!"
+            self = text
+        case .ru:
+            let text = "Спасибо за ответы, \(name), мы с нетерпением ждем следующего урока, продолжай работать над собой до тех пор!"
+            self = text
+        case .en:
+            let text = "Thank you for your answers \(name), we look forward to the next lesson, keep working on yourself until then!"
+            self = text
+        }
+        
+    }
 
 }
 

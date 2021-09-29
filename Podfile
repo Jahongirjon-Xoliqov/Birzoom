@@ -4,6 +4,5 @@ target 'Birzoom' do
   
   pod 'LTMorphingLabel'
   pod 'IQKeyboardManagerSwift'
-  pod 'SwiftyStarRatingView'
 
 end

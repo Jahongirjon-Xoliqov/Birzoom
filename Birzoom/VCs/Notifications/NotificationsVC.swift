@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import SwiftyStarRatingView
 
 class NotificationsVC: UIViewController {
 
@@ -44,6 +43,8 @@ class NotificationsVC: UIViewController {
             rateView.backgroundColor = .bHomeNavBackground
             rateView.layer.cornerRadius = 24
             rateView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+            
+            rateView.transform = CGAffineTransform(translationX: 0, y: 500)
         }
     }
     
@@ -65,17 +66,42 @@ class NotificationsVC: UIViewController {
         }
     }
     
+    @IBOutlet var starButtons: [UIButton]!
+    
+    
     
     //thanksgiving
+    @IBOutlet weak var thanksView: UIView! {
+        didSet {
+            thanksView.backgroundColor = .bHomeNavBackground
+            thanksView.layer.cornerRadius = 24
+            thanksView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+            
+            thanksView.transform = CGAffineTransform(translationX: 0, y: 500)
+        }
+    }
+    
+    @IBOutlet weak var thanksLabel: UILabel! {
+        didSet {
+            thanksLabel.text?.setThankgiving(to: "Jahongirjon")
+            thanksLabel.font = .font(name: .roboto_regular, size: .r16)
+            thanksLabel.textColor = .bBlack
+        }
+    }
+    
+    @IBOutlet weak var thanksButton: UIButton! {
+        didSet {
+            thanksButton.design(as: .mainGray)
+            thanksButton.backgroundColor = .bBlue
+            thanksButton.setTitle(Lang.get(valueFor: .b_notifications_return_home), for: .normal)
+        }
+    }
     
     
-    
-    let starRatingView = SwiftyStarRatingView()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureStarsView()
         
     }
     
@@ -84,33 +110,31 @@ class NotificationsVC: UIViewController {
         navigateBackward()
     }
     
-    @objc
-    fileprivate
-    func userDidRate() {
-        print(starRatingView.value)
+    
+    @IBAction func starButtonsTapped(_ sender: UIButton) {
+        for i in 0...4 {
+            if i <= sender.tag {
+                starButtons[i].setImage(UIImage.image(name: .starsfill), for: .normal)
+            } else {
+                starButtons[i].setImage(UIImage.image(name: .starsempty), for: .normal)
+            }
+        }
     }
+    
+    @IBAction func rateButtonTapped(_ sender: UIButton) {
+        UIView.animate(withDuration: 0.5) {
+            self.thanksView.transform = .identity
+            self.rateView.transform = CGAffineTransform(translationX: 0, y: 500)
+        }
+    }
+    
+    @IBAction func goBackHomeButtonTapped(_ sender: UIButton) {
+        UIView.animate(withDuration: 0.3) {
+            self.thanksView.transform = CGAffineTransform(translationX: 0, y: 500)
+        } completion: { (_) in
+            self.navigateBackward()
+        }
 
-    fileprivate
-    func configureStarsView() {
-        starsView.backgroundColor = .clear
-        starRatingView.backgroundColor = .clear
-        
-        starRatingView.maximumValue = 5         //default is 5
-        starRatingView.minimumValue = 0         //default is 0
-        starRatingView.value = 3                //default is 0
-        starRatingView.tintColor = UIColor.yellow
-        
-        starRatingView.halfStarImage = UIImage.image(name: .starshalf)
-        starRatingView.emptyStarImage = UIImage.image(name: .starsempty)
-        starRatingView.filledStarImage = UIImage.image(name: .starsfill)
-        
-        starRatingView.addTarget(self, action: #selector(userDidRate), for: .valueChanged)
-        starsView.addSubview(starRatingView)
-        starRatingView.translatesAutoresizingMaskIntoConstraints = false
-        starRatingView.topAnchor.constraint(equalTo: starsView.topAnchor).isActive = true
-        starRatingView.bottomAnchor.constraint(equalTo: starsView.bottomAnchor).isActive = true
-        starRatingView.leadingAnchor.constraint(equalTo: starsView.leadingAnchor).isActive = true
-        starRatingView.bottomAnchor.constraint(equalTo: starsView.bottomAnchor).isActive = true
     }
     
 }
@@ -135,8 +159,18 @@ extension NotificationsVC: UITableViewDataSource {
             temp.contentView.backgroundColor = .clear
             return temp
         }
+        cell.lessonRateDelegate = self
         cell.assign(notification: indexPath.row != 0)
         return cell
+    }
+    
+}
+
+extension NotificationsVC: LessonRateNotificationDelegate {
+    func didTappedToRateLesson() {
+        UIView.animate(withDuration: 0.5) {
+            self.rateView.transform = .identity
+        }
     }
     
 }
