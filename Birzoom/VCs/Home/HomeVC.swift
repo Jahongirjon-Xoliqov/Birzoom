@@ -396,7 +396,7 @@ class HomeVC: UIViewController {
     }
     
     @IBAction func bellButtonTapped(_ sender: UIButton) {
-        navigate(to: .news)
+        navigate(to: .notifications)
     }
     
     @IBAction func discountButtonTapped(_ sender: UIButton) {

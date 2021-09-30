@@ -10,6 +10,13 @@
 		10ED4BE058E8E6B01F9C1D8C /* Pods_Birzoom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29396E119D49209D43537B22 /* Pods_Birzoom.framework */; };
 		C30607C526F8CCA600D2A88A /* LessonTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30607C326F8CCA600D2A88A /* LessonTVC.swift */; };
 		C30607C626F8CCA600D2A88A /* LessonTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C30607C426F8CCA600D2A88A /* LessonTVC.xib */; };
+		C32141772705901C00865FF1 /* ProfilVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32141752705901C00865FF1 /* ProfilVC.swift */; };
+		C32141782705901C00865FF1 /* ProfilVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C32141762705901C00865FF1 /* ProfilVC.xib */; };
+		C321417D2705945300865FF1 /* ProfilTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C321417B2705945300865FF1 /* ProfilTVC.swift */; };
+		C321417E2705945300865FF1 /* ProfilTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C321417C2705945300865FF1 /* ProfilTVC.xib */; };
+		C3214181270595B200865FF1 /* ProfilImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3214180270595B200865FF1 /* ProfilImageView.swift */; };
+		C321418B2705CBEF00865FF1 /* BalanceTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32141892705CBEF00865FF1 /* BalanceTVC.swift */; };
+		C321418C2705CBEF00865FF1 /* BalanceTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C321418A2705CBEF00865FF1 /* BalanceTVC.xib */; };
 		C33AAD6A26EF2037007CF7B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33AAD6926EF2037007CF7B9 /* AppDelegate.swift */; };
 		C33AAD7326EF2039007CF7B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C33AAD7226EF2039007CF7B9 /* Assets.xcassets */; };
 		C33AAD7626EF2039007CF7B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C33AAD7426EF2039007CF7B9 /* LaunchScreen.storyboard */; };
@@ -91,6 +98,13 @@
 		BBB9C0AC7934049803CA4819 /* Pods-Birzoom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Birzoom.debug.xcconfig"; path = "Target Support Files/Pods-Birzoom/Pods-Birzoom.debug.xcconfig"; sourceTree = "<group>"; };
 		C30607C326F8CCA600D2A88A /* LessonTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonTVC.swift; sourceTree = "<group>"; };
 		C30607C426F8CCA600D2A88A /* LessonTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LessonTVC.xib; sourceTree = "<group>"; };
+		C32141752705901C00865FF1 /* ProfilVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilVC.swift; sourceTree = "<group>"; };
+		C32141762705901C00865FF1 /* ProfilVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfilVC.xib; sourceTree = "<group>"; };
+		C321417B2705945300865FF1 /* ProfilTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilTVC.swift; sourceTree = "<group>"; };
+		C321417C2705945300865FF1 /* ProfilTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfilTVC.xib; sourceTree = "<group>"; };
+		C3214180270595B200865FF1 /* ProfilImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilImageView.swift; sourceTree = "<group>"; };
+		C32141892705CBEF00865FF1 /* BalanceTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceTVC.swift; sourceTree = "<group>"; };
+		C321418A2705CBEF00865FF1 /* BalanceTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BalanceTVC.xib; sourceTree = "<group>"; };
 		C33AAD6626EF2037007CF7B9 /* Birzoom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Birzoom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C33AAD6926EF2037007CF7B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C33AAD7226EF2039007CF7B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -195,6 +209,19 @@
 				274EEDA4A30E59067AF80722 /* Pods-Birzoom.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		C321417427058F8800865FF1 /* Profil */ = {
+			isa = PBXGroup;
+			children = (
+				C32141752705901C00865FF1 /* ProfilVC.swift */,
+				C32141762705901C00865FF1 /* ProfilVC.xib */,
+				C321417B2705945300865FF1 /* ProfilTVC.swift */,
+				C321417C2705945300865FF1 /* ProfilTVC.xib */,
+				C32141892705CBEF00865FF1 /* BalanceTVC.swift */,
+				C321418A2705CBEF00865FF1 /* BalanceTVC.xib */,
+			);
+			path = Profil;
 			sourceTree = "<group>";
 		};
 		C33AAD5D26EF2037007CF7B9 = {
@@ -377,6 +404,7 @@
 		C3B15A6926F3063800B9D76E /* VCs */ = {
 			isa = PBXGroup;
 			children = (
+				C321417427058F8800865FF1 /* Profil */,
 				C340C87927031541001A14C2 /* Notifications */,
 				C35905BD26FEEC4700790F6B /* Courses */,
 				C352145626FC9B9B0073185A /* News */,
@@ -412,6 +440,7 @@
 			children = (
 				C3F5376226F1B14E004BBF00 /* OTPTextfield.swift */,
 				C3F5376A26F1D3AE004BBF00 /* PasswordTextField.swift */,
+				C3214180270595B200865FF1 /* ProfilImageView.swift */,
 			);
 			path = Customs;
 			sourceTree = "<group>";
@@ -506,10 +535,12 @@
 				C33AADA126EF59E8007CF7B9 /* Roboto-Bold.ttf in Resources */,
 				C33AAD9D26EF59E8007CF7B9 /* Roboto-LightItalic.ttf in Resources */,
 				C34CB57126FB37B200FF15C2 /* GuideVC.xib in Resources */,
+				C321417E2705945300865FF1 /* ProfilTVC.xib in Resources */,
 				C360EA7C26F0C89300289A5C /* OTPVarifyVC.xib in Resources */,
 				C33AADA526EF59E8007CF7B9 /* Roboto-Light.ttf in Resources */,
 				C33AADA626EF59E8007CF7B9 /* Roboto-Medium.ttf in Resources */,
 				C33AADA226EF59E8007CF7B9 /* Roboto-Thin.ttf in Resources */,
+				C32141782705901C00865FF1 /* ProfilVC.xib in Resources */,
 				C360EA6A26F065D900289A5C /* SignupVC.xib in Resources */,
 				C3F5377A26F21B5E004BBF00 /* NewPasswordVC.xib in Resources */,
 				C3A203B926FDDDA900506DBC /* NewsDetailedVC.xib in Resources */,
@@ -526,6 +557,7 @@
 				C3B7775826F5B5760020DE16 /* HomeVC.xib in Resources */,
 				C30607C626F8CCA600D2A88A /* LessonTVC.xib in Resources */,
 				C3A203C326FDDE1C00506DBC /* NewsAdditionalTVC.xib in Resources */,
+				C321418C2705CBEF00865FF1 /* BalanceTVC.xib in Resources */,
 				C3F5377526F21287004BBF00 /* PasswordOTPVarifyVC.xib in Resources */,
 				C35905C226FEFCC400790F6B /* CuponVC.xib in Resources */,
 				C3A203BE26FDDDFC00506DBC /* NewsMainDetailedTVC.xib in Resources */,
@@ -595,9 +627,13 @@
 				C3B15A7C26F34C1300B9D76E /* InterestsCVC.swift in Sources */,
 				C35905C126FEFCC400790F6B /* CuponVC.swift in Sources */,
 				C340C87C27031C0B001A14C2 /* NotificationsVC.swift in Sources */,
+				C32141772705901C00865FF1 /* ProfilVC.swift in Sources */,
 				C3F5376B26F1D3AE004BBF00 /* PasswordTextField.swift in Sources */,
+				C321418B2705CBEF00865FF1 /* BalanceTVC.swift in Sources */,
+				C3214181270595B200865FF1 /* ProfilImageView.swift in Sources */,
 				C3A203B326FDAC8600506DBC /* NewsTVC.swift in Sources */,
 				C34CB56526FAFB3C00FF15C2 /* NewsCVC.swift in Sources */,
+				C321417D2705945300865FF1 /* ProfilTVC.swift in Sources */,
 				C33AAD6A26EF2037007CF7B9 /* AppDelegate.swift in Sources */,
 				C3B15A8526F362A200B9D76E /* InterestTag.swift in Sources */,
 				C3F58A7526F4A1EA0039E30F /* DiscardPopupVC.swift in Sources */,

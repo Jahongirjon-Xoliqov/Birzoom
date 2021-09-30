@@ -406,6 +406,8 @@ extension String {
         }
         
     }
+    
+    
 
 }
 
@@ -489,5 +491,21 @@ extension NotificationTVC {
     static let identifier = "NotificationTVC"
     static func nib() -> UINib {
         UINib(nibName: "NotificationTVC", bundle: nil)
+    }
+}
+
+
+extension ProfilTVC {
+    static let identifier = "ProfilTVC"
+    static func nib() -> UINib {
+        UINib(nibName: "ProfilTVC", bundle: nil)
+    }
+}
+
+
+extension BalanceTVC {
+    static let identifier = "BalanceTVC"
+    static func nib() -> UINib {
+        UINib(nibName: "BalanceTVC", bundle: nil)
     }
 }

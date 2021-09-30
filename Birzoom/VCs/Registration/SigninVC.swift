@@ -102,7 +102,7 @@ class SigninVC: UIViewController {
         
         if isUserInfoValid() {
             ///open up next page
-            
+            navigate(to: .home)
         } else {
             ///show alert
         }

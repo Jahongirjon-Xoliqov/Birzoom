@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow()
         
-        let vc = NotificationsVC(nibName: "NotificationsVC", bundle: nil)
+        let vc = ProfilVC(nibName: "ProfilVC", bundle: nil)
         let navVC = UINavigationController(rootViewController: vc)
         navVC.navigationBar.isHidden = true
         window?.rootViewController = navVC

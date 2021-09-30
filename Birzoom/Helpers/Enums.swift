@@ -34,6 +34,8 @@ enum BFontSize {
     case r20
     case r22
     case r24
+    case r28
+    case r30
 }
 
 extension CGFloat {
@@ -56,6 +58,8 @@ extension CGFloat {
         case .r20: return 20*scSize.width/uiSize.width
         case .r18: return 18*scSize.width/uiSize.width
         case .r22: return 22*scSize.width/uiSize.width
+        case .r28: return 28*scSize.width/uiSize.width
+        case .r30: return 30*scSize.width/uiSize.width
         }
         
     }
@@ -128,6 +132,14 @@ enum BImage: String {
     case starsfill = "stars.fill"
     case starshalf = "stars.half"
     case starsempty = "starsEmpty"
+    
+    //profil
+    case profil = "user"
+    case settings = "settingss"
+    case edit = "pencil"
+    case topBackground = "topback"
+    case bottomBackground = "bottomback"
+    
     
 }
 

@@ -85,7 +85,9 @@ class Lang {
         case b_notifications_return_home
         case l_notifications_teaching_satisfy
         
-        
+        //profil
+        case l_profil
+        case b_profil_replenish_balance
         
     }
     
@@ -174,6 +176,11 @@ class Lang {
             case .l_notifications_options: return "Darsga kirdim,Darsga kira olmadim,Dars yarmida tugadi"
             case .b_notifications_return_home: return "Bosh Sahifaga Qaytish"
             case .l_notifications_teaching_satisfy: return "Ustozingizni bugungi darslaridan \nqanchalik qoniqdingiz?"
+                
+                
+            //profil
+            case .l_profil: return "Profil"
+            case .b_profil_replenish_balance: return "Hisobni To'ldirish"
                 
             }
             
