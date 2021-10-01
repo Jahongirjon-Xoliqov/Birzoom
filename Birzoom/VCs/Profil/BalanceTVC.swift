@@ -11,7 +11,7 @@ class BalanceTVC: UITableViewCell {
 
     @IBOutlet weak var balanceLabel: UILabel! {
         didSet {
-            balanceLabel.text = "0,0 UZS"
+            balanceLabel.text = "0,0 UZS" //temp string
             balanceLabel.textColor = .white
             balanceLabel.font = .font(name: .roboto_bold, size: .r28)
         }
@@ -32,7 +32,7 @@ class BalanceTVC: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+        selectionStyle = .none
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

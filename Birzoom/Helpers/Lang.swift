@@ -88,6 +88,8 @@ class Lang {
         //profil
         case l_profil
         case b_profil_replenish_balance
+        case l_profil_certificate
+        
         
     }
     
@@ -181,6 +183,8 @@ class Lang {
             //profil
             case .l_profil: return "Profil"
             case .b_profil_replenish_balance: return "Hisobni To'ldirish"
+            case .l_profil_certificate: return "Sertifikat"
+                
                 
             }
             

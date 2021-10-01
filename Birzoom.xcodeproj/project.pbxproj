@@ -17,6 +17,12 @@
 		C3214181270595B200865FF1 /* ProfilImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3214180270595B200865FF1 /* ProfilImageView.swift */; };
 		C321418B2705CBEF00865FF1 /* BalanceTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32141892705CBEF00865FF1 /* BalanceTVC.swift */; };
 		C321418C2705CBEF00865FF1 /* BalanceTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C321418A2705CBEF00865FF1 /* BalanceTVC.xib */; };
+		C33095802706CD610054DA83 /* ResultsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C330957E2706CD610054DA83 /* ResultsTVC.swift */; };
+		C33095812706CD610054DA83 /* ResultsTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C330957F2706CD610054DA83 /* ResultsTVC.xib */; };
+		C33095852706D8140054DA83 /* CertificateTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33095832706D8140054DA83 /* CertificateTVC.swift */; };
+		C33095862706D8140054DA83 /* CertificateTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C33095842706D8140054DA83 /* CertificateTVC.xib */; };
+		C330958C2706E14A0054DA83 /* ProgressTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C330958A2706E14A0054DA83 /* ProgressTVC.swift */; };
+		C330958D2706E14A0054DA83 /* ProgressTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C330958B2706E14A0054DA83 /* ProgressTVC.xib */; };
 		C33AAD6A26EF2037007CF7B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33AAD6926EF2037007CF7B9 /* AppDelegate.swift */; };
 		C33AAD7326EF2039007CF7B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C33AAD7226EF2039007CF7B9 /* Assets.xcassets */; };
 		C33AAD7626EF2039007CF7B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C33AAD7426EF2039007CF7B9 /* LaunchScreen.storyboard */; };
@@ -105,6 +111,12 @@
 		C3214180270595B200865FF1 /* ProfilImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilImageView.swift; sourceTree = "<group>"; };
 		C32141892705CBEF00865FF1 /* BalanceTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceTVC.swift; sourceTree = "<group>"; };
 		C321418A2705CBEF00865FF1 /* BalanceTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BalanceTVC.xib; sourceTree = "<group>"; };
+		C330957E2706CD610054DA83 /* ResultsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsTVC.swift; sourceTree = "<group>"; };
+		C330957F2706CD610054DA83 /* ResultsTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultsTVC.xib; sourceTree = "<group>"; };
+		C33095832706D8140054DA83 /* CertificateTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificateTVC.swift; sourceTree = "<group>"; };
+		C33095842706D8140054DA83 /* CertificateTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CertificateTVC.xib; sourceTree = "<group>"; };
+		C330958A2706E14A0054DA83 /* ProgressTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressTVC.swift; sourceTree = "<group>"; };
+		C330958B2706E14A0054DA83 /* ProgressTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProgressTVC.xib; sourceTree = "<group>"; };
 		C33AAD6626EF2037007CF7B9 /* Birzoom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Birzoom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C33AAD6926EF2037007CF7B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C33AAD7226EF2039007CF7B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -220,6 +232,12 @@
 				C321417C2705945300865FF1 /* ProfilTVC.xib */,
 				C32141892705CBEF00865FF1 /* BalanceTVC.swift */,
 				C321418A2705CBEF00865FF1 /* BalanceTVC.xib */,
+				C330957E2706CD610054DA83 /* ResultsTVC.swift */,
+				C330957F2706CD610054DA83 /* ResultsTVC.xib */,
+				C33095832706D8140054DA83 /* CertificateTVC.swift */,
+				C33095842706D8140054DA83 /* CertificateTVC.xib */,
+				C330958A2706E14A0054DA83 /* ProgressTVC.swift */,
+				C330958B2706E14A0054DA83 /* ProgressTVC.xib */,
 			);
 			path = Profil;
 			sourceTree = "<group>";
@@ -527,11 +545,13 @@
 				C34CB57626FB47AC00FF15C2 /* bigbuck.mp4 in Resources */,
 				C3F5376826F1BF25004BBF00 /* SigninVC.xib in Resources */,
 				C3B15A7526F34B3700B9D76E /* InterestsVC.xib in Resources */,
+				C33095862706D8140054DA83 /* CertificateTVC.xib in Resources */,
 				C3A203B426FDAC8600506DBC /* NewsTVC.xib in Resources */,
 				C3F5377026F2039D004BBF00 /* PasswordRecoveryVC.xib in Resources */,
 				C34CB56626FAFB3C00FF15C2 /* NewsCVC.xib in Resources */,
 				C33AAD7626EF2039007CF7B9 /* LaunchScreen.storyboard in Resources */,
 				C33AADA726EF59E8007CF7B9 /* Roboto-Regular.ttf in Resources */,
+				C33095812706CD610054DA83 /* ResultsTVC.xib in Resources */,
 				C33AADA126EF59E8007CF7B9 /* Roboto-Bold.ttf in Resources */,
 				C33AAD9D26EF59E8007CF7B9 /* Roboto-LightItalic.ttf in Resources */,
 				C34CB57126FB37B200FF15C2 /* GuideVC.xib in Resources */,
@@ -554,6 +574,7 @@
 				C340C87D27031C0B001A14C2 /* NotificationsVC.xib in Resources */,
 				C3B15A6E26F3069700B9D76E /* LanguageVC.xib in Resources */,
 				C33AAD8726EF367D007CF7B9 /* WelcomeVC.xib in Resources */,
+				C330958D2706E14A0054DA83 /* ProgressTVC.xib in Resources */,
 				C3B7775826F5B5760020DE16 /* HomeVC.xib in Resources */,
 				C30607C626F8CCA600D2A88A /* LessonTVC.xib in Resources */,
 				C3A203C326FDDE1C00506DBC /* NewsAdditionalTVC.xib in Resources */,
@@ -638,6 +659,7 @@
 				C3B15A8526F362A200B9D76E /* InterestTag.swift in Sources */,
 				C3F58A7526F4A1EA0039E30F /* DiscardPopupVC.swift in Sources */,
 				C3F5376326F1B14E004BBF00 /* OTPTextfield.swift in Sources */,
+				C33095852706D8140054DA83 /* CertificateTVC.swift in Sources */,
 				C34CB57026FB37B200FF15C2 /* GuideVC.swift in Sources */,
 				C33AADAB26EF5A6C007CF7B9 /* Enums.swift in Sources */,
 				C33AAD8626EF367D007CF7B9 /* WelcomeVC.swift in Sources */,
@@ -651,6 +673,8 @@
 				C33AADB426EF6BB3007CF7B9 /* Cache.swift in Sources */,
 				C3B15A7826F34B6400B9D76E /* HashtagLikeCollectionViewFlowLayout.swift in Sources */,
 				C33AADAE26EF5D39007CF7B9 /* Extensions.swift in Sources */,
+				C33095802706CD610054DA83 /* ResultsTVC.swift in Sources */,
+				C330958C2706E14A0054DA83 /* ProgressTVC.swift in Sources */,
 				C3F5376726F1BF25004BBF00 /* SigninVC.swift in Sources */,
 				C340C88227031FE5001A14C2 /* NotificationTVC.swift in Sources */,
 				C3F5377926F21B5E004BBF00 /* NewPasswordVC.swift in Sources */,

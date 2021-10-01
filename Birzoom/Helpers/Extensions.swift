@@ -41,6 +41,7 @@ extension UIColor {
     static let bSelectionBlue: UIColor = UIColor(named: "bSelectionBlue") ?? .blue
     static let bBorderBlue: UIColor = UIColor(named: "bBorderBlue") ?? .blue
     static let bHomeExpbBlue: UIColor = UIColor(named: "bHomeExpbBlue") ?? .blue
+    static let bProfileBlue: UIColor = UIColor(named: "bProfileBlue") ?? .blue
     
     //gray
     static let bGray: UIColor = UIColor(named: "bGray") ?? .red
@@ -71,6 +72,16 @@ extension UIColor {
     //purple
     static let bHomePurple: UIColor = UIColor(named: "bHomePurple") ?? .purple
     
+    //yellow
+    static let bProfileYellow: UIColor = UIColor(named: "bProfileYellow") ?? .yellow
+    
+    //orange
+    static let bProfileOrange: UIColor = UIColor(named: "bProfileOrange") ?? .orange
+    
+    
+    //green
+    //bProfileGreen
+    static let bProfileGreen: UIColor = UIColor(named: "bProfileGreen") ?? .green
 }
 
 
@@ -507,5 +518,26 @@ extension BalanceTVC {
     static let identifier = "BalanceTVC"
     static func nib() -> UINib {
         UINib(nibName: "BalanceTVC", bundle: nil)
+    }
+}
+
+extension ResultsTVC {
+    static let identifier = "ResultsTVC"
+    static func nib() -> UINib {
+        UINib(nibName: "ResultsTVC", bundle: nil)
+    }
+}
+
+extension CertificateTVC {
+    static let identifier = "CertificateTVC"
+    static func nib() -> UINib {
+        UINib(nibName: "CertificateTVC", bundle: nil)
+    }
+}
+
+extension ProgressTVC {
+    static let identifier = "ProgressTVC"
+    static func nib() -> UINib {
+        UINib(nibName: "ProgressTVC", bundle: nil)
     }
 }

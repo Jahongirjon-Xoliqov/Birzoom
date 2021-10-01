@@ -17,6 +17,9 @@ class ProfilVC: UIViewController {
             tableView.dataSource = self
             tableView.register(ProfilTVC.nib(), forCellReuseIdentifier: ProfilTVC.identifier)
             tableView.register(BalanceTVC.nib(), forCellReuseIdentifier: BalanceTVC.identifier)
+            tableView.register(ResultsTVC.nib(), forCellReuseIdentifier: ResultsTVC.identifier)
+            tableView.register(CertificateTVC.nib(), forCellReuseIdentifier: CertificateTVC.identifier)
+            tableView.register(ProgressTVC.nib(), forCellReuseIdentifier: ProgressTVC.identifier)
         }
     }
     
@@ -55,7 +58,7 @@ class ProfilVC: UIViewController {
 extension ProfilVC: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        2
+        5
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -82,6 +85,40 @@ extension ProfilVC: UITableViewDataSource {
             }
             return cell
         }
+        
+        if indexPath.row == 2 {
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: ResultsTVC.identifier, for: indexPath) as? ResultsTVC else {
+                let temp = UITableViewCell()
+                temp.backgroundColor = .clear
+                temp.contentView.backgroundColor = .clear
+                temp.selectionStyle = .none
+                return temp
+            }
+            return cell
+        }
+        
+        if indexPath.row == 3 {
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: CertificateTVC.identifier, for: indexPath) as? CertificateTVC else {
+                let temp = UITableViewCell()
+                temp.backgroundColor = .clear
+                temp.contentView.backgroundColor = .clear
+                temp.selectionStyle = .none
+                return temp
+            }
+            return cell
+        }
+        
+        if indexPath.row == 4 {
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: ProgressTVC.identifier, for: indexPath) as? ProgressTVC else {
+                let temp = UITableViewCell()
+                temp.backgroundColor = .clear
+                temp.contentView.backgroundColor = .clear
+                temp.selectionStyle = .none
+                return temp
+            }
+            return cell
+        }
+        
         
         return UITableViewCell()
     }
