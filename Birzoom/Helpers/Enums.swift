@@ -27,6 +27,7 @@ enum BFont: String {
 //birzoom
 enum BFontSize {
     case r10
+    case r12
     case r14
     case r15
     case r16
@@ -36,6 +37,7 @@ enum BFontSize {
     case r24
     case r28
     case r30
+    case r36
 }
 
 extension CGFloat {
@@ -51,6 +53,7 @@ extension CGFloat {
         
         switch size {
         case .r10: return 10*scSize.width/uiSize.width
+        case .r12: return 12*scSize.width/uiSize.width
         case .r14: return 15*scSize.width/uiSize.width
         case .r15: return 15*scSize.width/uiSize.width
         case .r24: return 24*scSize.width/uiSize.width
@@ -60,6 +63,7 @@ extension CGFloat {
         case .r22: return 22*scSize.width/uiSize.width
         case .r28: return 28*scSize.width/uiSize.width
         case .r30: return 30*scSize.width/uiSize.width
+        case .r36: return 36*scSize.width/uiSize.width
         }
         
     }

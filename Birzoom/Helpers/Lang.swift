@@ -89,7 +89,10 @@ class Lang {
         case l_profil
         case b_profil_replenish_balance
         case l_profil_certificate
-        
+        case b_profil_goal
+        case l_profil_myactivity
+        case l_profil_lessons
+        case l_profil_homework
         
     }
     
@@ -184,6 +187,11 @@ class Lang {
             case .l_profil: return "Profil"
             case .b_profil_replenish_balance: return "Hisobni To'ldirish"
             case .l_profil_certificate: return "Sertifikat"
+            case .b_profil_goal: return "Maqsad qoyish"
+            case .l_profil_myactivity: return "Mening faoliyatim"
+            case .l_profil_lessons: return "Darslar"
+            case .l_profil_homework: return "Uyga vazifalar"
+                
                 
                 
             }

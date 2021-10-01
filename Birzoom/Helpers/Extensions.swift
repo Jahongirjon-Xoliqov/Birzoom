@@ -58,6 +58,7 @@ extension UIColor {
     static let bHomeBorderGray: UIColor = UIColor(named: "bHomeBorderGray") ?? .gray
     static let bHomeShadowGray: UIColor = UIColor(named: "bHomeShadowGray") ?? .gray
     static let bHomeScriptGray: UIColor = UIColor(named: "bHomeScriptGray") ?? .gray
+    static let bProfileShadowGray: UIColor = UIColor(named: "bProfileShadowGray") ?? .gray
     
     
     //white
@@ -539,5 +540,12 @@ extension ProgressTVC {
     static let identifier = "ProgressTVC"
     static func nib() -> UINib {
         UINib(nibName: "ProgressTVC", bundle: nil)
+    }
+}
+
+extension ActivityTVC {
+    static let identifier = "ActivityTVC"
+    static func nib() -> UINib {
+        UINib(nibName: "ActivityTVC", bundle: nil)
     }
 }
