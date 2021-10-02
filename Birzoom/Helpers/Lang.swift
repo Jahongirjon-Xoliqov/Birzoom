@@ -93,7 +93,8 @@ class Lang {
         case l_profil_myactivity
         case l_profil_lessons
         case l_profil_homework
-        
+        case l_profil_saveds
+        case b_profil_logout
     }
     
     static func get(valueFor component: Component) -> String {
@@ -191,8 +192,8 @@ class Lang {
             case .l_profil_myactivity: return "Mening faoliyatim"
             case .l_profil_lessons: return "Darslar"
             case .l_profil_homework: return "Uyga vazifalar"
-                
-                
+            case .l_profil_saveds: return "Saqlanganlar"
+            case .b_profil_logout: return "Chiqish"
                 
             }
             

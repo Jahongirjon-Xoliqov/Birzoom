@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="83" id="KGk-i7-Jjw" customClass="LogoutTVC" customModule="Birzoom" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="83"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="83"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="59h-Im-oJf">
+                        <rect key="frame" x="16" y="8" width="288" height="55"/>
+                        <color key="backgroundColor" name="bHomeBackground"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="59h-Im-oJf" secondAttribute="height" multiplier="344:56" priority="998" id="IVk-hL-LVP"/>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="400" id="j8w-3I-dp9"/>
+                        </constraints>
+                        <color key="tintColor" name="bRedText"/>
+                        <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <inset key="titleEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="Button" image="logout">
+                            <color key="titleColor" name="bRedText"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <integer key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="logoutButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="5rE-p8-Bqk"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="59h-Im-oJf" secondAttribute="bottom" constant="20" id="dHB-3k-IQK"/>
+                    <constraint firstItem="59h-Im-oJf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="f8s-ZN-XkE"/>
+                    <constraint firstItem="59h-Im-oJf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" priority="999" constant="16" id="s3o-KX-4JK"/>
+                    <constraint firstAttribute="trailing" secondItem="59h-Im-oJf" secondAttribute="trailing" priority="999" constant="16" id="zcI-k5-PMR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="logoutButton" destination="59h-Im-oJf" id="qUv-cm-hcr"/>
+            </connections>
+            <point key="canvasLocation" x="-17.39130434782609" y="-0.33482142857142855"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="logout" width="20" height="18"/>
+        <namedColor name="bHomeBackground">
+            <color red="0.94900000095367432" green="0.94900000095367432" blue="0.96899998188018799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="bRedText">
+            <color red="0.98400002717971802" green="0.44299998879432678" blue="0.50599998235702515" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

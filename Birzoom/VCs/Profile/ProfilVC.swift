@@ -17,10 +17,12 @@ class ProfilVC: UIViewController {
             tableView.dataSource = self
             tableView.register(ProfilTVC.nib(), forCellReuseIdentifier: ProfilTVC.identifier)
             tableView.register(BalanceTVC.nib(), forCellReuseIdentifier: BalanceTVC.identifier)
+            tableView.register(SavedsTVC.nib(), forCellReuseIdentifier: SavedsTVC.identifier)
             tableView.register(ResultsTVC.nib(), forCellReuseIdentifier: ResultsTVC.identifier)
             tableView.register(CertificateTVC.nib(), forCellReuseIdentifier: CertificateTVC.identifier)
             tableView.register(ProgressTVC.nib(), forCellReuseIdentifier: ProgressTVC.identifier)
             tableView.register(ActivityTVC.nib(), forCellReuseIdentifier: ActivityTVC.identifier)
+            tableView.register(LogoutTVC.nib(), forCellReuseIdentifier: LogoutTVC.identifier)
         }
     }
     
@@ -59,7 +61,7 @@ class ProfilVC: UIViewController {
 extension ProfilVC: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        6
+        8
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -88,6 +90,19 @@ extension ProfilVC: UITableViewDataSource {
         }
         
         if indexPath.row == 2 {
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: SavedsTVC.identifier, for: indexPath) as? SavedsTVC else {
+                let temp = UITableViewCell()
+                temp.backgroundColor = .clear
+                temp.contentView.backgroundColor = .clear
+                temp.selectionStyle = .none
+                return temp
+            }
+            return cell
+        }
+        
+        
+        
+        if indexPath.row == 3 {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: ResultsTVC.identifier, for: indexPath) as? ResultsTVC else {
                 let temp = UITableViewCell()
                 temp.backgroundColor = .clear
@@ -98,7 +113,7 @@ extension ProfilVC: UITableViewDataSource {
             return cell
         }
         
-        if indexPath.row == 3 {
+        if indexPath.row == 4 {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: CertificateTVC.identifier, for: indexPath) as? CertificateTVC else {
                 let temp = UITableViewCell()
                 temp.backgroundColor = .clear
@@ -109,7 +124,7 @@ extension ProfilVC: UITableViewDataSource {
             return cell
         }
         
-        if indexPath.row == 4 {
+        if indexPath.row == 5 {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: ProgressTVC.identifier, for: indexPath) as? ProgressTVC else {
                 let temp = UITableViewCell()
                 temp.backgroundColor = .clear
@@ -120,7 +135,7 @@ extension ProfilVC: UITableViewDataSource {
             return cell
         }
         
-        if indexPath.row == 5 {
+        if indexPath.row == 6 {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: ActivityTVC.identifier, for: indexPath) as? ActivityTVC else {
                 let temp = UITableViewCell()
                 temp.backgroundColor = .clear
@@ -130,6 +145,18 @@ extension ProfilVC: UITableViewDataSource {
             }
             return cell
         }
+        
+        if indexPath.row == 7 {
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: LogoutTVC.identifier, for: indexPath) as? LogoutTVC else {
+                let temp = UITableViewCell()
+                temp.backgroundColor = .clear
+                temp.contentView.backgroundColor = .clear
+                temp.selectionStyle = .none
+                return temp
+            }
+            return cell
+        }
+        
         
         
         return UITableViewCell()

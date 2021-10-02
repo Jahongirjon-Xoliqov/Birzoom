@@ -434,6 +434,8 @@ extension UICollectionView {
     
     static let videosItemHeight: CGSize = CGSize(width: (300/375)*CGFloat.scSize.width, height: (238/375)*CGFloat.scSize.width)
     
+    static let savedsItemSize: CGSize = CGSize(width: (144/375)*CGFloat.scSize.width, height: (144/375)*CGFloat.scSize.width)
+    
 }
 
 
@@ -547,5 +549,27 @@ extension ActivityTVC {
     static let identifier = "ActivityTVC"
     static func nib() -> UINib {
         UINib(nibName: "ActivityTVC", bundle: nil)
+    }
+}
+
+
+extension SavedsTVC {
+    static let identifier = "SavedsTVC"
+    static func nib() -> UINib {
+        UINib(nibName: "SavedsTVC", bundle: nil)
+    }
+}
+
+extension SavedsCVC {
+    static let identifier = "SavedsCVC"
+    static func nib() -> UINib {
+        UINib(nibName: "SavedsCVC", bundle: nil)
+    }
+}
+
+extension LogoutTVC {
+    static let identifier = "LogoutTVC"
+    static func nib() -> UINib {
+        UINib(nibName: "LogoutTVC", bundle: nil)
     }
 }

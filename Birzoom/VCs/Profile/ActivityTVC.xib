@@ -207,6 +207,7 @@
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="qBj-9P-aug" secondAttribute="bottom" constant="8" id="1Ja-bO-wiI"/>
+                    <constraint firstItem="qBj-9P-aug" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="2ii-ZU-v2A"/>
                     <constraint firstItem="qBj-9P-aug" firstAttribute="width" secondItem="qBj-9P-aug" secondAttribute="height" multiplier="344:560" priority="998" id="Dqr-hD-i5f"/>
                     <constraint firstAttribute="trailing" secondItem="qBj-9P-aug" secondAttribute="trailing" priority="999" constant="16" id="IKF-3X-Zhh"/>
                     <constraint firstItem="qBj-9P-aug" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Ozf-0C-mR1"/>
