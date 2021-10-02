@@ -39,8 +39,6 @@ class ActivityTVC: UITableViewCell {
         }
     }
     
-    
-    
     @IBOutlet weak var goalButton: UIButton! {
         didSet {
             goalButton.setTitle(Lang.get(valueFor: .b_profil_goal), for: .normal)
@@ -52,8 +50,6 @@ class ActivityTVC: UITableViewCell {
             goalButton.layer.borderColor = UIColor.bHomeNavTint.cgColor
         }
     }
-    
-    
     
     @IBOutlet weak var shadowView: UIView! {
         didSet {
@@ -99,18 +95,15 @@ class ActivityTVC: UITableViewCell {
         }
     }
     
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         selectionStyle = .none
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
-    
-    
-    
     
     
 }

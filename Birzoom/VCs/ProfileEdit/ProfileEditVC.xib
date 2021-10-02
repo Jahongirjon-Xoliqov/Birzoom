@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileEditVC" customModule="Birzoom" customModuleProvider="target">
             <connections>
+                <outlet property="progressView" destination="ibc-AY-Ted" id="XIb-Wp-0rD"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,10 +21,9 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ibc-AY-Ted" customClass="RDProgressView" customModule="Birzoom" customModuleProvider="target">
-                    <rect key="frame" x="20" y="438" width="374" height="20"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <rect key="frame" x="20" y="428" width="374" height="40"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="20" id="Ca4-Jy-AlS"/>
+                        <constraint firstAttribute="height" constant="40" id="Ca4-Jy-AlS"/>
                     </constraints>
                 </view>
             </subviews>
