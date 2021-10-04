@@ -75,6 +75,7 @@ extension ProfilVC: UITableViewDataSource {
                 return temp
             }
             cell.assign()
+            cell.profileEditDelegate = self
             return cell
         }
         
@@ -160,6 +161,16 @@ extension ProfilVC: UITableViewDataSource {
         
         
         return UITableViewCell()
+    }
+    
+}
+
+
+///profile edit
+extension ProfilVC: ProfileModificationDelegate {
+    
+    func didTappedToEditProfile() {
+        navigate(to: .profilEdit)
     }
     
 }

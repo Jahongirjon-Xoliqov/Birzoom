@@ -114,6 +114,10 @@ class Lang {
         case p_profile_edit_email
         case b_profile_edit_password_modify
         
+        //password modify
+        case p_profile_edit_oldpassword
+        case p_profile_edit_newpasswod
+        case p_profile_edit_repeatpassword
         
         
     }
@@ -234,6 +238,12 @@ class Lang {
             case .p_profile_edit_email: return "jakhongirjontuit@gmail.com"
             case .b_profile_edit_password_modify: return "Parolni o'zgartirish"
             
+            //password modify
+            case .p_profile_edit_oldpassword: return "Eski parol 12345678"
+            case .p_profile_edit_newpasswod: return "Yangi parol"
+            case .p_profile_edit_repeatpassword: return "Parolni qayta kiritish"
+                
+                
             }
             
             

@@ -43,6 +43,7 @@
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
+                    <constraint firstItem="59h-Im-oJf" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="U0a-Sg-3oX"/>
                     <constraint firstAttribute="bottom" secondItem="59h-Im-oJf" secondAttribute="bottom" constant="20" id="dHB-3k-IQK"/>
                     <constraint firstItem="59h-Im-oJf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="f8s-ZN-XkE"/>
                     <constraint firstItem="59h-Im-oJf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" priority="999" constant="16" id="s3o-KX-4JK"/>

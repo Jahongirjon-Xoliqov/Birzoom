@@ -18,7 +18,6 @@ class ProfilImageView: UIImageView {
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        
     }
     
 }
@@ -61,7 +60,7 @@ extension ProfilImageView {
             
             ///placeholder button configs
             let placeholderButton = UIButton()
-            placeholderButton.setTitle(String(firstLetter), for: .normal)
+            placeholderButton.setTitle(String(firstLetter).uppercased(), for: .normal)
             placeholderButton.titleLabel?.font = .font(name: .roboto_medium, size: .r30)
             placeholderButton.setTitleColor(.white, for: .normal)
             //placeholderButton.backgroundColor = .bBlue
@@ -69,10 +68,10 @@ extension ProfilImageView {
             ///gradient for button
             ///should create gradient
             let gradientLayer = CAGradientLayer()
-            gradientLayer.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
+            gradientLayer.frame = CGRect(x: 0, y: 0, width: 150, height: 150)
             gradientLayer.startPoint = CGPoint(x: 0, y: 0)
             gradientLayer.endPoint = CGPoint(x: 0, y: 1)
-            gradientLayer.colors =  [UIColor.bBlue.cgColor ,#colorLiteral(red: 0.5998852064, green: 0.8637192795, blue: 0.9761541486, alpha: 1).cgColor]
+            gradientLayer.colors =  [#colorLiteral(red: 0.5998852064, green: 0.8637192795, blue: 0.9761541486, alpha: 1).cgColor, UIColor.bBlue.cgColor]
             gradientLayer.locations = [0.0,1.0]
             layer.insertSublayer(gradientLayer, at: 0)
             

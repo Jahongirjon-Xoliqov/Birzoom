@@ -296,6 +296,12 @@ extension UIViewController {
         case .notifications:
             let vc = NotificationsVC(nibName: "NotificationsVC", bundle: nil)
             present(vc, animated: true)
+        case .profilEdit:
+            let vc = ProfileEditVC(nibName: "ProfileEditVC", bundle: nil)
+            present(vc, animated: true)
+        case .modifyPassword:
+            let vc = PasswordModifyVC(nibName: "PasswordModifyVC", bundle: nil)
+            present(vc, animated: true)
         }
         
     }
@@ -356,6 +362,12 @@ extension UIViewController {
             navController.pushViewController(vc, animated: true)
         case .notifications:
             let vc = NotificationsVC(nibName: "NotificationsVC", bundle: nil)
+            navController.pushViewController(vc, animated: true)
+        case .profilEdit:
+            let vc = ProfileEditVC(nibName: "ProfileEditVC", bundle: nil)
+            navController.pushViewController(vc, animated: true)
+        case .modifyPassword:
+            let vc = PasswordModifyVC(nibName: "PasswordModifyVC", bundle: nil)
             navController.pushViewController(vc, animated: true)
         }
         

@@ -90,6 +90,8 @@
 		C3B15A7C26F34C1300B9D76E /* InterestsCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B15A7A26F34C1300B9D76E /* InterestsCVC.swift */; };
 		C3B15A7D26F34C1300B9D76E /* InterestsCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3B15A7B26F34C1300B9D76E /* InterestsCVC.xib */; };
 		C3B15A8526F362A200B9D76E /* InterestTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B15A8426F362A200B9D76E /* InterestTag.swift */; };
+		C3B20845270B04EE00D2128A /* PasswordModifyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B20843270B04EE00D2128A /* PasswordModifyVC.swift */; };
+		C3B20846270B04EE00D2128A /* PasswordModifyVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3B20844270B04EE00D2128A /* PasswordModifyVC.xib */; };
 		C3B7775326F5B4660020DE16 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B7775226F5B4660020DE16 /* MainTabBarController.swift */; };
 		C3B7775726F5B5760020DE16 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B7775526F5B5760020DE16 /* HomeVC.swift */; };
 		C3B7775826F5B5760020DE16 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3B7775626F5B5760020DE16 /* HomeVC.xib */; };
@@ -197,6 +199,8 @@
 		C3B15A7A26F34C1300B9D76E /* InterestsCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestsCVC.swift; sourceTree = "<group>"; };
 		C3B15A7B26F34C1300B9D76E /* InterestsCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InterestsCVC.xib; sourceTree = "<group>"; };
 		C3B15A8426F362A200B9D76E /* InterestTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestTag.swift; sourceTree = "<group>"; };
+		C3B20843270B04EE00D2128A /* PasswordModifyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordModifyVC.swift; sourceTree = "<group>"; };
+		C3B20844270B04EE00D2128A /* PasswordModifyVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PasswordModifyVC.xib; sourceTree = "<group>"; };
 		C3B7775226F5B4660020DE16 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		C3B7775526F5B5760020DE16 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		C3B7775626F5B5760020DE16 /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
@@ -442,6 +446,8 @@
 			children = (
 				C386CC262708885000D68E71 /* ProfileEditVC.swift */,
 				C386CC272708885000D68E71 /* ProfileEditVC.xib */,
+				C3B20843270B04EE00D2128A /* PasswordModifyVC.swift */,
+				C3B20844270B04EE00D2128A /* PasswordModifyVC.xib */,
 			);
 			path = ProfileEdit;
 			sourceTree = "<group>";
@@ -630,6 +636,7 @@
 				C33AAD9E26EF59E8007CF7B9 /* Roboto-BoldItalic.ttf in Resources */,
 				C3A203AF26FDA7B100506DBC /* NewsVC.xib in Resources */,
 				C3B15A7D26F34C1300B9D76E /* InterestsCVC.xib in Resources */,
+				C3B20846270B04EE00D2128A /* PasswordModifyVC.xib in Resources */,
 				C386CC292708885000D68E71 /* ProfileEditVC.xib in Resources */,
 				C33AAD7326EF2039007CF7B9 /* Assets.xcassets in Resources */,
 			);
@@ -714,6 +721,7 @@
 				C34CB57026FB37B200FF15C2 /* GuideVC.swift in Sources */,
 				C33AADAB26EF5A6C007CF7B9 /* Enums.swift in Sources */,
 				C33AAD8626EF367D007CF7B9 /* WelcomeVC.swift in Sources */,
+				C3B20845270B04EE00D2128A /* PasswordModifyVC.swift in Sources */,
 				C34CB56A26FB0C7C00FF15C2 /* VideosCVC.swift in Sources */,
 				C360EA7B26F0C89300289A5C /* OTPVarifyVC.swift in Sources */,
 				C3A203AE26FDA7B100506DBC /* NewsVC.swift in Sources */,

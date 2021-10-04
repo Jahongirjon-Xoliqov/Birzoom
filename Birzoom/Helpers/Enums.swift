@@ -166,6 +166,8 @@ enum VControllers {
     case discountPopup
     case cupon
     case notifications
+    case profilEdit
+    case modifyPassword
 }
 
 

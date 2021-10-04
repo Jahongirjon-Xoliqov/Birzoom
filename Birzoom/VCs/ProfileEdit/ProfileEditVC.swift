@@ -34,9 +34,10 @@ class ProfileEditVC: UIViewController {
         }
     }
     
-    @IBOutlet weak var profileImageView: UIImageView! {
+    @IBOutlet weak var profileImageView: ProfilImageView! {
         didSet {
             profileImageView.clipsToBounds = true
+            profileImageView.configureUI(withName: "alex")
         }
     }
     
@@ -114,9 +115,9 @@ class ProfileEditVC: UIViewController {
         }
     }
     
-    @IBOutlet weak var passwordTextField: UITextField! {
+    @IBOutlet weak var passwordTextField: PasswordTextField! {
         didSet {
-            passwordTextField.activateUI(for: .registration)
+            passwordTextField.activateUI(for: .password)
             passwordTextField.attributedPlaceholder = .bPlaceHolder(text: Lang.get(valueFor: .p_profile_edit_password))
             passwordTextField.font = .font(name: .roboto_regular, size: .r15)
             passwordTextField.textColor = .bBlack
@@ -231,7 +232,10 @@ class ProfileEditVC: UIViewController {
     
     
     
+    
+    
     @IBAction func backButton(_ sender: UIButton) {
+        navigateBackward()
     }
     
     @IBAction func cameraButtonTapped(_ sender: UIButton) {
@@ -251,8 +255,9 @@ class ProfileEditVC: UIViewController {
     }
     
     @IBAction func modifyPasswordButtonTapped(_ sender: UIButton) {
-        modifyPasswordButton.isHidden = true
-        eyeButton.isHidden = false
+        //modifyPasswordButton.isHidden = true
+        //eyeButton.isHidden = false
+        navigate(to: .modifyPassword)
     }
     
     @IBAction func eyeButtonTapped(_ sender: UIButton) {

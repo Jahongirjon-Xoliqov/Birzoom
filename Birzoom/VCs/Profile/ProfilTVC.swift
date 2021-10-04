@@ -7,6 +7,12 @@
 
 import UIKit
 
+
+protocol ProfileModificationDelegate {
+    func didTappedToEditProfile()
+}
+
+
 class ProfilTVC: UITableViewCell {
     
     @IBOutlet weak var profilImageView: ProfilImageView!
@@ -36,6 +42,8 @@ class ProfilTVC: UITableViewCell {
     }
     
 
+    var profileEditDelegate: ProfileModificationDelegate!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         selectionStyle = .none
@@ -54,7 +62,7 @@ class ProfilTVC: UITableViewCell {
     }
     
     @IBAction func editButtonTapped(_ sender: UIButton) {
-        
+        profileEditDelegate.didTappedToEditProfile()
     }
     
     func assign() {
