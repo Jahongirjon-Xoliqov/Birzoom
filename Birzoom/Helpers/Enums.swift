@@ -144,6 +144,8 @@ enum BImage: String {
     case topBackground = "topback"
     case bottomBackground = "bottomback"
     
+    //profile edit
+    case camera = "camera"
     
 }
 

@@ -59,6 +59,9 @@ extension UIColor {
     static let bHomeShadowGray: UIColor = UIColor(named: "bHomeShadowGray") ?? .gray
     static let bHomeScriptGray: UIColor = UIColor(named: "bHomeScriptGray") ?? .gray
     static let bProfileShadowGray: UIColor = UIColor(named: "bProfileShadowGray") ?? .gray
+    static let bProfileEditBorderGray: UIColor = UIColor(named: "bProfileEditBorderGray") ?? .gray
+    static let bProfileEditBackGray: UIColor = UIColor(named: "bProfileEditBackGray") ?? .gray
+    static let bProfileEditTextGray: UIColor = UIColor(named: "bProfileEditTextGray") ?? .gray
     
     
     //white

@@ -95,6 +95,27 @@ class Lang {
         case l_profil_homework
         case l_profil_saveds
         case b_profil_logout
+        
+        //profil edit
+        case l_profile_edit
+        case l_profile_edit_name
+        case l_profile_edit_surname
+        case l_profile_edit_birthdate
+        case l_profile_edit_password
+        case l_profile_edit_email
+        case l_profile_edit_gender
+        case l_profile_edit_male
+        case l_profile_edit_female
+        case b_save
+        case p_profile_edit_name
+        case p_profile_edit_surname
+        case p_profile_edit_birthdate
+        case p_profile_edit_password
+        case p_profile_edit_email
+        case b_profile_edit_password_modify
+        
+        
+        
     }
     
     static func get(valueFor component: Component) -> String {
@@ -195,6 +216,24 @@ class Lang {
             case .l_profil_saveds: return "Saqlanganlar"
             case .b_profil_logout: return "Chiqish"
                 
+            //profile edit
+            case .l_profile_edit: return "Profilni tahrirlash"
+            case .l_profile_edit_name: return "Ism"
+            case .l_profile_edit_surname: return "Familiya"
+            case .l_profile_edit_birthdate: return "Tug'ilgan sana"
+            case .l_profile_edit_password: return "Parol"
+            case .l_profile_edit_email: return "E-mail"
+            case .l_profile_edit_gender: return "Jinsi"
+            case .l_profile_edit_male: return "Erkak"
+            case .l_profile_edit_female: return "Ayol"
+            case .b_save: return "Saqlash"
+            case .p_profile_edit_name: return "Jahongirjon"
+            case .p_profile_edit_surname: return "Xoliqov"
+            case .p_profile_edit_birthdate: return "19.06.1997"
+            case .p_profile_edit_password: return "********"
+            case .p_profile_edit_email: return "jakhongirjontuit@gmail.com"
+            case .b_profile_edit_password_modify: return "Parolni o'zgartirish"
+            
             }
             
             
