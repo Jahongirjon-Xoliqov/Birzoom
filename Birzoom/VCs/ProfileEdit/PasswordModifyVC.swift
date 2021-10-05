@@ -13,7 +13,7 @@ class PasswordModifyVC: UIViewController {
     
     @IBOutlet weak var scrollView: UIScrollView! {
         didSet {
-            scrollView.contentInset = UIEdgeInsets(top: 24, left: 0, bottom: 0, right: 0)
+            scrollView.contentInset = UIEdgeInsets(top: 32, left: 0, bottom: 0, right: 0)
         }
     }
     

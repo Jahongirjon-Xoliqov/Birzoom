@@ -916,7 +916,7 @@
         <image name="discardback" width="344" height="72"/>
         <image name="disforward" width="50" height="50"/>
         <image name="forwardblue" width="54" height="54"/>
-        <image name="girl" width="275" height="183"/>
+        <image name="girl" width="800" height="500"/>
         <image name="homebook" width="32" height="32"/>
         <image name="letsdo" width="104.33333587646484" height="81"/>
         <image name="newlesson" width="344" height="72"/>

@@ -120,6 +120,30 @@ class Lang {
         case p_profile_edit_repeatpassword
         
         
+        //target
+        case l_target
+        case b_target_set
+        case l_target_count
+        case l_target_1time
+        case l_target_3times
+        case l_target_5times
+        case l_target_7times
+        
+        case l_target_1time_desc
+        case l_target_3times_desc
+        case l_target_5times_desc
+        case l_target_7times_desc
+        
+        case l_target_targetDidSet
+        case l_target_canChange
+        case b_confirm
+        
+        //logout
+        case l_logout
+        case l_logout_confirm
+        case b_cancel
+        case b_logout
+        
     }
     
     static func get(valueFor component: Component) -> String {
@@ -242,6 +266,30 @@ class Lang {
             case .p_profile_edit_oldpassword: return "Eski parol 12345678"
             case .p_profile_edit_newpasswod: return "Yangi parol"
             case .p_profile_edit_repeatpassword: return "Parolni qayta kiritish"
+                
+            //target
+            case .l_target: return "Maqsadingizni belgilang"
+            case .b_target_set: return "Maqsadni belgilash"
+            case .l_target_count: return "Haftada faolliklar soni"
+            case .l_target_1time: return "Maqsadim oson o’rganish"
+            case .l_target_3times: return "Maqsadim barqaror o’rganish"
+            case .l_target_5times: return "Maqsadim faol o’rganish"
+            case .l_target_7times: return "Maqsadim mashaqqatli o’rganish "
+            case .l_target_1time_desc: return "Faqat bir nechta darslar va videolar"
+            case .l_target_3times_desc: return "Bir qancha darslar va videolar"
+            case .l_target_5times_desc: return "Ko’proq darslar va videolar"
+            case .l_target_7times_desc: return "Eng ko’p darslar va videolar"
+            case .l_target_targetDidSet: return "Maqsad belgilandi"
+            case .l_target_canChange: return "Istalgan vaqtingiz o'zgartirishingiz mumkin."
+            case .b_confirm: return "Tasdiqlash"
+                
+                
+            //logout
+            case .l_logout: return "Profildan chiqish"
+            case .l_logout_confirm: return "Profildan chiqishga ishonchingiz komilmi?"
+            case .b_cancel: return "Bekor qilish"
+            case .b_logout: return "Chiqish"
+                
                 
                 
             }

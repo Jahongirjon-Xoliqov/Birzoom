@@ -38,6 +38,7 @@ enum BFontSize {
     case r28
     case r30
     case r36
+    case r80
 }
 
 extension CGFloat {
@@ -64,6 +65,7 @@ extension CGFloat {
         case .r28: return 28*scSize.width/uiSize.width
         case .r30: return 30*scSize.width/uiSize.width
         case .r36: return 36*scSize.width/uiSize.width
+        case .r80: return 80*scSize.width/uiSize.width
         }
         
     }
@@ -168,6 +170,8 @@ enum VControllers {
     case notifications
     case profilEdit
     case modifyPassword
+    case target
+    case logout
 }
 
 

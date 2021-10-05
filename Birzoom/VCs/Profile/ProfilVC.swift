@@ -144,6 +144,7 @@ extension ProfilVC: UITableViewDataSource {
                 temp.selectionStyle = .none
                 return temp
             }
+            cell.activityDelegate = self
             return cell
         }
         
@@ -155,6 +156,7 @@ extension ProfilVC: UITableViewDataSource {
                 temp.selectionStyle = .none
                 return temp
             }
+            cell.logoutDelegate = self
             return cell
         }
         
@@ -171,6 +173,25 @@ extension ProfilVC: ProfileModificationDelegate {
     
     func didTappedToEditProfile() {
         navigate(to: .profilEdit)
+    }
+    
+}
+
+///activity
+extension ProfilVC: ActivitiesDelegate {
+    
+    func didTappedToSetGoal() {
+        coordinate(to: .target, animated: false)
+    }
+    
+}
+
+
+///logout
+extension ProfilVC: LogoutDelegate {
+    
+    func didTappedToLogout() {
+        coordinate(to: .logout, animated: false)
     }
     
 }

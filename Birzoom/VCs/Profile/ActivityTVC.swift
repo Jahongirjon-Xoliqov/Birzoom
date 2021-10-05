@@ -7,6 +7,11 @@
 
 import UIKit
 
+protocol ActivitiesDelegate {
+    func didTappedToSetGoal()
+}
+
+
 class ActivityTVC: UITableViewCell {
 
     @IBOutlet weak var activityLabel: UILabel! {
@@ -95,6 +100,8 @@ class ActivityTVC: UITableViewCell {
         }
     }
     
+    var activityDelegate: ActivitiesDelegate!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         selectionStyle = .none
@@ -105,5 +112,8 @@ class ActivityTVC: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
+    @IBAction func goalButtonTapped(_ sender: UIButton) {
+        activityDelegate.didTappedToSetGoal()
+    }
     
 }

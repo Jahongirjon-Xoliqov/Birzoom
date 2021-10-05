@@ -7,6 +7,12 @@
 
 import UIKit
 
+protocol LogoutDelegate {
+    func didTappedToLogout()
+}
+
+
+
 class LogoutTVC: UITableViewCell {
     
     @IBOutlet weak var logoutButton: UIButton! {
@@ -17,6 +23,8 @@ class LogoutTVC: UITableViewCell {
         }
     }
 
+    var logoutDelegate: LogoutDelegate!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -29,9 +37,13 @@ class LogoutTVC: UITableViewCell {
     
     @IBAction func logoutButtonTapped(_ sender: UIButton) {
         logoutButton.alpha = 0
+
         UIView.animate(withDuration: 0.3) {
             self.logoutButton.alpha = 1
+        } completion: { (_) in
+            self.logoutDelegate.didTappedToLogout()
         }
+
     }
     
 }

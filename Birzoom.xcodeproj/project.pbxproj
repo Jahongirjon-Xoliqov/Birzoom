@@ -10,6 +10,10 @@
 		10ED4BE058E8E6B01F9C1D8C /* Pods_Birzoom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29396E119D49209D43537B22 /* Pods_Birzoom.framework */; };
 		C30607C526F8CCA600D2A88A /* LessonTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30607C326F8CCA600D2A88A /* LessonTVC.swift */; };
 		C30607C626F8CCA600D2A88A /* LessonTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C30607C426F8CCA600D2A88A /* LessonTVC.xib */; };
+		C3198FA0270C243B005090C9 /* TargetSetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3198F9E270C243B005090C9 /* TargetSetVC.swift */; };
+		C3198FA1270C243B005090C9 /* TargetSetVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3198F9F270C243B005090C9 /* TargetSetVC.xib */; };
+		C3198FAA270C7FE7005090C9 /* LogoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3198FA8270C7FE7005090C9 /* LogoutVC.swift */; };
+		C3198FAB270C7FE7005090C9 /* LogoutVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3198FA9270C7FE7005090C9 /* LogoutVC.xib */; };
 		C32141772705901C00865FF1 /* ProfilVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32141752705901C00865FF1 /* ProfilVC.swift */; };
 		C32141782705901C00865FF1 /* ProfilVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C32141762705901C00865FF1 /* ProfilVC.xib */; };
 		C321417D2705945300865FF1 /* ProfilTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C321417B2705945300865FF1 /* ProfilTVC.swift */; };
@@ -117,6 +121,10 @@
 		BBB9C0AC7934049803CA4819 /* Pods-Birzoom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Birzoom.debug.xcconfig"; path = "Target Support Files/Pods-Birzoom/Pods-Birzoom.debug.xcconfig"; sourceTree = "<group>"; };
 		C30607C326F8CCA600D2A88A /* LessonTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonTVC.swift; sourceTree = "<group>"; };
 		C30607C426F8CCA600D2A88A /* LessonTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LessonTVC.xib; sourceTree = "<group>"; };
+		C3198F9E270C243B005090C9 /* TargetSetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetSetVC.swift; sourceTree = "<group>"; };
+		C3198F9F270C243B005090C9 /* TargetSetVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TargetSetVC.xib; sourceTree = "<group>"; };
+		C3198FA8270C7FE7005090C9 /* LogoutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutVC.swift; sourceTree = "<group>"; };
+		C3198FA9270C7FE7005090C9 /* LogoutVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogoutVC.xib; sourceTree = "<group>"; };
 		C32141752705901C00865FF1 /* ProfilVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilVC.swift; sourceTree = "<group>"; };
 		C32141762705901C00865FF1 /* ProfilVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfilVC.xib; sourceTree = "<group>"; };
 		C321417B2705945300865FF1 /* ProfilTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilTVC.swift; sourceTree = "<group>"; };
@@ -272,6 +280,10 @@
 				C386CC1927085C9800D68E71 /* SavedsCVC.xib */,
 				C386CC1D2708791800D68E71 /* LogoutTVC.swift */,
 				C386CC1E2708791800D68E71 /* LogoutTVC.xib */,
+				C3198F9E270C243B005090C9 /* TargetSetVC.swift */,
+				C3198F9F270C243B005090C9 /* TargetSetVC.xib */,
+				C3198FA8270C7FE7005090C9 /* LogoutVC.swift */,
+				C3198FA9270C7FE7005090C9 /* LogoutVC.xib */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -606,6 +618,7 @@
 				C33AAD9D26EF59E8007CF7B9 /* Roboto-LightItalic.ttf in Resources */,
 				C34CB57126FB37B200FF15C2 /* GuideVC.xib in Resources */,
 				C321417E2705945300865FF1 /* ProfilTVC.xib in Resources */,
+				C3198FA1270C243B005090C9 /* TargetSetVC.xib in Resources */,
 				C360EA7C26F0C89300289A5C /* OTPVarifyVC.xib in Resources */,
 				C33AADA526EF59E8007CF7B9 /* Roboto-Light.ttf in Resources */,
 				C33AADA626EF59E8007CF7B9 /* Roboto-Medium.ttf in Resources */,
@@ -622,6 +635,7 @@
 				C33AAD9F26EF59E8007CF7B9 /* Roboto-ThinItalic.ttf in Resources */,
 				C33AADA326EF59E8007CF7B9 /* Roboto-BlackItalic.ttf in Resources */,
 				C33AADA026EF59E8007CF7B9 /* Roboto-Black.ttf in Resources */,
+				C3198FAB270C7FE7005090C9 /* LogoutVC.xib in Resources */,
 				C340C87D27031C0B001A14C2 /* NotificationsVC.xib in Resources */,
 				C3B15A6E26F3069700B9D76E /* LanguageVC.xib in Resources */,
 				C33AAD8726EF367D007CF7B9 /* WelcomeVC.xib in Resources */,
@@ -711,11 +725,13 @@
 				C3A203B326FDAC8600506DBC /* NewsTVC.swift in Sources */,
 				C34CB56526FAFB3C00FF15C2 /* NewsCVC.swift in Sources */,
 				C386CC232708809700D68E71 /* RDProgressView.swift in Sources */,
+				C3198FA0270C243B005090C9 /* TargetSetVC.swift in Sources */,
 				C321417D2705945300865FF1 /* ProfilTVC.swift in Sources */,
 				C33AAD6A26EF2037007CF7B9 /* AppDelegate.swift in Sources */,
 				C3B15A8526F362A200B9D76E /* InterestTag.swift in Sources */,
 				C3F58A7526F4A1EA0039E30F /* DiscardPopupVC.swift in Sources */,
 				C3BEDF112707160E005D9024 /* ActivityTVC.swift in Sources */,
+				C3198FAA270C7FE7005090C9 /* LogoutVC.swift in Sources */,
 				C3F5376326F1B14E004BBF00 /* OTPTextfield.swift in Sources */,
 				C33095852706D8140054DA83 /* CertificateTVC.swift in Sources */,
 				C34CB57026FB37B200FF15C2 /* GuideVC.swift in Sources */,

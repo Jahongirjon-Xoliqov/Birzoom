@@ -246,7 +246,7 @@ extension UITapGestureRecognizer {
 extension UIViewController {
     
     //if view controller only
-    func coordinate(to vc: VControllers) {
+    func coordinate(to vc: VControllers, animated: Bool = true) {
         
         switch vc {
         case .signup:
@@ -288,11 +288,11 @@ extension UIViewController {
         case .discountPopup:
             let vc = DiscardPopupVC(nibName: "DiscardPopupVC", bundle: nil)
             vc.modalPresentationStyle = .overFullScreen
-            present(vc, animated: false)
+            present(vc, animated: animated)
         case .cupon:
             let vc = CuponVC(nibName: "CuponVC", bundle: nil)
             vc.modalPresentationStyle = .overFullScreen
-            present(vc, animated: false)
+            present(vc, animated: animated)
         case .notifications:
             let vc = NotificationsVC(nibName: "NotificationsVC", bundle: nil)
             present(vc, animated: true)
@@ -302,12 +302,20 @@ extension UIViewController {
         case .modifyPassword:
             let vc = PasswordModifyVC(nibName: "PasswordModifyVC", bundle: nil)
             present(vc, animated: true)
+        case .target:
+            let vc = TargetSetVC(nibName: "TargetSetVC", bundle: nil)
+            vc.modalPresentationStyle = .overFullScreen
+            present(vc, animated: animated)
+        case .logout:
+            let vc = LogoutVC(nibName: "LogoutVC", bundle: nil)
+            vc.modalPresentationStyle = .overFullScreen
+            present(vc, animated: animated)
         }
         
     }
     
-    func coordinateBackward() {
-        dismiss(animated: true)
+    func coordinateBackward(animated: Bool = true) {
+        dismiss(animated: animated)
     }
     
     //if with navigation controller
@@ -368,6 +376,12 @@ extension UIViewController {
             navController.pushViewController(vc, animated: true)
         case .modifyPassword:
             let vc = PasswordModifyVC(nibName: "PasswordModifyVC", bundle: nil)
+            navController.pushViewController(vc, animated: true)
+        case .target:
+            let vc = TargetSetVC(nibName: "TargetSetVC", bundle: nil)
+            navController.pushViewController(vc, animated: true)
+        case .logout:
+            let vc = LogoutVC(nibName: "LogoutVC", bundle: nil)
             navController.pushViewController(vc, animated: true)
         }
         
@@ -434,7 +448,21 @@ extension String {
         
     }
     
-    
+    mutating func setTargetFor(days: Int) {
+        
+        if Cache.getAppLanguage() == .en {
+            self = "You will complete \n\(days) activity in a week"
+        }
+        
+        if Cache.getAppLanguage() == .ru {
+            self = "You will complete \n\(days) activity in a week"
+        }
+        
+        if Cache.getAppLanguage() == .uz {
+            self = "Siz haftasiga \n\(days) ta faoliyat tugallaysiz"
+        }
+        
+    }
 
 }
 
