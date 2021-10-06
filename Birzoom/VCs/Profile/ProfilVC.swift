@@ -54,7 +54,12 @@ class ProfilVC: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .bHomeNavBackground
     }
+    
+    
 
+    @IBAction func settingsButtonTapped(_ sender: UIButton) {
+        navigate(to: .settings)
+    }
 }
 
 

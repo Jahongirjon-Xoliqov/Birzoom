@@ -44,15 +44,15 @@ class DiscardPopupVC: UIViewController {
     }
     
     @IBAction func buyButtonTapped(_ sender: UIButton) {
-        coordinateBackward()
+        coordinateBackward(animated: false)
     }
     
     @IBAction func dissmisButtonTapped(_ sender: UIButton) {
-        coordinateBackward()
+        coordinateBackward(animated: false)
     }
     
     @IBAction func tappedToDissmis(_ sender: UITapGestureRecognizer) {
-        coordinateBackward()
+        coordinateBackward(animated: false)
     }
     
 }

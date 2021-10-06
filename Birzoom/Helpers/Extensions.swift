@@ -179,11 +179,36 @@ extension UITextField {
 extension UIButton {
     
     func design(as type: BButtonType) {
-        backgroundColor = UIColor.bGray
-        clipsToBounds = true
-        layer.cornerRadius = 8
-        titleLabel?.font = .font(name: .roboto_medium, size: .r16)
-        setTitleColor(.white, for: .normal)
+        
+        switch type {
+        
+        case .mainGray:
+            backgroundColor = UIColor.bGray
+            clipsToBounds = true
+            layer.cornerRadius = 8
+            titleLabel?.font = .font(name: .roboto_medium, size: .r16)
+            setTitleColor(.white, for: .normal)
+        case .backBlue:
+            setTitle("", for: .normal)
+            setImage(UIImage.image(name: .chevBack), for: .normal)
+            //backButton.imageEdgeInsets = UIEdgeInsets(top: 0, left: -15, bottom: 0, right: 0)
+            tintColor = .bBlue
+        case .settingsBlack:
+            titleLabel?.font = .font(name: .roboto_regular, size: .r14)
+            setTitleColor(.bBlack, for: .normal)
+        }
+        
+    }
+    
+}
+
+
+//MARK: - UILabel
+extension UILabel {
+    
+    func designAsTopTitle() {
+        textColor = .bBlack
+        font = .font(name: .roboto_medium, size: .r20)
     }
     
 }
@@ -310,6 +335,12 @@ extension UIViewController {
             let vc = LogoutVC(nibName: "LogoutVC", bundle: nil)
             vc.modalPresentationStyle = .overFullScreen
             present(vc, animated: animated)
+        case .settings:
+            let vc = SettingsVC(nibName: "SettingsVC", bundle: nil)
+            present(vc, animated: true)
+        case .notificationsModify:
+            let vc = ModifyNotificationsVC(nibName: "ModifyNotificationsVC", bundle: nil)
+            present(vc, animated: true)
         }
         
     }
@@ -382,6 +413,12 @@ extension UIViewController {
             navController.pushViewController(vc, animated: true)
         case .logout:
             let vc = LogoutVC(nibName: "LogoutVC", bundle: nil)
+            navController.pushViewController(vc, animated: true)
+        case .settings:
+            let vc = SettingsVC(nibName: "SettingsVC", bundle: nil)
+            navController.pushViewController(vc, animated: true)
+        case .notificationsModify:
+            let vc = ModifyNotificationsVC(nibName: "ModifyNotificationsVC", bundle: nil)
             navController.pushViewController(vc, animated: true)
         }
         
@@ -465,6 +502,9 @@ extension String {
     }
 
 }
+
+
+
 
 
 extension UITableView {

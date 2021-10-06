@@ -37,13 +37,10 @@ class LogoutTVC: UITableViewCell {
     
     @IBAction func logoutButtonTapped(_ sender: UIButton) {
         logoutButton.alpha = 0
-
         UIView.animate(withDuration: 0.3) {
             self.logoutButton.alpha = 1
-        } completion: { (_) in
-            self.logoutDelegate.didTappedToLogout()
         }
-
+        logoutDelegate.didTappedToLogout()
     }
     
 }

@@ -144,6 +144,26 @@ class Lang {
         case b_cancel
         case b_logout
         
+        //settings
+        case l_settings
+        case l_settings_history
+        case l_settings_language
+        case l_settings_activities
+        case l_settings_notification
+        case l_settings_devices
+        case l_settings_mode
+        case l_settings_share
+        case l_settings_aboutus
+        case l_settings_faq
+        case l_settings_privacy
+        case l_settings_contacts
+        
+        //settins notifications
+        case l_settings_notifications
+        case b_settings_lessons
+        case b_settings_news
+        case b_settings_messages
+        
     }
     
     static func get(valueFor component: Component) -> String {
@@ -290,7 +310,26 @@ class Lang {
             case .b_cancel: return "Bekor qilish"
             case .b_logout: return "Chiqish"
                 
+            //settings
+            case .l_settings: return "Sozlamalar"
+            case .l_settings_history: return "To'lovlar tarixi"
+            case .l_settings_language: return "Ilova tili"
+            case .l_settings_activities: return "Faol mashg'ulotlar"
+            case .l_settings_notification: return "Bildirishnoma"
+            case .l_settings_devices: return "Faol qurilmalar"
+            case .l_settings_mode: return "Qorong'ulik rejimi"
+            case .l_settings_share: return "Do'stlarga ulashish"
+            case .l_settings_aboutus: return "Biz haqimizda"
+            case .l_settings_faq: return "FAQ"
+            case .l_settings_privacy: return "Maxfiylik siyosati"
+            case .l_settings_contacts: return "Kontaktlar"
                 
+                
+            //settins notifications
+            case .l_settings_notifications: return "Bildirishnoma"
+            case .b_settings_lessons: return "Darslar"
+            case .b_settings_news: return "Yangiliklar"
+            case .b_settings_messages: return "Xabarlar"
                 
             }
             
@@ -311,5 +350,25 @@ class Lang {
         
         return "Unknown"
     }
+        
+    static func getSettingsOptionTitles() -> [String] {
+            
+        [
+            Lang.get(valueFor: .l_settings_history),
+            Lang.get(valueFor: .l_settings_language),
+            Lang.get(valueFor: .l_settings_activities),
+            Lang.get(valueFor: .l_settings_notification),
+            Lang.get(valueFor: .l_settings_devices),
+            Lang.get(valueFor: .l_settings_mode),
+            Lang.get(valueFor: .l_settings_share),
+            Lang.get(valueFor: .l_settings_aboutus),
+            Lang.get(valueFor: .l_settings_faq),
+            Lang.get(valueFor: .l_settings_privacy),
+            Lang.get(valueFor: .l_settings_contacts)
+        ]
+            
+    }
+        
+    
     
 }

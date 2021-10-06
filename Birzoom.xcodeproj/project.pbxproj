@@ -67,6 +67,10 @@
 		C360EA6A26F065D900289A5C /* SignupVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C360EA6826F065D900289A5C /* SignupVC.xib */; };
 		C360EA7B26F0C89300289A5C /* OTPVarifyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C360EA7926F0C89300289A5C /* OTPVarifyVC.swift */; };
 		C360EA7C26F0C89300289A5C /* OTPVarifyVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C360EA7A26F0C89300289A5C /* OTPVarifyVC.xib */; };
+		C38609E9270D6270001AA9D2 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38609E7270D6270001AA9D2 /* SettingsVC.swift */; };
+		C38609EA270D6270001AA9D2 /* SettingsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C38609E8270D6270001AA9D2 /* SettingsVC.xib */; };
+		C38609F0270D7D95001AA9D2 /* ModifyNotificationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38609EE270D7D95001AA9D2 /* ModifyNotificationsVC.swift */; };
+		C38609F1270D7D95001AA9D2 /* ModifyNotificationsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C38609EF270D7D95001AA9D2 /* ModifyNotificationsVC.xib */; };
 		C386CC1527085AAD00D68E71 /* SavedsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C386CC1327085AAD00D68E71 /* SavedsTVC.swift */; };
 		C386CC1627085AAD00D68E71 /* SavedsTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C386CC1427085AAD00D68E71 /* SavedsTVC.xib */; };
 		C386CC1A27085C9800D68E71 /* SavedsCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C386CC1827085C9800D68E71 /* SavedsCVC.swift */; };
@@ -180,6 +184,10 @@
 		C360EA6826F065D900289A5C /* SignupVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignupVC.xib; sourceTree = "<group>"; };
 		C360EA7926F0C89300289A5C /* OTPVarifyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPVarifyVC.swift; sourceTree = "<group>"; };
 		C360EA7A26F0C89300289A5C /* OTPVarifyVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OTPVarifyVC.xib; sourceTree = "<group>"; };
+		C38609E7270D6270001AA9D2 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		C38609E8270D6270001AA9D2 /* SettingsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsVC.xib; sourceTree = "<group>"; };
+		C38609EE270D7D95001AA9D2 /* ModifyNotificationsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyNotificationsVC.swift; sourceTree = "<group>"; };
+		C38609EF270D7D95001AA9D2 /* ModifyNotificationsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModifyNotificationsVC.xib; sourceTree = "<group>"; };
 		C386CC1327085AAD00D68E71 /* SavedsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedsTVC.swift; sourceTree = "<group>"; };
 		C386CC1427085AAD00D68E71 /* SavedsTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SavedsTVC.xib; sourceTree = "<group>"; };
 		C386CC1827085C9800D68E71 /* SavedsCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedsCVC.swift; sourceTree = "<group>"; };
@@ -453,6 +461,17 @@
 			path = Courses;
 			sourceTree = "<group>";
 		};
+		C38609E6270D625F001AA9D2 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				C38609E7270D6270001AA9D2 /* SettingsVC.swift */,
+				C38609E8270D6270001AA9D2 /* SettingsVC.xib */,
+				C38609EE270D7D95001AA9D2 /* ModifyNotificationsVC.swift */,
+				C38609EF270D7D95001AA9D2 /* ModifyNotificationsVC.xib */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		C386CC252708883100D68E71 /* ProfileEdit */ = {
 			isa = PBXGroup;
 			children = (
@@ -479,6 +498,7 @@
 		C3B15A6926F3063800B9D76E /* VCs */ = {
 			isa = PBXGroup;
 			children = (
+				C38609E6270D625F001AA9D2 /* Settings */,
 				C386CC252708883100D68E71 /* ProfileEdit */,
 				C321417427058F8800865FF1 /* Profile */,
 				C340C87927031541001A14C2 /* Notifications */,
@@ -603,6 +623,7 @@
 				C386CC1627085AAD00D68E71 /* SavedsTVC.xib in Resources */,
 				C33AAD9B26EF59E8007CF7B9 /* Roboto-MediumItalic.ttf in Resources */,
 				C34CB57626FB47AC00FF15C2 /* bigbuck.mp4 in Resources */,
+				C38609EA270D6270001AA9D2 /* SettingsVC.xib in Resources */,
 				C3F5376826F1BF25004BBF00 /* SigninVC.xib in Resources */,
 				C3B15A7526F34B3700B9D76E /* InterestsVC.xib in Resources */,
 				C33095862706D8140054DA83 /* CertificateTVC.xib in Resources */,
@@ -627,6 +648,7 @@
 				C386CC1B27085C9800D68E71 /* SavedsCVC.xib in Resources */,
 				C360EA6A26F065D900289A5C /* SignupVC.xib in Resources */,
 				C3F5377A26F21B5E004BBF00 /* NewPasswordVC.xib in Resources */,
+				C38609F1270D7D95001AA9D2 /* ModifyNotificationsVC.xib in Resources */,
 				C3A203B926FDDDA900506DBC /* NewsDetailedVC.xib in Resources */,
 				C33AADA426EF59E8007CF7B9 /* LICENSE.txt in Resources */,
 				C33AAD9C26EF59E8007CF7B9 /* Roboto-Italic.ttf in Resources */,
@@ -718,6 +740,7 @@
 				C340C87C27031C0B001A14C2 /* NotificationsVC.swift in Sources */,
 				C32141772705901C00865FF1 /* ProfilVC.swift in Sources */,
 				C3F5376B26F1D3AE004BBF00 /* PasswordTextField.swift in Sources */,
+				C38609E9270D6270001AA9D2 /* SettingsVC.swift in Sources */,
 				C386CC1F2708791800D68E71 /* LogoutTVC.swift in Sources */,
 				C386CC282708885000D68E71 /* ProfileEditVC.swift in Sources */,
 				C321418B2705CBEF00865FF1 /* BalanceTVC.swift in Sources */,
@@ -738,6 +761,7 @@
 				C33AADAB26EF5A6C007CF7B9 /* Enums.swift in Sources */,
 				C33AAD8626EF367D007CF7B9 /* WelcomeVC.swift in Sources */,
 				C3B20845270B04EE00D2128A /* PasswordModifyVC.swift in Sources */,
+				C38609F0270D7D95001AA9D2 /* ModifyNotificationsVC.swift in Sources */,
 				C34CB56A26FB0C7C00FF15C2 /* VideosCVC.swift in Sources */,
 				C360EA7B26F0C89300289A5C /* OTPVarifyVC.swift in Sources */,
 				C3A203AE26FDA7B100506DBC /* NewsVC.swift in Sources */,

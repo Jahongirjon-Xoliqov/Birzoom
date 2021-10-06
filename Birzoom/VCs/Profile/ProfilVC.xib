@@ -38,6 +38,9 @@
                                 <constraint firstAttribute="width" constant="50" id="tWv-kX-a68"/>
                             </constraints>
                             <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="settingsButtonTapped:" destination="-1" eventType="touchUpInside" id="vr9-yr-opd"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>

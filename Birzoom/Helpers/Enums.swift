@@ -92,6 +92,8 @@ enum TextFieldType {
 
 enum BButtonType {
     case mainGray
+    case backBlue
+    case settingsBlack
 }
 
 
@@ -172,6 +174,8 @@ enum VControllers {
     case modifyPassword
     case target
     case logout
+    case settings
+    case notificationsModify
 }
 
 
