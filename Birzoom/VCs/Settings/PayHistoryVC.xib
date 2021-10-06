@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PayHistoryVC" customModule="Birzoom" customModuleProvider="target">
+            <connections>
+                <outlet property="backButton" destination="8HI-2d-4BK" id="A5o-IQ-kCH"/>
+                <outlet property="tableView" destination="qzZ-LI-xkL" id="j2M-Vm-RHV"/>
+                <outlet property="transactionsLabel" destination="d9z-JW-nb7" id="WqK-Wr-oWe"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xXv-Rz-vkE">
+                    <rect key="frame" x="0.0" y="44" width="414" height="60"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8HI-2d-4BK">
+                            <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="8HI-2d-4BK" secondAttribute="height" id="DQU-l9-VRc"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d9z-JW-nb7">
+                            <rect key="frame" x="60" y="0.0" width="354" height="60"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" name="bHomeNavBackground"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="d9z-JW-nb7" secondAttribute="trailing" id="9e9-if-P3C"/>
+                        <constraint firstAttribute="bottom" secondItem="d9z-JW-nb7" secondAttribute="bottom" id="FBh-Ld-HYl"/>
+                        <constraint firstItem="8HI-2d-4BK" firstAttribute="leading" secondItem="xXv-Rz-vkE" secondAttribute="leading" id="Zb1-IX-VGL"/>
+                        <constraint firstAttribute="height" constant="60" id="cpg-1v-Srz"/>
+                        <constraint firstAttribute="bottom" secondItem="8HI-2d-4BK" secondAttribute="bottom" id="f8G-GX-Cgo"/>
+                        <constraint firstItem="d9z-JW-nb7" firstAttribute="leading" secondItem="8HI-2d-4BK" secondAttribute="trailing" id="pCJ-o1-jB4"/>
+                        <constraint firstItem="d9z-JW-nb7" firstAttribute="top" secondItem="xXv-Rz-vkE" secondAttribute="top" id="srF-yZ-XuO"/>
+                        <constraint firstItem="8HI-2d-4BK" firstAttribute="top" secondItem="xXv-Rz-vkE" secondAttribute="top" id="zgz-J4-uhu"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qzZ-LI-xkL">
+                    <rect key="frame" x="0.0" y="104" width="414" height="792"/>
+                    <color key="backgroundColor" name="bHomeBackground"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="bHomeNavBackground"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="xXv-Rz-vkE" secondAttribute="trailing" id="0ca-lt-xqI"/>
+                <constraint firstAttribute="trailing" secondItem="qzZ-LI-xkL" secondAttribute="trailing" id="5lU-Uj-OMh"/>
+                <constraint firstItem="qzZ-LI-xkL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7mZ-G8-dXv"/>
+                <constraint firstAttribute="bottom" secondItem="qzZ-LI-xkL" secondAttribute="bottom" id="QES-kA-O0l"/>
+                <constraint firstItem="xXv-Rz-vkE" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="bvd-ot-y39"/>
+                <constraint firstItem="xXv-Rz-vkE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="d9u-wW-Yd3"/>
+                <constraint firstItem="qzZ-LI-xkL" firstAttribute="top" secondItem="xXv-Rz-vkE" secondAttribute="bottom" id="gF0-fh-gET"/>
+            </constraints>
+            <point key="canvasLocation" x="-16" y="117"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="bHomeBackground">
+            <color red="0.94900000095367432" green="0.94900000095367432" blue="0.96899998188018799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="bHomeNavBackground">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

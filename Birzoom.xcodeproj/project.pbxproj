@@ -71,6 +71,12 @@
 		C38609EA270D6270001AA9D2 /* SettingsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C38609E8270D6270001AA9D2 /* SettingsVC.xib */; };
 		C38609F0270D7D95001AA9D2 /* ModifyNotificationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38609EE270D7D95001AA9D2 /* ModifyNotificationsVC.swift */; };
 		C38609F1270D7D95001AA9D2 /* ModifyNotificationsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C38609EF270D7D95001AA9D2 /* ModifyNotificationsVC.xib */; };
+		C38609F7270DA447001AA9D2 /* ModifyLanguageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38609F5270DA447001AA9D2 /* ModifyLanguageVC.swift */; };
+		C38609F8270DA447001AA9D2 /* ModifyLanguageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C38609F6270DA447001AA9D2 /* ModifyLanguageVC.xib */; };
+		C38609FC270DB8A8001AA9D2 /* PayHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38609FA270DB8A8001AA9D2 /* PayHistoryVC.swift */; };
+		C38609FD270DB8A8001AA9D2 /* PayHistoryVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C38609FB270DB8A8001AA9D2 /* PayHistoryVC.xib */; };
+		C3860A02270DB9C9001AA9D2 /* PayHistoryTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3860A00270DB9C9001AA9D2 /* PayHistoryTVC.swift */; };
+		C3860A03270DB9C9001AA9D2 /* PayHistoryTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3860A01270DB9C9001AA9D2 /* PayHistoryTVC.xib */; };
 		C386CC1527085AAD00D68E71 /* SavedsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C386CC1327085AAD00D68E71 /* SavedsTVC.swift */; };
 		C386CC1627085AAD00D68E71 /* SavedsTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C386CC1427085AAD00D68E71 /* SavedsTVC.xib */; };
 		C386CC1A27085C9800D68E71 /* SavedsCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C386CC1827085C9800D68E71 /* SavedsCVC.swift */; };
@@ -188,6 +194,12 @@
 		C38609E8270D6270001AA9D2 /* SettingsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsVC.xib; sourceTree = "<group>"; };
 		C38609EE270D7D95001AA9D2 /* ModifyNotificationsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyNotificationsVC.swift; sourceTree = "<group>"; };
 		C38609EF270D7D95001AA9D2 /* ModifyNotificationsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModifyNotificationsVC.xib; sourceTree = "<group>"; };
+		C38609F5270DA447001AA9D2 /* ModifyLanguageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyLanguageVC.swift; sourceTree = "<group>"; };
+		C38609F6270DA447001AA9D2 /* ModifyLanguageVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModifyLanguageVC.xib; sourceTree = "<group>"; };
+		C38609FA270DB8A8001AA9D2 /* PayHistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayHistoryVC.swift; sourceTree = "<group>"; };
+		C38609FB270DB8A8001AA9D2 /* PayHistoryVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PayHistoryVC.xib; sourceTree = "<group>"; };
+		C3860A00270DB9C9001AA9D2 /* PayHistoryTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayHistoryTVC.swift; sourceTree = "<group>"; };
+		C3860A01270DB9C9001AA9D2 /* PayHistoryTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PayHistoryTVC.xib; sourceTree = "<group>"; };
 		C386CC1327085AAD00D68E71 /* SavedsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedsTVC.swift; sourceTree = "<group>"; };
 		C386CC1427085AAD00D68E71 /* SavedsTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SavedsTVC.xib; sourceTree = "<group>"; };
 		C386CC1827085C9800D68E71 /* SavedsCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedsCVC.swift; sourceTree = "<group>"; };
@@ -468,6 +480,12 @@
 				C38609E8270D6270001AA9D2 /* SettingsVC.xib */,
 				C38609EE270D7D95001AA9D2 /* ModifyNotificationsVC.swift */,
 				C38609EF270D7D95001AA9D2 /* ModifyNotificationsVC.xib */,
+				C38609F5270DA447001AA9D2 /* ModifyLanguageVC.swift */,
+				C38609F6270DA447001AA9D2 /* ModifyLanguageVC.xib */,
+				C38609FA270DB8A8001AA9D2 /* PayHistoryVC.swift */,
+				C38609FB270DB8A8001AA9D2 /* PayHistoryVC.xib */,
+				C3860A00270DB9C9001AA9D2 /* PayHistoryTVC.swift */,
+				C3860A01270DB9C9001AA9D2 /* PayHistoryTVC.xib */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -661,8 +679,11 @@
 				C340C87D27031C0B001A14C2 /* NotificationsVC.xib in Resources */,
 				C3B15A6E26F3069700B9D76E /* LanguageVC.xib in Resources */,
 				C33AAD8726EF367D007CF7B9 /* WelcomeVC.xib in Resources */,
+				C38609FD270DB8A8001AA9D2 /* PayHistoryVC.xib in Resources */,
 				C330958D2706E14A0054DA83 /* ProgressTVC.xib in Resources */,
+				C38609F8270DA447001AA9D2 /* ModifyLanguageVC.xib in Resources */,
 				C3B7775826F5B5760020DE16 /* HomeVC.xib in Resources */,
+				C3860A03270DB9C9001AA9D2 /* PayHistoryTVC.xib in Resources */,
 				C30607C626F8CCA600D2A88A /* LessonTVC.xib in Resources */,
 				C3A203C326FDDE1C00506DBC /* NewsAdditionalTVC.xib in Resources */,
 				C321418C2705CBEF00865FF1 /* BalanceTVC.xib in Resources */,
@@ -743,6 +764,7 @@
 				C38609E9270D6270001AA9D2 /* SettingsVC.swift in Sources */,
 				C386CC1F2708791800D68E71 /* LogoutTVC.swift in Sources */,
 				C386CC282708885000D68E71 /* ProfileEditVC.swift in Sources */,
+				C38609F7270DA447001AA9D2 /* ModifyLanguageVC.swift in Sources */,
 				C321418B2705CBEF00865FF1 /* BalanceTVC.swift in Sources */,
 				C3214181270595B200865FF1 /* ProfilImageView.swift in Sources */,
 				C3A203B326FDAC8600506DBC /* NewsTVC.swift in Sources */,
@@ -769,9 +791,11 @@
 				C3B7775726F5B5760020DE16 /* HomeVC.swift in Sources */,
 				C3B15A6D26F3069700B9D76E /* LanguageVC.swift in Sources */,
 				C33AADBF26EF6E1E007CF7B9 /* Keys.swift in Sources */,
+				C38609FC270DB8A8001AA9D2 /* PayHistoryVC.swift in Sources */,
 				C33AADB426EF6BB3007CF7B9 /* Cache.swift in Sources */,
 				C3B15A7826F34B6400B9D76E /* HashtagLikeCollectionViewFlowLayout.swift in Sources */,
 				C33AADAE26EF5D39007CF7B9 /* Extensions.swift in Sources */,
+				C3860A02270DB9C9001AA9D2 /* PayHistoryTVC.swift in Sources */,
 				C33095802706CD610054DA83 /* ResultsTVC.swift in Sources */,
 				C330958C2706E14A0054DA83 /* ProgressTVC.swift in Sources */,
 				C3F5376726F1BF25004BBF00 /* SigninVC.swift in Sources */,

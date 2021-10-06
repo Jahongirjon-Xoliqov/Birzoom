@@ -176,6 +176,9 @@ enum VControllers {
     case logout
     case settings
     case notificationsModify
+    case applangModify
+    case transactions
+    
 }
 
 

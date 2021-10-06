@@ -341,6 +341,12 @@ extension UIViewController {
         case .notificationsModify:
             let vc = ModifyNotificationsVC(nibName: "ModifyNotificationsVC", bundle: nil)
             present(vc, animated: true)
+        case .applangModify:
+            let vc = ModifyLanguageVC(nibName: "ModifyLanguageVC", bundle: nil)
+            present(vc, animated: true)
+        case .transactions:
+            let vc = PayHistoryVC(nibName: "PayHistoryVC", bundle: nil)
+            present(vc, animated: true)
         }
         
     }
@@ -419,6 +425,12 @@ extension UIViewController {
             navController.pushViewController(vc, animated: true)
         case .notificationsModify:
             let vc = ModifyNotificationsVC(nibName: "ModifyNotificationsVC", bundle: nil)
+            navController.pushViewController(vc, animated: true)
+        case .applangModify:
+            let vc = ModifyLanguageVC(nibName: "ModifyLanguageVC", bundle: nil)
+            navController.pushViewController(vc, animated: true)
+        case .transactions:
+            let vc = PayHistoryVC(nibName: "PayHistoryVC", bundle: nil)
             navController.pushViewController(vc, animated: true)
         }
         
@@ -654,5 +666,12 @@ extension LogoutTVC {
     static let identifier = "LogoutTVC"
     static func nib() -> UINib {
         UINib(nibName: "LogoutTVC", bundle: nil)
+    }
+}
+
+extension PayHistoryTVC {
+    static let identifier = "PayHistoryTVC"
+    static func nib() -> UINib {
+        UINib(nibName: "PayHistoryTVC", bundle: nil)
     }
 }

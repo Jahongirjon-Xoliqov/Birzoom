@@ -164,6 +164,18 @@ class Lang {
         case b_settings_news
         case b_settings_messages
         
+        //settings lang
+        case l_settings_appLanguage
+        case l_settings_lang_uz
+        case l_settings_lang_ru
+        case l_settings_lang_en
+        case l_settings_lang_uz_uz
+        case l_settings_lang_ru_uz
+        case l_settings_lang_en_uz
+        
+        //transactions
+        case l_settings_transactions
+        
     }
     
     static func get(valueFor component: Component) -> String {
@@ -331,6 +343,17 @@ class Lang {
             case .b_settings_news: return "Yangiliklar"
             case .b_settings_messages: return "Xabarlar"
                 
+                
+            //settings lang
+            case .l_settings_appLanguage: return "Ilova tili"
+            case .l_settings_lang_uz: return "O'zbek (lotin)"
+            case .l_settings_lang_en: return "English"
+            case .l_settings_lang_ru: return "Pусский"
+            case .l_settings_lang_uz_uz: return "O'zbekcha"
+            case .l_settings_lang_ru_uz: return "Ruscha"
+            case .l_settings_lang_en_uz: return "Inglizcha"
+                
+            case .l_settings_transactions: return "To'lovlar tarixi"
             }
             
             

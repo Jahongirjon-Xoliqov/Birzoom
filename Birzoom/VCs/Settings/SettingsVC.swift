@@ -56,8 +56,19 @@ class SettingsVC: UIViewController {
     @IBAction func optionsTapped(_ sender: UIButton) {
         print(sender.tag)
         
+        if sender.tag == 0 {
+            navigate(to: .transactions)
+            return
+        }
+        
+        if sender.tag == 1 {
+            navigate(to: .applangModify)
+            return
+        }
+        
         if sender.tag == 3 {
             navigate(to: .notificationsModify)
+            return
         }
         
     }
