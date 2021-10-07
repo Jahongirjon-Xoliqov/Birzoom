@@ -66,6 +66,11 @@ class SettingsVC: UIViewController {
             return
         }
         
+        if sender.tag == 2 {
+            navigate(to: .activeLessons)
+            return
+        }
+        
         if sender.tag == 3 {
             navigate(to: .notificationsModify)
             return

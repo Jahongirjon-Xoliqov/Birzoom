@@ -38,7 +38,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="mIg-6v-84m">
                                         <rect key="frame" x="81" y="0.0" width="269" height="71"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B8O-cp-LNA">
+                                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B8O-cp-LNA">
                                                 <rect key="frame" x="0.0" y="0.0" width="269" height="38.5"/>
                                                 <state key="normal" title="Button"/>
                                             </button>

@@ -175,6 +175,14 @@ class Lang {
         
         //transactions
         case l_settings_transactions
+        case l_transactions_servicepoint
+        case l_transactions_terminal
+        case l_transactions_card
+        case l_transactions_paydate
+        case l_transactions_payamount
+        
+        //active lesson
+        case l_active_lessons
         
     }
     
@@ -354,6 +362,16 @@ class Lang {
             case .l_settings_lang_en_uz: return "Inglizcha"
                 
             case .l_settings_transactions: return "To'lovlar tarixi"
+            case .l_transactions_servicepoint: return "Xizmat ko'rsatish punkti"
+            case .l_transactions_terminal: return "Terminal"
+            case .l_transactions_card: return "Karta"
+            case .l_transactions_paydate: return "To'landi"
+            case .l_transactions_payamount: return "To'lov summasi"
+                
+            //active lesson
+            case .l_active_lessons: return "Faol mashg'ulotlar"
+                
+                
             }
             
             

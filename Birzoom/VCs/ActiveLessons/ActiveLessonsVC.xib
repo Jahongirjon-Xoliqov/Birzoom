@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ActiveLessonsVC" customModule="Birzoom" customModuleProvider="target">
+            <connections>
+                <outlet property="activeLessonsTitleLabel" destination="vdu-Kl-4PS" id="dCQ-y4-axk"/>
+                <outlet property="backButton" destination="3LB-JU-t6l" id="zDF-rb-ESE"/>
+                <outlet property="tableView" destination="MUb-E2-dax" id="7bZ-wP-C5S"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SL1-7O-MvJ">
+                    <rect key="frame" x="0.0" y="44" width="414" height="60"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3LB-JU-t6l">
+                            <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="3LB-JU-t6l" secondAttribute="height" id="Hdf-TK-01c"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="backButtonTapped:" destination="-1" eventType="touchUpInside" id="TJJ-zT-NgC"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vdu-Kl-4PS">
+                            <rect key="frame" x="60" y="0.0" width="354" height="60"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" name="bHomeNavBackground"/>
+                    <constraints>
+                        <constraint firstItem="3LB-JU-t6l" firstAttribute="top" secondItem="SL1-7O-MvJ" secondAttribute="top" id="Nq3-Fh-tPC"/>
+                        <constraint firstItem="vdu-Kl-4PS" firstAttribute="top" secondItem="SL1-7O-MvJ" secondAttribute="top" id="UV5-fP-dWY"/>
+                        <constraint firstAttribute="trailing" secondItem="vdu-Kl-4PS" secondAttribute="trailing" id="VJc-Na-e4e"/>
+                        <constraint firstItem="vdu-Kl-4PS" firstAttribute="leading" secondItem="3LB-JU-t6l" secondAttribute="trailing" id="YjZ-nv-vm4"/>
+                        <constraint firstAttribute="bottom" secondItem="3LB-JU-t6l" secondAttribute="bottom" id="njx-s1-8nk"/>
+                        <constraint firstItem="3LB-JU-t6l" firstAttribute="leading" secondItem="SL1-7O-MvJ" secondAttribute="leading" id="t6F-05-XhR"/>
+                        <constraint firstAttribute="bottom" secondItem="vdu-Kl-4PS" secondAttribute="bottom" id="vdo-ak-h0m"/>
+                        <constraint firstAttribute="height" constant="60" id="yDC-zO-GtN"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MUb-E2-dax">
+                    <rect key="frame" x="0.0" y="104" width="414" height="792"/>
+                    <color key="backgroundColor" name="bHomeBackground"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="MUb-E2-dax" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="JoU-H0-fKA"/>
+                <constraint firstItem="MUb-E2-dax" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="ZCq-Xr-OOF"/>
+                <constraint firstItem="SL1-7O-MvJ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="kXY-dP-mlZ"/>
+                <constraint firstItem="MUb-E2-dax" firstAttribute="top" secondItem="SL1-7O-MvJ" secondAttribute="bottom" id="lVQ-xk-NBq"/>
+                <constraint firstAttribute="trailing" secondItem="SL1-7O-MvJ" secondAttribute="trailing" id="mNf-k5-b0c"/>
+                <constraint firstAttribute="bottom" secondItem="MUb-E2-dax" secondAttribute="bottom" id="onr-nA-NeG"/>
+                <constraint firstItem="SL1-7O-MvJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="vRu-ly-7Xj"/>
+            </constraints>
+            <point key="canvasLocation" x="-16" y="117"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="bHomeBackground">
+            <color red="0.94900000095367432" green="0.94900000095367432" blue="0.96899998188018799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="bHomeNavBackground">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

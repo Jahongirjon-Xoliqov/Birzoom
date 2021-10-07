@@ -178,6 +178,8 @@ enum VControllers {
     case notificationsModify
     case applangModify
     case transactions
+    case transactionsDetailed
+    case activeLessons
     
 }
 

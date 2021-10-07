@@ -347,6 +347,13 @@ extension UIViewController {
         case .transactions:
             let vc = PayHistoryVC(nibName: "PayHistoryVC", bundle: nil)
             present(vc, animated: true)
+        case .transactionsDetailed:
+            let vc = TransactionDetailedVC(nibName: "TransactionDetailedVC", bundle: nil)
+            vc.modalPresentationStyle = .overFullScreen
+            present(vc, animated: animated)
+        case .activeLessons:
+            let vc = ActiveLessonsVC(nibName: "ActiveLessonsVC", bundle: nil)
+            present(vc, animated: true)
         }
         
     }
@@ -431,6 +438,12 @@ extension UIViewController {
             navController.pushViewController(vc, animated: true)
         case .transactions:
             let vc = PayHistoryVC(nibName: "PayHistoryVC", bundle: nil)
+            navController.pushViewController(vc, animated: true)
+        case .transactionsDetailed:
+            let vc = TransactionDetailedVC(nibName: "TransactionDetailedVC", bundle: nil)
+            navController.pushViewController(vc, animated: true)
+        case .activeLessons:
+            let vc = ActiveLessonsVC(nibName: "ActiveLessonsVC", bundle: nil)
             navController.pushViewController(vc, animated: true)
         }
         
@@ -673,5 +686,12 @@ extension PayHistoryTVC {
     static let identifier = "PayHistoryTVC"
     static func nib() -> UINib {
         UINib(nibName: "PayHistoryTVC", bundle: nil)
+    }
+}
+
+extension ActiveLessonsTVC {
+    static let identifier = "ActiveLessonsTVC"
+    static func nib() -> UINib {
+        UINib(nibName: "ActiveLessonsTVC", bundle: nil)
     }
 }

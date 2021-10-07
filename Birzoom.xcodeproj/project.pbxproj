@@ -54,6 +54,12 @@
 		C340C87D27031C0B001A14C2 /* NotificationsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C340C87B27031C0B001A14C2 /* NotificationsVC.xib */; };
 		C340C88227031FE5001A14C2 /* NotificationTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C340C88027031FE5001A14C2 /* NotificationTVC.swift */; };
 		C340C88327031FE5001A14C2 /* NotificationTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C340C88127031FE5001A14C2 /* NotificationTVC.xib */; };
+		C343CCC0270EAF0C000074EE /* TransactionDetailedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C343CCBE270EAF0C000074EE /* TransactionDetailedVC.swift */; };
+		C343CCC1270EAF0C000074EE /* TransactionDetailedVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C343CCBF270EAF0C000074EE /* TransactionDetailedVC.xib */; };
+		C343CCC7270EBF17000074EE /* ActiveLessonsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C343CCC5270EBF17000074EE /* ActiveLessonsVC.swift */; };
+		C343CCC8270EBF17000074EE /* ActiveLessonsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C343CCC6270EBF17000074EE /* ActiveLessonsVC.xib */; };
+		C343CCCC270EC1BC000074EE /* ActiveLessonsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C343CCCA270EC1BC000074EE /* ActiveLessonsTVC.swift */; };
+		C343CCCD270EC1BC000074EE /* ActiveLessonsTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C343CCCB270EC1BC000074EE /* ActiveLessonsTVC.xib */; };
 		C34CB56526FAFB3C00FF15C2 /* NewsCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34CB56326FAFB3B00FF15C2 /* NewsCVC.swift */; };
 		C34CB56626FAFB3C00FF15C2 /* NewsCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C34CB56426FAFB3B00FF15C2 /* NewsCVC.xib */; };
 		C34CB56A26FB0C7C00FF15C2 /* VideosCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34CB56826FB0C7C00FF15C2 /* VideosCVC.swift */; };
@@ -177,6 +183,12 @@
 		C340C87B27031C0B001A14C2 /* NotificationsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationsVC.xib; sourceTree = "<group>"; };
 		C340C88027031FE5001A14C2 /* NotificationTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTVC.swift; sourceTree = "<group>"; };
 		C340C88127031FE5001A14C2 /* NotificationTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationTVC.xib; sourceTree = "<group>"; };
+		C343CCBE270EAF0C000074EE /* TransactionDetailedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailedVC.swift; sourceTree = "<group>"; };
+		C343CCBF270EAF0C000074EE /* TransactionDetailedVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionDetailedVC.xib; sourceTree = "<group>"; };
+		C343CCC5270EBF17000074EE /* ActiveLessonsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveLessonsVC.swift; sourceTree = "<group>"; };
+		C343CCC6270EBF17000074EE /* ActiveLessonsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActiveLessonsVC.xib; sourceTree = "<group>"; };
+		C343CCCA270EC1BC000074EE /* ActiveLessonsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveLessonsTVC.swift; sourceTree = "<group>"; };
+		C343CCCB270EC1BC000074EE /* ActiveLessonsTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActiveLessonsTVC.xib; sourceTree = "<group>"; };
 		C34CB56326FAFB3B00FF15C2 /* NewsCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCVC.swift; sourceTree = "<group>"; };
 		C34CB56426FAFB3B00FF15C2 /* NewsCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsCVC.xib; sourceTree = "<group>"; };
 		C34CB56826FB0C7C00FF15C2 /* VideosCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosCVC.swift; sourceTree = "<group>"; };
@@ -430,6 +442,30 @@
 			path = Notifications;
 			sourceTree = "<group>";
 		};
+		C343CCBD270EAEB5000074EE /* Transactions */ = {
+			isa = PBXGroup;
+			children = (
+				C38609FA270DB8A8001AA9D2 /* PayHistoryVC.swift */,
+				C38609FB270DB8A8001AA9D2 /* PayHistoryVC.xib */,
+				C3860A00270DB9C9001AA9D2 /* PayHistoryTVC.swift */,
+				C3860A01270DB9C9001AA9D2 /* PayHistoryTVC.xib */,
+				C343CCBE270EAF0C000074EE /* TransactionDetailedVC.swift */,
+				C343CCBF270EAF0C000074EE /* TransactionDetailedVC.xib */,
+			);
+			path = Transactions;
+			sourceTree = "<group>";
+		};
+		C343CCC4270EBECA000074EE /* ActiveLessons */ = {
+			isa = PBXGroup;
+			children = (
+				C343CCC5270EBF17000074EE /* ActiveLessonsVC.swift */,
+				C343CCC6270EBF17000074EE /* ActiveLessonsVC.xib */,
+				C343CCCA270EC1BC000074EE /* ActiveLessonsTVC.swift */,
+				C343CCCB270EC1BC000074EE /* ActiveLessonsTVC.xib */,
+			);
+			path = ActiveLessons;
+			sourceTree = "<group>";
+		};
 		C34CB56D26FB183F00FF15C2 /* Guide */ = {
 			isa = PBXGroup;
 			children = (
@@ -482,10 +518,6 @@
 				C38609EF270D7D95001AA9D2 /* ModifyNotificationsVC.xib */,
 				C38609F5270DA447001AA9D2 /* ModifyLanguageVC.swift */,
 				C38609F6270DA447001AA9D2 /* ModifyLanguageVC.xib */,
-				C38609FA270DB8A8001AA9D2 /* PayHistoryVC.swift */,
-				C38609FB270DB8A8001AA9D2 /* PayHistoryVC.xib */,
-				C3860A00270DB9C9001AA9D2 /* PayHistoryTVC.swift */,
-				C3860A01270DB9C9001AA9D2 /* PayHistoryTVC.xib */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -516,6 +548,8 @@
 		C3B15A6926F3063800B9D76E /* VCs */ = {
 			isa = PBXGroup;
 			children = (
+				C343CCC4270EBECA000074EE /* ActiveLessons */,
+				C343CCBD270EAEB5000074EE /* Transactions */,
 				C38609E6270D625F001AA9D2 /* Settings */,
 				C386CC252708883100D68E71 /* ProfileEdit */,
 				C321417427058F8800865FF1 /* Profile */,
@@ -642,6 +676,7 @@
 				C33AAD9B26EF59E8007CF7B9 /* Roboto-MediumItalic.ttf in Resources */,
 				C34CB57626FB47AC00FF15C2 /* bigbuck.mp4 in Resources */,
 				C38609EA270D6270001AA9D2 /* SettingsVC.xib in Resources */,
+				C343CCC1270EAF0C000074EE /* TransactionDetailedVC.xib in Resources */,
 				C3F5376826F1BF25004BBF00 /* SigninVC.xib in Resources */,
 				C3B15A7526F34B3700B9D76E /* InterestsVC.xib in Resources */,
 				C33095862706D8140054DA83 /* CertificateTVC.xib in Resources */,
@@ -667,9 +702,11 @@
 				C360EA6A26F065D900289A5C /* SignupVC.xib in Resources */,
 				C3F5377A26F21B5E004BBF00 /* NewPasswordVC.xib in Resources */,
 				C38609F1270D7D95001AA9D2 /* ModifyNotificationsVC.xib in Resources */,
+				C343CCCD270EC1BC000074EE /* ActiveLessonsTVC.xib in Resources */,
 				C3A203B926FDDDA900506DBC /* NewsDetailedVC.xib in Resources */,
 				C33AADA426EF59E8007CF7B9 /* LICENSE.txt in Resources */,
 				C33AAD9C26EF59E8007CF7B9 /* Roboto-Italic.ttf in Resources */,
+				C343CCC8270EBF17000074EE /* ActiveLessonsVC.xib in Resources */,
 				C3F58A7626F4A1EA0039E30F /* DiscardPopupVC.xib in Resources */,
 				C34CB56B26FB0C7C00FF15C2 /* VideosCVC.xib in Resources */,
 				C33AAD9F26EF59E8007CF7B9 /* Roboto-ThinItalic.ttf in Resources */,
@@ -768,6 +805,7 @@
 				C321418B2705CBEF00865FF1 /* BalanceTVC.swift in Sources */,
 				C3214181270595B200865FF1 /* ProfilImageView.swift in Sources */,
 				C3A203B326FDAC8600506DBC /* NewsTVC.swift in Sources */,
+				C343CCC7270EBF17000074EE /* ActiveLessonsVC.swift in Sources */,
 				C34CB56526FAFB3C00FF15C2 /* NewsCVC.swift in Sources */,
 				C386CC232708809700D68E71 /* RDProgressView.swift in Sources */,
 				C3198FA0270C243B005090C9 /* TargetSetVC.swift in Sources */,
@@ -786,8 +824,10 @@
 				C38609F0270D7D95001AA9D2 /* ModifyNotificationsVC.swift in Sources */,
 				C34CB56A26FB0C7C00FF15C2 /* VideosCVC.swift in Sources */,
 				C360EA7B26F0C89300289A5C /* OTPVarifyVC.swift in Sources */,
+				C343CCC0270EAF0C000074EE /* TransactionDetailedVC.swift in Sources */,
 				C3A203AE26FDA7B100506DBC /* NewsVC.swift in Sources */,
 				C3A203C226FDDE1C00506DBC /* NewsAdditionalTVC.swift in Sources */,
+				C343CCCC270EC1BC000074EE /* ActiveLessonsTVC.swift in Sources */,
 				C3B7775726F5B5760020DE16 /* HomeVC.swift in Sources */,
 				C3B15A6D26F3069700B9D76E /* LanguageVC.swift in Sources */,
 				C33AADBF26EF6E1E007CF7B9 /* Keys.swift in Sources */,

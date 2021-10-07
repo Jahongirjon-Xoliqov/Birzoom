@@ -1,13 +1,13 @@
 //
-//  PayHistoryVC.swift
+//  ActiveLessonsVC.swift
 //  Birzoom
 //
-//  Created by Administrator on 06/10/21.
+//  Created by Administrator on 07/10/21.
 //
 
 import UIKit
 
-class PayHistoryVC: UIViewController {
+class ActiveLessonsVC: UIViewController {
 
     @IBOutlet weak var backButton: UIButton! {
         didSet {
@@ -15,10 +15,10 @@ class PayHistoryVC: UIViewController {
         }
     }
     
-    @IBOutlet weak var transactionsLabel: UILabel! {
+    @IBOutlet weak var activeLessonsTitleLabel: UILabel! {
         didSet {
-            transactionsLabel.designAsTopTitle()
-            transactionsLabel.text = Lang.get(valueFor: .l_settings_transactions)
+            activeLessonsTitleLabel.designAsTopTitle()
+            activeLessonsTitleLabel.text = Lang.get(valueFor: .l_active_lessons)
         }
     }
     
@@ -27,39 +27,46 @@ class PayHistoryVC: UIViewController {
             tableView.delegate = self
             tableView.dataSource = self
             tableView.separatorStyle = .none
-            tableView.register(PayHistoryTVC.nib(), forCellReuseIdentifier: PayHistoryTVC.identifier)
-            tableView.contentInset = UIEdgeInsets(top: 24, left: 0, bottom: 24, right: 0)
+            tableView.register(ActiveLessonsTVC.nib(), forCellReuseIdentifier: ActiveLessonsTVC.identifier)
+            tableView.contentInset = UIEdgeInsets(top: 16, left: 0, bottom: 16, right: 0)
         }
     }
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
     }
-
-}
-
-extension PayHistoryVC: UITableViewDelegate {
+    
+    
+    @IBAction func backButtonTapped(_ sender: UIButton) {
+        navigateBackward()
+    }
     
 }
 
-extension PayHistoryVC: UITableViewDataSource {
+
+extension ActiveLessonsVC: UITableViewDelegate {
+    
+}
+
+extension ActiveLessonsVC: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        2
+        10
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: PayHistoryTVC.identifier, for: indexPath) as? PayHistoryTVC else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: ActiveLessonsTVC.identifier, for: indexPath) as? ActiveLessonsTVC else {
             let temp = UITableViewCell()
             temp.selectionStyle = .none
             temp.backgroundColor = .clear
             temp.contentView.backgroundColor = .clear
             return temp
         }
-        
         return cell
+        
     }
     
 }
