@@ -180,6 +180,9 @@ enum VControllers {
     case transactions
     case transactionsDetailed
     case activeLessons
+    case contacts
+    case aboutUs
+    case faq
     
 }
 

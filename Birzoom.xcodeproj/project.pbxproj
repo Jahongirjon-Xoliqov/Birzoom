@@ -60,6 +60,14 @@
 		C343CCC8270EBF17000074EE /* ActiveLessonsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C343CCC6270EBF17000074EE /* ActiveLessonsVC.xib */; };
 		C343CCCC270EC1BC000074EE /* ActiveLessonsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C343CCCA270EC1BC000074EE /* ActiveLessonsTVC.swift */; };
 		C343CCCD270EC1BC000074EE /* ActiveLessonsTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C343CCCB270EC1BC000074EE /* ActiveLessonsTVC.xib */; };
+		C343CCD1271013D4000074EE /* ContactVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C343CCCF271013D4000074EE /* ContactVC.swift */; };
+		C343CCD2271013D4000074EE /* ContactVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C343CCD0271013D4000074EE /* ContactVC.xib */; };
+		C343CCD627104970000074EE /* AboutUsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C343CCD427104970000074EE /* AboutUsVC.swift */; };
+		C343CCD727104970000074EE /* AboutUsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C343CCD527104970000074EE /* AboutUsVC.xib */; };
+		C343CCDB271051AF000074EE /* FAQVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C343CCD9271051AF000074EE /* FAQVC.swift */; };
+		C343CCDC271051AF000074EE /* FAQVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C343CCDA271051AF000074EE /* FAQVC.xib */; };
+		C343CCE127105267000074EE /* FAQTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C343CCDF27105267000074EE /* FAQTVC.swift */; };
+		C343CCE227105267000074EE /* FAQTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C343CCE027105267000074EE /* FAQTVC.xib */; };
 		C34CB56526FAFB3C00FF15C2 /* NewsCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34CB56326FAFB3B00FF15C2 /* NewsCVC.swift */; };
 		C34CB56626FAFB3C00FF15C2 /* NewsCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C34CB56426FAFB3B00FF15C2 /* NewsCVC.xib */; };
 		C34CB56A26FB0C7C00FF15C2 /* VideosCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34CB56826FB0C7C00FF15C2 /* VideosCVC.swift */; };
@@ -189,6 +197,14 @@
 		C343CCC6270EBF17000074EE /* ActiveLessonsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActiveLessonsVC.xib; sourceTree = "<group>"; };
 		C343CCCA270EC1BC000074EE /* ActiveLessonsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveLessonsTVC.swift; sourceTree = "<group>"; };
 		C343CCCB270EC1BC000074EE /* ActiveLessonsTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActiveLessonsTVC.xib; sourceTree = "<group>"; };
+		C343CCCF271013D4000074EE /* ContactVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactVC.swift; sourceTree = "<group>"; };
+		C343CCD0271013D4000074EE /* ContactVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactVC.xib; sourceTree = "<group>"; };
+		C343CCD427104970000074EE /* AboutUsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsVC.swift; sourceTree = "<group>"; };
+		C343CCD527104970000074EE /* AboutUsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutUsVC.xib; sourceTree = "<group>"; };
+		C343CCD9271051AF000074EE /* FAQVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQVC.swift; sourceTree = "<group>"; };
+		C343CCDA271051AF000074EE /* FAQVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FAQVC.xib; sourceTree = "<group>"; };
+		C343CCDF27105267000074EE /* FAQTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQTVC.swift; sourceTree = "<group>"; };
+		C343CCE027105267000074EE /* FAQTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FAQTVC.xib; sourceTree = "<group>"; };
 		C34CB56326FAFB3B00FF15C2 /* NewsCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCVC.swift; sourceTree = "<group>"; };
 		C34CB56426FAFB3B00FF15C2 /* NewsCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsCVC.xib; sourceTree = "<group>"; };
 		C34CB56826FB0C7C00FF15C2 /* VideosCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosCVC.swift; sourceTree = "<group>"; };
@@ -466,6 +482,24 @@
 			path = ActiveLessons;
 			sourceTree = "<group>";
 		};
+		C343CCDE2710524A000074EE /* FAQ */ = {
+			isa = PBXGroup;
+			children = (
+				C343CCD9271051AF000074EE /* FAQVC.swift */,
+				C343CCDA271051AF000074EE /* FAQVC.xib */,
+				C343CCDF27105267000074EE /* FAQTVC.swift */,
+				C343CCE027105267000074EE /* FAQTVC.xib */,
+			);
+			path = FAQ;
+			sourceTree = "<group>";
+		};
+		C343CCE42710638E000074EE /* ActiveSessions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ActiveSessions;
+			sourceTree = "<group>";
+		};
 		C34CB56D26FB183F00FF15C2 /* Guide */ = {
 			isa = PBXGroup;
 			children = (
@@ -518,6 +552,10 @@
 				C38609EF270D7D95001AA9D2 /* ModifyNotificationsVC.xib */,
 				C38609F5270DA447001AA9D2 /* ModifyLanguageVC.swift */,
 				C38609F6270DA447001AA9D2 /* ModifyLanguageVC.xib */,
+				C343CCCF271013D4000074EE /* ContactVC.swift */,
+				C343CCD0271013D4000074EE /* ContactVC.xib */,
+				C343CCD427104970000074EE /* AboutUsVC.swift */,
+				C343CCD527104970000074EE /* AboutUsVC.xib */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -548,6 +586,8 @@
 		C3B15A6926F3063800B9D76E /* VCs */ = {
 			isa = PBXGroup;
 			children = (
+				C343CCE42710638E000074EE /* ActiveSessions */,
+				C343CCDE2710524A000074EE /* FAQ */,
 				C343CCC4270EBECA000074EE /* ActiveLessons */,
 				C343CCBD270EAEB5000074EE /* Transactions */,
 				C38609E6270D625F001AA9D2 /* Settings */,
@@ -672,6 +712,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C340C88327031FE5001A14C2 /* NotificationTVC.xib in Resources */,
+				C343CCDC271051AF000074EE /* FAQVC.xib in Resources */,
 				C386CC1627085AAD00D68E71 /* SavedsTVC.xib in Resources */,
 				C33AAD9B26EF59E8007CF7B9 /* Roboto-MediumItalic.ttf in Resources */,
 				C34CB57626FB47AC00FF15C2 /* bigbuck.mp4 in Resources */,
@@ -692,16 +733,19 @@
 				C33AAD9D26EF59E8007CF7B9 /* Roboto-LightItalic.ttf in Resources */,
 				C34CB57126FB37B200FF15C2 /* GuideVC.xib in Resources */,
 				C321417E2705945300865FF1 /* ProfilTVC.xib in Resources */,
+				C343CCD2271013D4000074EE /* ContactVC.xib in Resources */,
 				C3198FA1270C243B005090C9 /* TargetSetVC.xib in Resources */,
 				C360EA7C26F0C89300289A5C /* OTPVarifyVC.xib in Resources */,
 				C33AADA526EF59E8007CF7B9 /* Roboto-Light.ttf in Resources */,
 				C33AADA626EF59E8007CF7B9 /* Roboto-Medium.ttf in Resources */,
+				C343CCD727104970000074EE /* AboutUsVC.xib in Resources */,
 				C33AADA226EF59E8007CF7B9 /* Roboto-Thin.ttf in Resources */,
 				C32141782705901C00865FF1 /* ProfilVC.xib in Resources */,
 				C386CC1B27085C9800D68E71 /* SavedsCVC.xib in Resources */,
 				C360EA6A26F065D900289A5C /* SignupVC.xib in Resources */,
 				C3F5377A26F21B5E004BBF00 /* NewPasswordVC.xib in Resources */,
 				C38609F1270D7D95001AA9D2 /* ModifyNotificationsVC.xib in Resources */,
+				C343CCE227105267000074EE /* FAQTVC.xib in Resources */,
 				C343CCCD270EC1BC000074EE /* ActiveLessonsTVC.xib in Resources */,
 				C3A203B926FDDDA900506DBC /* NewsDetailedVC.xib in Resources */,
 				C33AADA426EF59E8007CF7B9 /* LICENSE.txt in Resources */,
@@ -788,11 +832,13 @@
 				C360EA6926F065D900289A5C /* SignupVC.swift in Sources */,
 				C386CC1A27085C9800D68E71 /* SavedsCVC.swift in Sources */,
 				C3A203BD26FDDDFC00506DBC /* NewsMainDetailedTVC.swift in Sources */,
+				C343CCDB271051AF000074EE /* FAQVC.swift in Sources */,
 				C3B15A7426F34B3700B9D76E /* InterestsVC.swift in Sources */,
 				C3B7775326F5B4660020DE16 /* MainTabBarController.swift in Sources */,
 				C30607C526F8CCA600D2A88A /* LessonTVC.swift in Sources */,
 				C33AADB126EF699A007CF7B9 /* Lang.swift in Sources */,
 				C3A203B826FDDDA900506DBC /* NewsDetailedVC.swift in Sources */,
+				C343CCD627104970000074EE /* AboutUsVC.swift in Sources */,
 				C3B15A7C26F34C1300B9D76E /* InterestsCVC.swift in Sources */,
 				C35905C126FEFCC400790F6B /* CuponVC.swift in Sources */,
 				C340C87C27031C0B001A14C2 /* NotificationsVC.swift in Sources */,
@@ -824,6 +870,7 @@
 				C38609F0270D7D95001AA9D2 /* ModifyNotificationsVC.swift in Sources */,
 				C34CB56A26FB0C7C00FF15C2 /* VideosCVC.swift in Sources */,
 				C360EA7B26F0C89300289A5C /* OTPVarifyVC.swift in Sources */,
+				C343CCD1271013D4000074EE /* ContactVC.swift in Sources */,
 				C343CCC0270EAF0C000074EE /* TransactionDetailedVC.swift in Sources */,
 				C3A203AE26FDA7B100506DBC /* NewsVC.swift in Sources */,
 				C3A203C226FDDE1C00506DBC /* NewsAdditionalTVC.swift in Sources */,
@@ -832,6 +879,7 @@
 				C3B15A6D26F3069700B9D76E /* LanguageVC.swift in Sources */,
 				C33AADBF26EF6E1E007CF7B9 /* Keys.swift in Sources */,
 				C38609FC270DB8A8001AA9D2 /* PayHistoryVC.swift in Sources */,
+				C343CCE127105267000074EE /* FAQTVC.swift in Sources */,
 				C33AADB426EF6BB3007CF7B9 /* Cache.swift in Sources */,
 				C3B15A7826F34B6400B9D76E /* HashtagLikeCollectionViewFlowLayout.swift in Sources */,
 				C33AADAE26EF5D39007CF7B9 /* Extensions.swift in Sources */,

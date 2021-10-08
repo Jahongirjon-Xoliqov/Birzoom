@@ -184,6 +184,23 @@ class Lang {
         //active lesson
         case l_active_lessons
         
+        //contacts
+        case l_contacts
+        case b_contacts_telegram
+        case b_contacts_instagram
+        case b_contacts_facebook
+        case b_contacts_tiktok
+        case b_contacts_youtube
+        
+        case p_contacts_name
+        case p_contacts_email
+        case p_contacts_message
+        
+        case b_send
+        case l_aboutus
+        
+        case l_faq
+        
     }
     
     static func get(valueFor component: Component) -> String {
@@ -371,7 +388,24 @@ class Lang {
             //active lesson
             case .l_active_lessons: return "Faol mashg'ulotlar"
                 
+            //contacts
+            case .l_contacts: return "Kontaktlar"
+            case .b_contacts_telegram: return "Telegram"
+            case .b_contacts_instagram: return "Instagram"
+            case .b_contacts_facebook: return "Facebook"
+            case .b_contacts_tiktok: return "Tik Tok"
+            case .b_contacts_youtube: return "YouTube"
+            
+            case .p_contacts_name: return "Ism"
+            case .p_contacts_email: return "Elektron pochta"
+            case .p_contacts_message: return "Message"
+            
+            case .b_send: return "Jo'natish"
                 
+            //about us
+            case .l_aboutus: return "Biz haqimizda"
+            case .l_faq: return "FAQ"
+            
             }
             
             

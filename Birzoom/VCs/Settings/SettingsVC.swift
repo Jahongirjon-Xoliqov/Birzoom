@@ -76,6 +76,21 @@ class SettingsVC: UIViewController {
             return
         }
         
+        if sender.tag == 7 {
+            navigate(to: .aboutUs)
+            return
+        }
+        
+        if sender.tag == 8 {
+            navigate(to: .faq)
+            return
+        }
+        
+        if sender.tag == 10 {
+            navigate(to: .contacts)
+            return
+        }
+        
     }
     
     @IBAction func modeIsSwitched(_ sender: UISwitch) {

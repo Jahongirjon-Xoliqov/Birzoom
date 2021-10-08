@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FAQVC" customModule="Birzoom" customModuleProvider="target">
+            <connections>
+                <outlet property="FAQTitleLabel" destination="hUM-Pn-jLB" id="Igi-i0-C7q"/>
+                <outlet property="backButton" destination="FSo-cp-icT" id="zIP-Q4-sgS"/>
+                <outlet property="tableView" destination="XDx-AY-9ot" id="AX5-OS-h2R"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9U1-X8-1YZ">
+                    <rect key="frame" x="0.0" y="44" width="414" height="60"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hUM-Pn-jLB">
+                            <rect key="frame" x="60" y="0.0" width="338" height="60"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FSo-cp-icT">
+                            <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="FSo-cp-icT" secondAttribute="height" id="iT0-Bq-2bU"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="backButtonTapped:" destination="-1" eventType="touchUpInside" id="a9z-U3-TTh"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" name="bHomeNavBackground"/>
+                    <constraints>
+                        <constraint firstItem="hUM-Pn-jLB" firstAttribute="top" secondItem="9U1-X8-1YZ" secondAttribute="top" id="6CS-fn-cUj"/>
+                        <constraint firstAttribute="bottom" secondItem="FSo-cp-icT" secondAttribute="bottom" id="6Sx-RH-u9B"/>
+                        <constraint firstItem="FSo-cp-icT" firstAttribute="leading" secondItem="9U1-X8-1YZ" secondAttribute="leading" id="BXF-ih-oGW"/>
+                        <constraint firstItem="hUM-Pn-jLB" firstAttribute="leading" secondItem="FSo-cp-icT" secondAttribute="trailing" id="EY4-OR-C3Z"/>
+                        <constraint firstAttribute="trailing" secondItem="hUM-Pn-jLB" secondAttribute="trailing" constant="16" id="FVH-hd-hcj"/>
+                        <constraint firstAttribute="bottom" secondItem="hUM-Pn-jLB" secondAttribute="bottom" id="G8t-Ti-sLb"/>
+                        <constraint firstAttribute="height" constant="60" id="sZu-nv-Vsc"/>
+                        <constraint firstItem="FSo-cp-icT" firstAttribute="top" secondItem="9U1-X8-1YZ" secondAttribute="top" id="tCi-8k-fxo"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XDx-AY-9ot">
+                    <rect key="frame" x="0.0" y="104" width="414" height="792"/>
+                    <color key="backgroundColor" name="bHomeBackground"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="bHomeNavBackground"/>
+            <constraints>
+                <constraint firstItem="9U1-X8-1YZ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="8CF-fs-CTC"/>
+                <constraint firstAttribute="trailing" secondItem="XDx-AY-9ot" secondAttribute="trailing" id="KNK-Jk-I8d"/>
+                <constraint firstItem="9U1-X8-1YZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="MxX-tm-tnE"/>
+                <constraint firstItem="XDx-AY-9ot" firstAttribute="top" secondItem="9U1-X8-1YZ" secondAttribute="bottom" id="ZJs-yE-sVh"/>
+                <constraint firstAttribute="bottom" secondItem="XDx-AY-9ot" secondAttribute="bottom" id="lVP-Sw-zg2"/>
+                <constraint firstAttribute="trailing" secondItem="9U1-X8-1YZ" secondAttribute="trailing" id="yV0-2e-xUJ"/>
+                <constraint firstItem="XDx-AY-9ot" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="zag-ss-MwW"/>
+            </constraints>
+            <point key="canvasLocation" x="-16" y="125"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="bHomeBackground">
+            <color red="0.94900000095367432" green="0.94900000095367432" blue="0.96899998188018799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="bHomeNavBackground">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

@@ -174,6 +174,19 @@ extension UITextField {
     
 }
 
+//MARK: - UITextView
+extension UITextView {
+    func isValid(_ b: Bool) {
+        if b {
+            layer.borderColor = UIColor.bBorderGray.cgColor
+        } else {
+            layer.borderColor = UIColor.bRed.cgColor
+            //vibrate
+            Vibration.error.vibrate()
+        }
+    }
+}
+
 
 //MARK: - UIButton
 extension UIButton {
@@ -354,6 +367,15 @@ extension UIViewController {
         case .activeLessons:
             let vc = ActiveLessonsVC(nibName: "ActiveLessonsVC", bundle: nil)
             present(vc, animated: true)
+        case .contacts:
+            let vc = ContactVC(nibName: "ContactVC", bundle: nil)
+            present(vc, animated: true)
+        case .aboutUs:
+            let vc = AboutUsVC(nibName: "AboutUsVC", bundle: nil)
+            present(vc, animated: true)
+        case .faq:
+            let vc = FAQVC(nibName: "FAQVC", bundle: nil)
+            present(vc, animated: true)
         }
         
     }
@@ -444,6 +466,15 @@ extension UIViewController {
             navController.pushViewController(vc, animated: true)
         case .activeLessons:
             let vc = ActiveLessonsVC(nibName: "ActiveLessonsVC", bundle: nil)
+            navController.pushViewController(vc, animated: true)
+        case .contacts:
+            let vc = ContactVC(nibName: "ContactVC", bundle: nil)
+            navController.pushViewController(vc, animated: true)
+        case .aboutUs:
+            let vc = AboutUsVC(nibName: "AboutUsVC", bundle: nil)
+            navController.pushViewController(vc, animated: true)
+        case .faq:
+            let vc = FAQVC(nibName: "FAQVC", bundle: nil)
             navController.pushViewController(vc, animated: true)
         }
         
@@ -693,5 +724,12 @@ extension ActiveLessonsTVC {
     static let identifier = "ActiveLessonsTVC"
     static func nib() -> UINib {
         UINib(nibName: "ActiveLessonsTVC", bundle: nil)
+    }
+}
+
+extension FAQTVC {
+    static let identifier = "FAQTVC"
+    static func nib() -> UINib {
+        UINib(nibName: "FAQTVC", bundle: nil)
     }
 }
