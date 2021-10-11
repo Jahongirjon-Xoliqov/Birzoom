@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="NewPodcastsCVC" customModule="Birzoom" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="182" height="297"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="182" height="297"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yeu-ro-FV7">
+                        <rect key="frame" x="0.0" y="0.0" width="182" height="297"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="npd-wz-CND">
+                                <rect key="frame" x="0.0" y="0.0" width="182" height="297"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="girl" translatesAutoresizingMaskIntoConstraints="NO" id="wVS-T1-xRt">
+                                        <rect key="frame" x="0.0" y="0.0" width="182" height="182"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="wVS-T1-xRt" secondAttribute="height" id="npp-58-VIQ"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="top" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UmC-Ir-AwO">
+                                        <rect key="frame" x="0.0" y="182" width="182" height="94.5"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VoG-4z-kRr">
+                                        <rect key="frame" x="0.0" y="276.5" width="182" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="npd-wz-CND" secondAttribute="trailing" id="Cgn-S3-0MI"/>
+                            <constraint firstItem="npd-wz-CND" firstAttribute="top" secondItem="Yeu-ro-FV7" secondAttribute="top" id="UrX-er-hri"/>
+                            <constraint firstItem="npd-wz-CND" firstAttribute="leading" secondItem="Yeu-ro-FV7" secondAttribute="leading" id="jqy-tR-klz"/>
+                            <constraint firstAttribute="bottom" secondItem="npd-wz-CND" secondAttribute="bottom" id="sN3-e5-qjq"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="Yeu-ro-FV7" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="4PS-7M-oW3"/>
+                <constraint firstAttribute="bottom" secondItem="Yeu-ro-FV7" secondAttribute="bottom" id="X45-TO-D33"/>
+                <constraint firstItem="Yeu-ro-FV7" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="eei-zd-aZn"/>
+                <constraint firstAttribute="trailing" secondItem="Yeu-ro-FV7" secondAttribute="trailing" id="qoI-bV-lza"/>
+            </constraints>
+            <size key="customSize" width="182" height="297"/>
+            <connections>
+                <outlet property="bannerImageView" destination="wVS-T1-xRt" id="hMa-ug-ht4"/>
+                <outlet property="dateLabel" destination="VoG-4z-kRr" id="kxu-4w-zJr"/>
+                <outlet property="podcastTitleLabel" destination="UmC-Ir-AwO" id="Nve-IM-jUA"/>
+            </connections>
+            <point key="canvasLocation" x="76.811594202898561" y="199.21875"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="girl" width="800" height="500"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

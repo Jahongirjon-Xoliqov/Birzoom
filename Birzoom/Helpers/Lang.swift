@@ -207,6 +207,14 @@ class Lang {
         case b_activeSessions_endOtherSessions
         case l_activeSessions_endSessonDescription
         case l_activeSessions_taptoend
+        
+        //podcasts
+        case l_podcasts
+        case l_podcasts_fm
+        case l_podcasts_news
+        case l_podcasts_forEveryone
+        case l_podcasts_motivational
+        
     }
     
     static func get(valueFor component: Component) -> String {
@@ -419,6 +427,12 @@ class Lang {
             case .l_activeSessions_endSessonDescription: return "*Bu qurilmadan tashqari barcha qurilmalardan chiqib ketiladi"
             case .l_activeSessions_taptoend: return "Seansni tugatish uchun qurilma ustiga bosing"
                 
+            //podcasts
+            case .l_podcasts: return "Podcastlar"
+            case .l_podcasts_fm: return "Birzoom FM"
+            case .l_podcasts_news: return "Yangi podcastlar"
+            case .l_podcasts_forEveryone: return "Hamma uchun podcastlar"
+            case .l_podcasts_motivational: return "Motivatsiya"
                 
                 
             }

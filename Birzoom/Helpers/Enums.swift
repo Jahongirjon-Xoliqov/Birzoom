@@ -184,6 +184,7 @@ enum VControllers {
     case aboutUs
     case faq
     case activeSessions
+    case podcast
     
 }
 

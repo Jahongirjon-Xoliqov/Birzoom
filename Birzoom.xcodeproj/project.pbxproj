@@ -105,6 +105,10 @@
 		C396DD312714237F00B84810 /* DeviceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C396DD302714237F00B84810 /* DeviceData.swift */; };
 		C396DD362714399D00B84810 /* PodcastsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C396DD342714399D00B84810 /* PodcastsVC.swift */; };
 		C396DD372714399D00B84810 /* PodcastsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C396DD352714399D00B84810 /* PodcastsVC.xib */; };
+		C396DD3B2714425400B84810 /* TopPodcastsCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C396DD392714425400B84810 /* TopPodcastsCVC.swift */; };
+		C396DD3C2714425400B84810 /* TopPodcastsCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C396DD3A2714425400B84810 /* TopPodcastsCVC.xib */; };
+		C396DD402714572D00B84810 /* NewPodcastsCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C396DD3E2714572D00B84810 /* NewPodcastsCVC.swift */; };
+		C396DD412714572E00B84810 /* NewPodcastsCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C396DD3F2714572D00B84810 /* NewPodcastsCVC.xib */; };
 		C3A203AE26FDA7B100506DBC /* NewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A203AC26FDA7B100506DBC /* NewsVC.swift */; };
 		C3A203AF26FDA7B100506DBC /* NewsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3A203AD26FDA7B100506DBC /* NewsVC.xib */; };
 		C3A203B326FDAC8600506DBC /* NewsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A203B126FDAC8600506DBC /* NewsTVC.swift */; };
@@ -247,6 +251,10 @@
 		C396DD302714237F00B84810 /* DeviceData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceData.swift; sourceTree = "<group>"; };
 		C396DD342714399D00B84810 /* PodcastsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastsVC.swift; sourceTree = "<group>"; };
 		C396DD352714399D00B84810 /* PodcastsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PodcastsVC.xib; sourceTree = "<group>"; };
+		C396DD392714425400B84810 /* TopPodcastsCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopPodcastsCVC.swift; sourceTree = "<group>"; };
+		C396DD3A2714425400B84810 /* TopPodcastsCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopPodcastsCVC.xib; sourceTree = "<group>"; };
+		C396DD3E2714572D00B84810 /* NewPodcastsCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPodcastsCVC.swift; sourceTree = "<group>"; };
+		C396DD3F2714572D00B84810 /* NewPodcastsCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewPodcastsCVC.xib; sourceTree = "<group>"; };
 		C3A203AC26FDA7B100506DBC /* NewsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsVC.swift; sourceTree = "<group>"; };
 		C3A203AD26FDA7B100506DBC /* NewsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsVC.xib; sourceTree = "<group>"; };
 		C3A203B126FDAC8600506DBC /* NewsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTVC.swift; sourceTree = "<group>"; };
@@ -589,6 +597,10 @@
 			children = (
 				C396DD342714399D00B84810 /* PodcastsVC.swift */,
 				C396DD352714399D00B84810 /* PodcastsVC.xib */,
+				C396DD392714425400B84810 /* TopPodcastsCVC.swift */,
+				C396DD3A2714425400B84810 /* TopPodcastsCVC.xib */,
+				C396DD3E2714572D00B84810 /* NewPodcastsCVC.swift */,
+				C396DD3F2714572D00B84810 /* NewPodcastsCVC.xib */,
 			);
 			path = Podcast;
 			sourceTree = "<group>";
@@ -765,6 +777,7 @@
 				C343CCD727104970000074EE /* AboutUsVC.xib in Resources */,
 				C33AADA226EF59E8007CF7B9 /* Roboto-Thin.ttf in Resources */,
 				C32141782705901C00865FF1 /* ProfilVC.xib in Resources */,
+				C396DD3C2714425400B84810 /* TopPodcastsCVC.xib in Resources */,
 				C386CC1B27085C9800D68E71 /* SavedsCVC.xib in Resources */,
 				C360EA6A26F065D900289A5C /* SignupVC.xib in Resources */,
 				C3F5377A26F21B5E004BBF00 /* NewPasswordVC.xib in Resources */,
@@ -783,6 +796,7 @@
 				C33AADA026EF59E8007CF7B9 /* Roboto-Black.ttf in Resources */,
 				C3198FAB270C7FE7005090C9 /* LogoutVC.xib in Resources */,
 				C340C87D27031C0B001A14C2 /* NotificationsVC.xib in Resources */,
+				C396DD412714572E00B84810 /* NewPodcastsCVC.xib in Resources */,
 				C3B15A6E26F3069700B9D76E /* LanguageVC.xib in Resources */,
 				C33AAD8726EF367D007CF7B9 /* WelcomeVC.xib in Resources */,
 				C38609FD270DB8A8001AA9D2 /* PayHistoryVC.xib in Resources */,
@@ -856,6 +870,7 @@
 			files = (
 				C360EA6926F065D900289A5C /* SignupVC.swift in Sources */,
 				C386CC1A27085C9800D68E71 /* SavedsCVC.swift in Sources */,
+				C396DD402714572D00B84810 /* NewPodcastsCVC.swift in Sources */,
 				C3A203BD26FDDDFC00506DBC /* NewsMainDetailedTVC.swift in Sources */,
 				C343CCDB271051AF000074EE /* FAQVC.swift in Sources */,
 				C3B15A7426F34B3700B9D76E /* InterestsVC.swift in Sources */,
@@ -916,6 +931,7 @@
 				C340C88227031FE5001A14C2 /* NotificationTVC.swift in Sources */,
 				C3F5377926F21B5E004BBF00 /* NewPasswordVC.swift in Sources */,
 				C386CC1527085AAD00D68E71 /* SavedsTVC.swift in Sources */,
+				C396DD3B2714425400B84810 /* TopPodcastsCVC.swift in Sources */,
 				C396DCE92713FE4F00B84810 /* ActiveSessionsVC.swift in Sources */,
 				C396DD362714399D00B84810 /* PodcastsVC.swift in Sources */,
 				C3F5377426F21287004BBF00 /* PasswordOTPVarifyVC.swift in Sources */,

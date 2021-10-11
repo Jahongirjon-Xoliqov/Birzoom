@@ -379,6 +379,9 @@ extension UIViewController {
         case .activeSessions:
             let vc = ActiveSessionsVC(nibName: "ActiveSessionsVC", bundle: nil)
             present(vc, animated: true)
+        case .podcast:
+            let vc = PodcastsVC(nibName: "PodcastsVC", bundle: nil)
+            present(vc, animated: true)
         }
         
     }
@@ -482,6 +485,9 @@ extension UIViewController {
         case .activeSessions:
             let vc = ActiveSessionsVC(nibName: "ActiveSessionsVC", bundle: nil)
             navController.pushViewController(vc, animated: true)
+        case .podcast:
+            let vc = PodcastsVC(nibName: "PodcastsVC", bundle: nil)
+            navController.pushViewController(vc, animated: true)
         }
         
     }
@@ -580,6 +586,28 @@ extension UICollectionView {
     static let videosItemHeight: CGSize = CGSize(width: (300/375)*CGFloat.scSize.width, height: (238/375)*CGFloat.scSize.width)
     
     static let savedsItemSize: CGSize = CGSize(width: (144/375)*CGFloat.scSize.width, height: (144/375)*CGFloat.scSize.width)
+    
+    static var topPodcastsItemSize: CGSize {
+        if CGFloat.scSize.width > CGFloat.uiSize.width {
+            return CGSize(width: (328/128)*140, height: 140)
+        } else {
+            //375 128
+            let h = min(128*CGFloat.scSize.width/375, 140)
+            let w = 328*h/128
+            return CGSize(width: w, height: h)
+        }
+    }
+    
+    static var newPodcastsItemSize: CGSize {
+        if CGFloat.scSize.width > CGFloat.uiSize.width {
+            return CGSize(width: (112/172)*220, height: 220)
+        } else {
+            //375 128
+            let h = min(182*CGFloat.scSize.width/375, 220)
+            let w = 112*h/172
+            return CGSize(width: w, height: h)
+        }
+    }
     
 }
 
@@ -737,5 +765,19 @@ extension FAQTVC {
     static let identifier = "FAQTVC"
     static func nib() -> UINib {
         UINib(nibName: "FAQTVC", bundle: nil)
+    }
+}
+
+extension TopPodcastsCVC {
+    static let identifier = "TopPodcastsCVC"
+    static func nib() -> UINib {
+        UINib(nibName: "TopPodcastsCVC", bundle: nil)
+    }
+}
+
+extension NewPodcastsCVC {
+    static let identifier = "NewPodcastsCVC"
+    static func nib() -> UINib {
+        UINib(nibName: "NewPodcastsCVC", bundle: nil)
     }
 }
