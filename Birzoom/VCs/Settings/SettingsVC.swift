@@ -76,6 +76,11 @@ class SettingsVC: UIViewController {
             return
         }
         
+        if sender.tag == 4 {
+            navigate(to: .activeSessions)
+            return
+        }
+        
         if sender.tag == 7 {
             navigate(to: .aboutUs)
             return

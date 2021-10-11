@@ -376,6 +376,9 @@ extension UIViewController {
         case .faq:
             let vc = FAQVC(nibName: "FAQVC", bundle: nil)
             present(vc, animated: true)
+        case .activeSessions:
+            let vc = ActiveSessionsVC(nibName: "ActiveSessionsVC", bundle: nil)
+            present(vc, animated: true)
         }
         
     }
@@ -475,6 +478,9 @@ extension UIViewController {
             navController.pushViewController(vc, animated: true)
         case .faq:
             let vc = FAQVC(nibName: "FAQVC", bundle: nil)
+            navController.pushViewController(vc, animated: true)
+        case .activeSessions:
+            let vc = ActiveSessionsVC(nibName: "ActiveSessionsVC", bundle: nil)
             navController.pushViewController(vc, animated: true)
         }
         

@@ -201,6 +201,12 @@ class Lang {
         
         case l_faq
         
+        //active sessions
+        case l_activeSessions
+        case l_activeSessions_yourDevice
+        case b_activeSessions_endOtherSessions
+        case l_activeSessions_endSessonDescription
+        case l_activeSessions_taptoend
     }
     
     static func get(valueFor component: Component) -> String {
@@ -406,6 +412,15 @@ class Lang {
             case .l_aboutus: return "Biz haqimizda"
             case .l_faq: return "FAQ"
             
+            //active sessions
+            case .l_activeSessions: return "Faol qurilmalar"
+            case .l_activeSessions_yourDevice: return "Sizning qurilmangiz"
+            case .b_activeSessions_endOtherSessions: return "Barcha seanslarni yakunlash"
+            case .l_activeSessions_endSessonDescription: return "*Bu qurilmadan tashqari barcha qurilmalardan chiqib ketiladi"
+            case .l_activeSessions_taptoend: return "Seansni tugatish uchun qurilma ustiga bosing"
+                
+                
+                
             }
             
             

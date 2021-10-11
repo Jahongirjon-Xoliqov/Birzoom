@@ -183,6 +183,7 @@ enum VControllers {
     case contacts
     case aboutUs
     case faq
+    case activeSessions
     
 }
 
