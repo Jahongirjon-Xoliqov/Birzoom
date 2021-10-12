@@ -391,6 +391,9 @@ extension UIViewController {
         case .motivationalPodcast:
             let vc = MotivationalPodcastsVC(nibName: "MotivationalPodcastsVC", bundle: nil)
             present(vc, animated: true)
+        case .fmPodcast:
+            let vc = FMPodcastVC(nibName: "FMPodcastVC", bundle: nil)
+            present(vc, animated: true)
         }
         
     }
@@ -505,6 +508,10 @@ extension UIViewController {
             navController.pushViewController(vc, animated: true)
         case .motivationalPodcast:
             let vc = MotivationalPodcastsVC(nibName: "MotivationalPodcastsVC", bundle: nil)
+            navController.pushViewController(vc, animated: true)
+        case .fmPodcast:
+            let vc = FMPodcastVC(nibName: "FMPodcastVC", bundle: nil)
+            vc.hidesBottomBarWhenPushed = true
             navController.pushViewController(vc, animated: true)
         }
         
@@ -629,12 +636,12 @@ extension UICollectionView {
     
     static var podcastsDetailedItemSize: CGSize {
         if CGFloat.scSize.width > CGFloat.uiSize.width {
-            let w = CGFloat.uiSize.width/2 - 16
+            let w = CGFloat.uiSize.width/2 - 23
             let h = w*238/164
             return CGSize(width: w, height: h)
         } else {
             //164 238
-            let w = CGFloat.scSize.width/2 - 16
+            let w = CGFloat.scSize.width/2 - 23
             let h = w*238/164
             return CGSize(width: w, height: h)
         }
@@ -817,5 +824,12 @@ extension PodcastsDetailedCVC {
     static let identifier = "PodcastsDetailedCVC"
     static func nib() -> UINib {
         UINib(nibName: "PodcastsDetailedCVC", bundle: nil)
+    }
+}
+
+extension MeterCVC {
+    static let identifier = "MeterCVC"
+    static func nib() -> UINib {
+        UINib(nibName: "MeterCVC", bundle: nil)
     }
 }

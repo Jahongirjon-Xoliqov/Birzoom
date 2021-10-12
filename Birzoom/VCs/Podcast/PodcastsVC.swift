@@ -118,6 +118,7 @@ class PodcastsVC: UIViewController {
     }
     
     @IBAction func podcastFMButtonTapped(_ sender: UIButton) {
+        navigate(to: .fmPodcast)
     }
     
     @IBAction func newPodcastsButtonTapped(_ sender: UIButton) {

@@ -188,6 +188,7 @@ enum VControllers {
     case newPodcast
     case everyonePodcast
     case motivationalPodcast
+    case fmPodcast
     
 }
 
