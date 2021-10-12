@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MotivationalPodcastsVC" customModule="Birzoom" customModuleProvider="target">
+            <connections>
+                <outlet property="backButton" destination="pX3-Q9-kJ5" id="blc-VJ-S0L"/>
+                <outlet property="collectionView" destination="W8v-lP-Ddz" id="a05-iv-0cH"/>
+                <outlet property="podcastTitleLabel" destination="ZZj-K8-7Ma" id="HZy-1t-eOP"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="W8v-lP-Ddz">
+                    <rect key="frame" x="0.0" y="104" width="414" height="792"/>
+                    <color key="backgroundColor" name="bHomeBackground"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="16" minimumInteritemSpacing="10" id="Wl8-ye-0Vm">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uid-GG-ka8">
+                    <rect key="frame" x="0.0" y="44" width="414" height="60"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xfd-vl-FbY">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pX3-Q9-kJ5">
+                                    <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="pX3-Q9-kJ5" secondAttribute="height" id="7FP-rm-c6d"/>
+                                    </constraints>
+                                    <state key="normal" title="Button"/>
+                                    <connections>
+                                        <action selector="backButtonTapped:" destination="-1" eventType="touchUpInside" id="rUw-BD-W30"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZj-K8-7Ma">
+                                    <rect key="frame" x="60" y="0.0" width="354" height="60"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" name="bHomeNavBackground"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="5hV-ed-JG1"/>
+                        <constraint firstItem="Xfd-vl-FbY" firstAttribute="leading" secondItem="Uid-GG-ka8" secondAttribute="leading" id="Aye-Gj-aAx"/>
+                        <constraint firstAttribute="trailing" secondItem="Xfd-vl-FbY" secondAttribute="trailing" id="Htt-yh-vkl"/>
+                        <constraint firstItem="Xfd-vl-FbY" firstAttribute="top" secondItem="Uid-GG-ka8" secondAttribute="top" id="bf6-Dp-mks"/>
+                        <constraint firstAttribute="bottom" secondItem="Xfd-vl-FbY" secondAttribute="bottom" id="lnH-FN-uft"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="W8v-lP-Ddz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="3fq-hA-fhE"/>
+                <constraint firstAttribute="trailing" secondItem="W8v-lP-Ddz" secondAttribute="trailing" id="Dig-0S-WM7"/>
+                <constraint firstItem="Uid-GG-ka8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="KBB-Wv-W2o"/>
+                <constraint firstItem="W8v-lP-Ddz" firstAttribute="top" secondItem="Uid-GG-ka8" secondAttribute="bottom" id="pMG-HU-88U"/>
+                <constraint firstAttribute="trailing" secondItem="Uid-GG-ka8" secondAttribute="trailing" id="pUi-f8-lBn"/>
+                <constraint firstAttribute="bottom" secondItem="W8v-lP-Ddz" secondAttribute="bottom" id="qbB-Tv-l6A"/>
+                <constraint firstItem="Uid-GG-ka8" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="x6w-2G-h6x"/>
+            </constraints>
+            <point key="canvasLocation" x="-17.39130434782609" y="117.85714285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="bHomeBackground">
+            <color red="0.94900000095367432" green="0.94900000095367432" blue="0.96899998188018799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="bHomeNavBackground">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

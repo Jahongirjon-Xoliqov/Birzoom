@@ -192,8 +192,7 @@
                                                             <color key="tintColor" name="bBlack"/>
                                                             <state key="normal" image="rightchevron"/>
                                                             <connections>
-                                                                <action selector="everyonePodcastsButtonTapped:" destination="-1" eventType="touchUpInside" id="8dy-f1-TdA"/>
-                                                                <action selector="newPodcastsButtonTapped:" destination="-1" eventType="touchUpInside" id="0Ib-9W-Wlf"/>
+                                                                <action selector="everyonePodcastsButtonTapped:" destination="-1" eventType="touchUpInside" id="4EZ-VC-G7m"/>
                                                             </connections>
                                                         </button>
                                                     </subviews>
@@ -243,9 +242,7 @@
                                                             <color key="tintColor" name="bBlack"/>
                                                             <state key="normal" image="rightchevron"/>
                                                             <connections>
-                                                                <action selector="everyonePodcastsButtonTapped:" destination="-1" eventType="touchUpInside" id="14E-A2-D7a"/>
-                                                                <action selector="motivationalPodcastsButtonTapped:" destination="-1" eventType="touchUpInside" id="u14-ax-Dgq"/>
-                                                                <action selector="newPodcastsButtonTapped:" destination="-1" eventType="touchUpInside" id="i6f-EV-dSO"/>
+                                                                <action selector="motivationalPodcastsButtonTapped:" destination="-1" eventType="touchUpInside" id="vzt-y9-h4f"/>
                                                             </connections>
                                                         </button>
                                                     </subviews>

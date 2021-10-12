@@ -382,6 +382,15 @@ extension UIViewController {
         case .podcast:
             let vc = PodcastsVC(nibName: "PodcastsVC", bundle: nil)
             present(vc, animated: true)
+        case .newPodcast:
+            let vc = NewPodcastsVC(nibName: "NewPodcastsVC", bundle: nil)
+            present(vc, animated: true)
+        case .everyonePodcast:
+            let vc = EveryonePodcastsVC(nibName: "EveryonePodcastsVC", bundle: nil)
+            present(vc, animated: true)
+        case .motivationalPodcast:
+            let vc = MotivationalPodcastsVC(nibName: "MotivationalPodcastsVC", bundle: nil)
+            present(vc, animated: true)
         }
         
     }
@@ -487,6 +496,15 @@ extension UIViewController {
             navController.pushViewController(vc, animated: true)
         case .podcast:
             let vc = PodcastsVC(nibName: "PodcastsVC", bundle: nil)
+            navController.pushViewController(vc, animated: true)
+        case .newPodcast:
+            let vc = NewPodcastsVC(nibName: "NewPodcastsVC", bundle: nil)
+            navController.pushViewController(vc, animated: true)
+        case .everyonePodcast:
+            let vc = EveryonePodcastsVC(nibName: "EveryonePodcastsVC", bundle: nil)
+            navController.pushViewController(vc, animated: true)
+        case .motivationalPodcast:
+            let vc = MotivationalPodcastsVC(nibName: "MotivationalPodcastsVC", bundle: nil)
             navController.pushViewController(vc, animated: true)
         }
         
@@ -605,6 +623,19 @@ extension UICollectionView {
             //375 128
             let h = min(182*CGFloat.scSize.width/375, 220)
             let w = 112*h/172
+            return CGSize(width: w, height: h)
+        }
+    }
+    
+    static var podcastsDetailedItemSize: CGSize {
+        if CGFloat.scSize.width > CGFloat.uiSize.width {
+            let w = CGFloat.uiSize.width/2 - 16
+            let h = w*238/164
+            return CGSize(width: w, height: h)
+        } else {
+            //164 238
+            let w = CGFloat.scSize.width/2 - 16
+            let h = w*238/164
             return CGSize(width: w, height: h)
         }
     }
@@ -779,5 +810,12 @@ extension NewPodcastsCVC {
     static let identifier = "NewPodcastsCVC"
     static func nib() -> UINib {
         UINib(nibName: "NewPodcastsCVC", bundle: nil)
+    }
+}
+
+extension PodcastsDetailedCVC {
+    static let identifier = "PodcastsDetailedCVC"
+    static func nib() -> UINib {
+        UINib(nibName: "PodcastsDetailedCVC", bundle: nil)
     }
 }

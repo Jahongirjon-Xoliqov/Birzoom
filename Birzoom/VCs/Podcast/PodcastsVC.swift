@@ -121,12 +121,15 @@ class PodcastsVC: UIViewController {
     }
     
     @IBAction func newPodcastsButtonTapped(_ sender: UIButton) {
+        navigate(to: .newPodcast)
     }
     
     @IBAction func everyonePodcastsButtonTapped(_ sender: UIButton) {
+        navigate(to: .everyonePodcast)
     }
     
     @IBAction func motivationalPodcastsButtonTapped(_ sender: UIButton) {
+        navigate(to: .motivationalPodcast)
     }
     
 }
@@ -149,16 +152,18 @@ extension PodcastsVC: UICollectionViewDelegateFlowLayout {
 
 extension PodcastsVC: UICollectionViewDelegate {
     
+    
+    
 }
 
 extension PodcastsVC: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         switch collectionView {
-        case topPodcastsCollectionView: return 4
-        case newPodcastsCollectionView: return 4
-        case everyonePodcastsCollectionView: return 4
-        case motivationalPodcastsCollectionView: return 4
+        case topPodcastsCollectionView: return 20
+        case newPodcastsCollectionView: return 20
+        case everyonePodcastsCollectionView: return 20
+        case motivationalPodcastsCollectionView: return 20
         default: return 0
         }
     }

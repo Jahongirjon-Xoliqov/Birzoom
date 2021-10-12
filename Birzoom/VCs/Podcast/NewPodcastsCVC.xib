@@ -18,7 +18,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="182" height="297"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yeu-ro-FV7">
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yeu-ro-FV7">
                         <rect key="frame" x="0.0" y="0.0" width="182" height="297"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="npd-wz-CND">
@@ -55,6 +55,11 @@
                             <constraint firstItem="npd-wz-CND" firstAttribute="leading" secondItem="Yeu-ro-FV7" secondAttribute="leading" id="jqy-tR-klz"/>
                             <constraint firstAttribute="bottom" secondItem="npd-wz-CND" secondAttribute="bottom" id="sN3-e5-qjq"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <integer key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
                 </subviews>
             </view>
