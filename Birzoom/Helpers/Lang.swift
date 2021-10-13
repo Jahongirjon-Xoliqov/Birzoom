@@ -215,6 +215,13 @@ class Lang {
         case l_podcasts_forEveryone
         case l_podcasts_motivational
         
+        case l_podcasts_comments
+        case l_podcasts_share
+        case l_podcasts_save
+        
+        //test
+        case l_tests
+        case b_tests_begin
         
     }
     
@@ -434,6 +441,14 @@ class Lang {
             case .l_podcasts_news: return "Yangi podcastlar"
             case .l_podcasts_forEveryone: return "Hamma uchun podcastlar"
             case .l_podcasts_motivational: return "Motivatsiya"
+                
+            case .l_podcasts_comments: return "Izohlar"
+            case .l_podcasts_share: return "Ulashish"
+            case .l_podcasts_save: return "Saqlash"
+                
+                //tests
+            case .l_tests: return "Testlar"
+            case .b_tests_begin: return "Boshlash"
                 
                 
             }

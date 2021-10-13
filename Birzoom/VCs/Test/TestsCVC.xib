@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TestsCVC" customModule="Birzoom" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="195" height="199"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="195" height="199"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gQq-vL-oF8">
+                        <rect key="frame" x="0.0" y="0.0" width="195" height="199"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="li5-l5-eQ1">
+                                <rect key="frame" x="12" y="12" width="171" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brain" translatesAutoresizingMaskIntoConstraints="NO" id="zrd-pu-KvO">
+                                <rect key="frame" x="72" y="64.5" width="51" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="zrd-pu-KvO" secondAttribute="height" multiplier="34:33" id="JPr-xw-Hg1"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JOz-SR-LrZ">
+                                <rect key="frame" x="12" y="148" width="171" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="JOz-SR-LrZ" secondAttribute="height" multiplier="140:32" id="RYJ-xS-K66"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="beginButtonTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="5gt-Fa-okC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.29939383269999997" green="0.58930069210000002" blue="0.96475392579999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="zrd-pu-KvO" firstAttribute="height" secondItem="gQq-vL-oF8" secondAttribute="height" multiplier="1:4" id="1da-lY-Xm3"/>
+                            <constraint firstAttribute="trailing" secondItem="JOz-SR-LrZ" secondAttribute="trailing" constant="12" id="G55-1S-L82"/>
+                            <constraint firstAttribute="trailing" secondItem="li5-l5-eQ1" secondAttribute="trailing" constant="12" id="NoS-HE-Wer"/>
+                            <constraint firstItem="li5-l5-eQ1" firstAttribute="top" secondItem="gQq-vL-oF8" secondAttribute="top" constant="12" id="P1T-H7-we5"/>
+                            <constraint firstItem="zrd-pu-KvO" firstAttribute="centerY" secondItem="gQq-vL-oF8" secondAttribute="centerY" constant="-10" id="Rgr-nO-OoS"/>
+                            <constraint firstAttribute="bottom" secondItem="JOz-SR-LrZ" secondAttribute="bottom" constant="12" id="SpS-AE-Jg6"/>
+                            <constraint firstItem="zrd-pu-KvO" firstAttribute="centerX" secondItem="gQq-vL-oF8" secondAttribute="centerX" id="VK0-h3-pbA"/>
+                            <constraint firstItem="li5-l5-eQ1" firstAttribute="leading" secondItem="gQq-vL-oF8" secondAttribute="leading" constant="12" id="gJN-DW-N4E"/>
+                            <constraint firstItem="JOz-SR-LrZ" firstAttribute="leading" secondItem="gQq-vL-oF8" secondAttribute="leading" constant="12" id="zET-S0-CMe"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="gQq-vL-oF8" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="F8a-mr-Dyq"/>
+                <constraint firstAttribute="bottom" secondItem="gQq-vL-oF8" secondAttribute="bottom" id="K72-JA-UeE"/>
+                <constraint firstItem="gQq-vL-oF8" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Qyy-im-Das"/>
+                <constraint firstAttribute="trailing" secondItem="gQq-vL-oF8" secondAttribute="trailing" id="o1l-oS-m29"/>
+            </constraints>
+            <size key="customSize" width="195" height="199"/>
+            <connections>
+                <outlet property="backView" destination="gQq-vL-oF8" id="sTu-98-fxm"/>
+                <outlet property="beginButton" destination="JOz-SR-LrZ" id="AJl-nC-qGR"/>
+                <outlet property="iconImageView" destination="zrd-pu-KvO" id="dIu-5g-cJS"/>
+                <outlet property="titleLabel" destination="li5-l5-eQ1" id="Gkb-Nq-hZR"/>
+            </connections>
+            <point key="canvasLocation" x="92.028985507246389" y="180.46875"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="brain" width="40" height="40"/>
+    </resources>
+</document>

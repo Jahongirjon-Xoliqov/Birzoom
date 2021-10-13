@@ -79,7 +79,10 @@ class InterestsVC: UIViewController {
     
     @IBAction func continueButtonTapped(_ sender: UIButton) {
         //move to next
-        navigate(to: .interest)
+        //navigate(to: .interest)
+        let vc = MainTabbarController()
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true)
     }
     
 }

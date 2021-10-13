@@ -77,6 +77,20 @@
 		C34CB57626FB47AC00FF15C2 /* bigbuck.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C34CB57526FB47AC00FF15C2 /* bigbuck.mp4 */; };
 		C35905C126FEFCC400790F6B /* CuponVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35905BF26FEFCC400790F6B /* CuponVC.swift */; };
 		C35905C226FEFCC400790F6B /* CuponVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C35905C026FEFCC400790F6B /* CuponVC.xib */; };
+		C35EE5DE2716ABCA0009E346 /* EveryonePDetailedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35EE5DC2716ABCA0009E346 /* EveryonePDetailedVC.swift */; };
+		C35EE5DF2716ABCA0009E346 /* EveryonePDetailedVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C35EE5DD2716ABCA0009E346 /* EveryonePDetailedVC.xib */; };
+		C35EE5E42716AF190009E346 /* EveryonePDetailedDescTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35EE5E22716AF190009E346 /* EveryonePDetailedDescTVC.swift */; };
+		C35EE5E52716AF190009E346 /* EveryonePDetailedDescTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C35EE5E32716AF190009E346 /* EveryonePDetailedDescTVC.xib */; };
+		C35EE5E92716C2A00009E346 /* PodcastPlayTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35EE5E72716C2A00009E346 /* PodcastPlayTVC.swift */; };
+		C35EE5EA2716C2A10009E346 /* PodcastPlayTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C35EE5E82716C2A00009E346 /* PodcastPlayTVC.xib */; };
+		C35EE5F02716EB950009E346 /* TestsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35EE5EE2716EB940009E346 /* TestsVC.swift */; };
+		C35EE5F12716EB950009E346 /* TestsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C35EE5EF2716EB950009E346 /* TestsVC.xib */; };
+		C35EE5F52716EE310009E346 /* TestsCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35EE5F32716EE310009E346 /* TestsCVC.swift */; };
+		C35EE5F62716EE310009E346 /* TestsCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C35EE5F42716EE310009E346 /* TestsCVC.xib */; };
+		C35EE5FA271702370009E346 /* TestLessonsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35EE5F8271702360009E346 /* TestLessonsVC.swift */; };
+		C35EE5FB271702370009E346 /* TestLessonsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C35EE5F9271702360009E346 /* TestLessonsVC.xib */; };
+		C35EE5FF271705D50009E346 /* TestLessonTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35EE5FD271705D50009E346 /* TestLessonTVC.swift */; };
+		C35EE600271705D50009E346 /* TestLessonTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C35EE5FE271705D50009E346 /* TestLessonTVC.xib */; };
 		C360EA6926F065D900289A5C /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C360EA6726F065D900289A5C /* SignupVC.swift */; };
 		C360EA6A26F065D900289A5C /* SignupVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C360EA6826F065D900289A5C /* SignupVC.xib */; };
 		C360EA7B26F0C89300289A5C /* OTPVarifyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C360EA7926F0C89300289A5C /* OTPVarifyVC.swift */; };
@@ -236,6 +250,20 @@
 		C34CB57526FB47AC00FF15C2 /* bigbuck.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = bigbuck.mp4; sourceTree = "<group>"; };
 		C35905BF26FEFCC400790F6B /* CuponVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuponVC.swift; sourceTree = "<group>"; };
 		C35905C026FEFCC400790F6B /* CuponVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CuponVC.xib; sourceTree = "<group>"; };
+		C35EE5DC2716ABCA0009E346 /* EveryonePDetailedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EveryonePDetailedVC.swift; sourceTree = "<group>"; };
+		C35EE5DD2716ABCA0009E346 /* EveryonePDetailedVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EveryonePDetailedVC.xib; sourceTree = "<group>"; };
+		C35EE5E22716AF190009E346 /* EveryonePDetailedDescTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EveryonePDetailedDescTVC.swift; sourceTree = "<group>"; };
+		C35EE5E32716AF190009E346 /* EveryonePDetailedDescTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EveryonePDetailedDescTVC.xib; sourceTree = "<group>"; };
+		C35EE5E72716C2A00009E346 /* PodcastPlayTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastPlayTVC.swift; sourceTree = "<group>"; };
+		C35EE5E82716C2A00009E346 /* PodcastPlayTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PodcastPlayTVC.xib; sourceTree = "<group>"; };
+		C35EE5EE2716EB940009E346 /* TestsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestsVC.swift; sourceTree = "<group>"; };
+		C35EE5EF2716EB950009E346 /* TestsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestsVC.xib; sourceTree = "<group>"; };
+		C35EE5F32716EE310009E346 /* TestsCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestsCVC.swift; sourceTree = "<group>"; };
+		C35EE5F42716EE310009E346 /* TestsCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestsCVC.xib; sourceTree = "<group>"; };
+		C35EE5F8271702360009E346 /* TestLessonsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestLessonsVC.swift; sourceTree = "<group>"; };
+		C35EE5F9271702360009E346 /* TestLessonsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestLessonsVC.xib; sourceTree = "<group>"; };
+		C35EE5FD271705D50009E346 /* TestLessonTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestLessonTVC.swift; sourceTree = "<group>"; };
+		C35EE5FE271705D50009E346 /* TestLessonTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestLessonTVC.xib; sourceTree = "<group>"; };
 		C360EA6726F065D900289A5C /* SignupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
 		C360EA6826F065D900289A5C /* SignupVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignupVC.xib; sourceTree = "<group>"; };
 		C360EA7926F0C89300289A5C /* OTPVarifyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPVarifyVC.swift; sourceTree = "<group>"; };
@@ -590,6 +618,34 @@
 			path = Courses;
 			sourceTree = "<group>";
 		};
+		C35EE5D52716A4FE0009E346 /* PodcastDetailed */ = {
+			isa = PBXGroup;
+			children = (
+				C35EE5DC2716ABCA0009E346 /* EveryonePDetailedVC.swift */,
+				C35EE5DD2716ABCA0009E346 /* EveryonePDetailedVC.xib */,
+				C35EE5E22716AF190009E346 /* EveryonePDetailedDescTVC.swift */,
+				C35EE5E32716AF190009E346 /* EveryonePDetailedDescTVC.xib */,
+				C35EE5E72716C2A00009E346 /* PodcastPlayTVC.swift */,
+				C35EE5E82716C2A00009E346 /* PodcastPlayTVC.xib */,
+			);
+			path = PodcastDetailed;
+			sourceTree = "<group>";
+		};
+		C35EE5EC2716E6620009E346 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				C35EE5EE2716EB940009E346 /* TestsVC.swift */,
+				C35EE5EF2716EB950009E346 /* TestsVC.xib */,
+				C35EE5F32716EE310009E346 /* TestsCVC.swift */,
+				C35EE5F42716EE310009E346 /* TestsCVC.xib */,
+				C35EE5F8271702360009E346 /* TestLessonsVC.swift */,
+				C35EE5F9271702360009E346 /* TestLessonsVC.xib */,
+				C35EE5FD271705D50009E346 /* TestLessonTVC.swift */,
+				C35EE5FE271705D50009E346 /* TestLessonTVC.xib */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
 		C36513E427156AAE0054C760 /* FM */ = {
 			isa = PBXGroup;
 			children = (
@@ -673,6 +729,8 @@
 		C3B15A6926F3063800B9D76E /* VCs */ = {
 			isa = PBXGroup;
 			children = (
+				C35EE5EC2716E6620009E346 /* Test */,
+				C35EE5D52716A4FE0009E346 /* PodcastDetailed */,
 				C36513E427156AAE0054C760 /* FM */,
 				C396DD43271469DC00B84810 /* Main */,
 				C396DD332714397500B84810 /* Podcast */,
@@ -837,9 +895,11 @@
 				C32141782705901C00865FF1 /* ProfilVC.xib in Resources */,
 				C396DD3C2714425400B84810 /* TopPodcastsCVC.xib in Resources */,
 				C36513D827155C400054C760 /* PodcastsDetailedCVC.xib in Resources */,
+				C35EE5EA2716C2A10009E346 /* PodcastPlayTVC.xib in Resources */,
 				C386CC1B27085C9800D68E71 /* SavedsCVC.xib in Resources */,
 				C360EA6A26F065D900289A5C /* SignupVC.xib in Resources */,
 				C36513EE2715A0A90054C760 /* MeterCVC.xib in Resources */,
+				C35EE5F12716EB950009E346 /* TestsVC.xib in Resources */,
 				C3F5377A26F21B5E004BBF00 /* NewPasswordVC.xib in Resources */,
 				C38609F1270D7D95001AA9D2 /* ModifyNotificationsVC.xib in Resources */,
 				C343CCE227105267000074EE /* FAQTVC.xib in Resources */,
@@ -855,15 +915,20 @@
 				C33AADA326EF59E8007CF7B9 /* Roboto-BlackItalic.ttf in Resources */,
 				C33AADA026EF59E8007CF7B9 /* Roboto-Black.ttf in Resources */,
 				C3198FAB270C7FE7005090C9 /* LogoutVC.xib in Resources */,
+				C35EE5FB271702370009E346 /* TestLessonsVC.xib in Resources */,
 				C340C87D27031C0B001A14C2 /* NotificationsVC.xib in Resources */,
 				C396DD412714572E00B84810 /* NewPodcastsCVC.xib in Resources */,
+				C35EE5E52716AF190009E346 /* EveryonePDetailedDescTVC.xib in Resources */,
 				C3B15A6E26F3069700B9D76E /* LanguageVC.xib in Resources */,
+				C35EE600271705D50009E346 /* TestLessonTVC.xib in Resources */,
 				C33AAD8726EF367D007CF7B9 /* WelcomeVC.xib in Resources */,
 				C38609FD270DB8A8001AA9D2 /* PayHistoryVC.xib in Resources */,
 				C330958D2706E14A0054DA83 /* ProgressTVC.xib in Resources */,
 				C38609F8270DA447001AA9D2 /* ModifyLanguageVC.xib in Resources */,
+				C35EE5DF2716ABCA0009E346 /* EveryonePDetailedVC.xib in Resources */,
 				C3B7775826F5B5760020DE16 /* HomeVC.xib in Resources */,
 				C3860A03270DB9C9001AA9D2 /* PayHistoryTVC.xib in Resources */,
+				C35EE5F62716EE310009E346 /* TestsCVC.xib in Resources */,
 				C30607C626F8CCA600D2A88A /* LessonTVC.xib in Resources */,
 				C3A203C326FDDE1C00506DBC /* NewsAdditionalTVC.xib in Resources */,
 				C321418C2705CBEF00865FF1 /* BalanceTVC.xib in Resources */,
@@ -937,11 +1002,14 @@
 				C343CCDB271051AF000074EE /* FAQVC.swift in Sources */,
 				C36513E727156AE90054C760 /* FMPodcastVC.swift in Sources */,
 				C3B15A7426F34B3700B9D76E /* InterestsVC.swift in Sources */,
+				C35EE5F52716EE310009E346 /* TestsCVC.swift in Sources */,
 				C3B7775326F5B4660020DE16 /* MainTabBarController.swift in Sources */,
 				C30607C526F8CCA600D2A88A /* LessonTVC.swift in Sources */,
 				C33AADB126EF699A007CF7B9 /* Lang.swift in Sources */,
 				C3A203B826FDDDA900506DBC /* NewsDetailedVC.swift in Sources */,
+				C35EE5DE2716ABCA0009E346 /* EveryonePDetailedVC.swift in Sources */,
 				C343CCD627104970000074EE /* AboutUsVC.swift in Sources */,
+				C35EE5E92716C2A00009E346 /* PodcastPlayTVC.swift in Sources */,
 				C396DD312714237F00B84810 /* DeviceData.swift in Sources */,
 				C3B15A7C26F34C1300B9D76E /* InterestsCVC.swift in Sources */,
 				C35905C126FEFCC400790F6B /* CuponVC.swift in Sources */,
@@ -956,6 +1024,7 @@
 				C36513ED2715A0A90054C760 /* MeterCVC.swift in Sources */,
 				C321418B2705CBEF00865FF1 /* BalanceTVC.swift in Sources */,
 				C3214181270595B200865FF1 /* ProfilImageView.swift in Sources */,
+				C35EE5F02716EB950009E346 /* TestsVC.swift in Sources */,
 				C3A203B326FDAC8600506DBC /* NewsTVC.swift in Sources */,
 				C343CCC7270EBF17000074EE /* ActiveLessonsVC.swift in Sources */,
 				C34CB56526FAFB3C00FF15C2 /* NewsCVC.swift in Sources */,
@@ -986,6 +1055,7 @@
 				C3B7775726F5B5760020DE16 /* HomeVC.swift in Sources */,
 				C3B15A6D26F3069700B9D76E /* LanguageVC.swift in Sources */,
 				C33AADBF26EF6E1E007CF7B9 /* Keys.swift in Sources */,
+				C35EE5FF271705D50009E346 /* TestLessonTVC.swift in Sources */,
 				C38609FC270DB8A8001AA9D2 /* PayHistoryVC.swift in Sources */,
 				C343CCE127105267000074EE /* FAQTVC.swift in Sources */,
 				C33AADB426EF6BB3007CF7B9 /* Cache.swift in Sources */,
@@ -994,12 +1064,14 @@
 				C3860A02270DB9C9001AA9D2 /* PayHistoryTVC.swift in Sources */,
 				C33095802706CD610054DA83 /* ResultsTVC.swift in Sources */,
 				C330958C2706E14A0054DA83 /* ProgressTVC.swift in Sources */,
+				C35EE5FA271702370009E346 /* TestLessonsVC.swift in Sources */,
 				C3F5376726F1BF25004BBF00 /* SigninVC.swift in Sources */,
 				C340C88227031FE5001A14C2 /* NotificationTVC.swift in Sources */,
 				C3F5377926F21B5E004BBF00 /* NewPasswordVC.swift in Sources */,
 				C386CC1527085AAD00D68E71 /* SavedsTVC.swift in Sources */,
 				C396DD3B2714425400B84810 /* TopPodcastsCVC.swift in Sources */,
 				C396DCE92713FE4F00B84810 /* ActiveSessionsVC.swift in Sources */,
+				C35EE5E42716AF190009E346 /* EveryonePDetailedDescTVC.swift in Sources */,
 				C396DD362714399D00B84810 /* PodcastsVC.swift in Sources */,
 				C3F5377426F21287004BBF00 /* PasswordOTPVarifyVC.swift in Sources */,
 				C36513D727155C400054C760 /* PodcastsDetailedCVC.swift in Sources */,

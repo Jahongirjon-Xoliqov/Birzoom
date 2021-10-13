@@ -102,7 +102,10 @@ class SigninVC: UIViewController {
         
         if isUserInfoValid() {
             ///open up next page
-            navigate(to: .home)
+            ///navigate(to: .home)
+            let vc = MainTabbarController()
+            vc.modalPresentationStyle = .fullScreen
+            present(vc, animated: true)
         } else {
             ///show alert
         }

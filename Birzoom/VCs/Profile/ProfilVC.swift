@@ -103,6 +103,7 @@ extension ProfilVC: UITableViewDataSource {
                 temp.selectionStyle = .none
                 return temp
             }
+            cell.delegate = self
             return cell
         }
         
@@ -182,6 +183,15 @@ extension ProfilVC: ProfileModificationDelegate {
     
 }
 
+///saveds
+extension ProfilVC: LessonSavedsDelegate {
+    
+    func didSelectToOpenTestsPage() {
+        navigate(to: .testLessons)
+    }
+    
+}
+
 ///activity
 extension ProfilVC: ActivitiesDelegate {
     
@@ -200,3 +210,5 @@ extension ProfilVC: LogoutDelegate {
     }
     
 }
+
+

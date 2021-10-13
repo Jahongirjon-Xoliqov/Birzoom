@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="99" id="KGk-i7-Jjw" customClass="TestLessonTVC" customModule="Birzoom" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iUD-95-sTi">
+                        <rect key="frame" x="16" y="0.0" width="288" height="99"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="9vr-1C-kwi">
+                                <rect key="frame" x="16" y="16" width="256" height="67"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="girl" translatesAutoresizingMaskIntoConstraints="NO" id="8xP-p2-vkI" customClass="ProfilImageView" customModule="Birzoom" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="67" height="67"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="8xP-p2-vkI" secondAttribute="height" id="rdo-Ev-Ww3"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="hXF-05-Yd2">
+                                        <rect key="frame" x="77" y="0.0" width="179" height="67"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="akl-0t-ozZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="179" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WIr-bu-dny">
+                                                <rect key="frame" x="0.0" y="25.5" width="179" height="41.5"/>
+                                                <state key="normal" title="Button"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8MB-OP-AK0">
+                                <rect key="frame" x="16" y="98" width="256" height="1"/>
+                                <color key="backgroundColor" name="bHomeSeparator"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="gVX-ng-IXP"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" name="bHomeNavBackground"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="9vr-1C-kwi" secondAttribute="bottom" constant="16" id="02X-vR-Qmv"/>
+                            <constraint firstAttribute="bottom" secondItem="8MB-OP-AK0" secondAttribute="bottom" id="2NH-af-9Xc"/>
+                            <constraint firstAttribute="trailing" secondItem="8MB-OP-AK0" secondAttribute="trailing" constant="16" id="33v-bY-7xJ"/>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="400" id="LHA-3o-jkR"/>
+                            <constraint firstAttribute="width" secondItem="iUD-95-sTi" secondAttribute="height" multiplier="344:94" priority="999" id="Spi-3P-Bkb"/>
+                            <constraint firstItem="9vr-1C-kwi" firstAttribute="top" secondItem="iUD-95-sTi" secondAttribute="top" constant="16" id="dOV-Ph-cnu"/>
+                            <constraint firstItem="8MB-OP-AK0" firstAttribute="leading" secondItem="iUD-95-sTi" secondAttribute="leading" constant="16" id="eu4-J1-T2E"/>
+                            <constraint firstItem="9vr-1C-kwi" firstAttribute="leading" secondItem="iUD-95-sTi" secondAttribute="leading" constant="16" id="tSP-as-xsJ"/>
+                            <constraint firstAttribute="trailing" secondItem="9vr-1C-kwi" secondAttribute="trailing" constant="16" id="yyt-Cb-e04"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <integer key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="iUD-95-sTi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="6Lu-0j-EEr"/>
+                    <constraint firstAttribute="bottom" secondItem="iUD-95-sTi" secondAttribute="bottom" id="SW9-ZL-Oz5"/>
+                    <constraint firstAttribute="trailing" secondItem="iUD-95-sTi" secondAttribute="trailing" constant="16" id="WRS-wv-gxw"/>
+                    <constraint firstItem="iUD-95-sTi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="cif-PI-jYo"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="backView" destination="iUD-95-sTi" id="v8X-0c-t2Q"/>
+                <outlet property="lessonImageView" destination="8xP-p2-vkI" id="z4u-Sf-QOn"/>
+                <outlet property="numberLabel" destination="akl-0t-ozZ" id="oAv-cM-Qrz"/>
+                <outlet property="separatorView" destination="8MB-OP-AK0" id="6cE-ZL-gNT"/>
+                <outlet property="themeButton" destination="WIr-bu-dny" id="bnq-sz-ZOc"/>
+            </connections>
+            <point key="canvasLocation" x="11.594202898550726" y="148.32589285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="girl" width="800" height="500"/>
+        <namedColor name="bHomeNavBackground">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="bHomeSeparator">
+            <color red="0.87800002098083496" green="0.87800002098083496" blue="0.87800002098083496" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

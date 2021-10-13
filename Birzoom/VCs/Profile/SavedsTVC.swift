@@ -7,6 +7,11 @@
 
 import UIKit
 
+protocol LessonSavedsDelegate {
+    func didSelectToOpenTestsPage()
+}
+
+
 class SavedsTVC: UITableViewCell {
     
     @IBOutlet weak var savedTitleLabel: UILabel! {
@@ -26,7 +31,7 @@ class SavedsTVC: UITableViewCell {
         }
     }
     
-    
+    var delegate: LessonSavedsDelegate!
     
     
     override func awakeFromNib() {
@@ -47,7 +52,13 @@ extension SavedsTVC: UICollectionViewDelegate, UICollectionViewDelegateFlowLayou
         UICollectionView.savedsItemSize
     }
     
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        if indexPath.row == 1 {
+            delegate.didSelectToOpenTestsPage()
+        }
+        
+    }
     
 }
 

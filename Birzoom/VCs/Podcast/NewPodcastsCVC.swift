@@ -7,6 +7,8 @@
 
 import UIKit
 
+
+
 class NewPodcastsCVC: UICollectionViewCell {
 
     @IBOutlet weak var bannerImageView: UIImageView!

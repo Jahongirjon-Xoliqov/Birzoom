@@ -55,7 +55,9 @@ class FMPodcastVC: UIViewController {
             let itemIndex = IndexPath(item: self.meters.count-1, section: 0)
             self.waveCollectionView.insertItems(at: [itemIndex])
             self.waveCollectionView.scrollToItem(at: itemIndex, at: .left, animated: true)
+            
         }
+    
         
         
     }

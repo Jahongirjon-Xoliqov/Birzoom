@@ -152,9 +152,9 @@ extension PodcastsVC: UICollectionViewDelegateFlowLayout {
 }
 
 extension PodcastsVC: UICollectionViewDelegate {
-    
-    
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        navigate(to: .everyonePDetailed)
+    }
 }
 
 extension PodcastsVC: UICollectionViewDataSource {

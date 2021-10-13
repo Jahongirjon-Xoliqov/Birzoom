@@ -394,6 +394,16 @@ extension UIViewController {
         case .fmPodcast:
             let vc = FMPodcastVC(nibName: "FMPodcastVC", bundle: nil)
             present(vc, animated: true)
+        case .everyonePDetailed:
+            let vc = EveryonePDetailedVC(nibName: "EveryonePDetailedVC", bundle: nil)
+            present(vc, animated: true)
+        case .tests:
+            let vc = TestsVC(nibName: "TestsVC", bundle: nil)
+            present(vc, animated: true)
+        case .testLessons:
+            let vc = TestLessonsVC(nibName: "TestLessonsVC", bundle: nil)
+            present(vc, animated: true)
+        
         }
         
     }
@@ -513,6 +523,19 @@ extension UIViewController {
             let vc = FMPodcastVC(nibName: "FMPodcastVC", bundle: nil)
             vc.hidesBottomBarWhenPushed = true
             navController.pushViewController(vc, animated: true)
+        case .everyonePDetailed:
+            let vc = EveryonePDetailedVC(nibName: "EveryonePDetailedVC", bundle: nil)
+            vc.hidesBottomBarWhenPushed = true
+            navController.pushViewController(vc, animated: true)
+        case .tests:
+            let vc = TestsVC(nibName: "TestsVC", bundle: nil)
+            vc.hidesBottomBarWhenPushed = true
+            navController.pushViewController(vc, animated: true)
+        case .testLessons:
+            let vc = TestLessonsVC(nibName: "TestLessonsVC", bundle: nil)
+            vc.hidesBottomBarWhenPushed = true
+            navController.pushViewController(vc, animated: true)
+        
         }
         
     }
@@ -646,6 +669,17 @@ extension UICollectionView {
             return CGSize(width: w, height: h)
         }
     }
+    
+    static var testsItemSize: CGSize {
+        if CGFloat.scSize.width > CGFloat.uiSize.width {
+            let w = CGFloat.uiSize.width/2 - 23
+            return CGSize(width: w, height: w)
+        } else {
+            let w = CGFloat.scSize.width/2 - 23
+            return CGSize(width: w, height: w)
+        }
+    }
+    
     
 }
 
@@ -831,5 +865,33 @@ extension MeterCVC {
     static let identifier = "MeterCVC"
     static func nib() -> UINib {
         UINib(nibName: "MeterCVC", bundle: nil)
+    }
+}
+
+extension EveryonePDetailedDescTVC {
+    static let identifier = "EveryonePDetailedDescTVC"
+    static func nib() -> UINib {
+        UINib(nibName: "EveryonePDetailedDescTVC", bundle: nil)
+    }
+}
+
+extension PodcastPlayTVC {
+    static let identifier = "PodcastPlayTVC"
+    static func nib() -> UINib {
+        UINib(nibName: "PodcastPlayTVC", bundle: nil)
+    }
+}
+
+extension TestsCVC {
+    static let identifier = "TestsCVC"
+    static func nib() -> UINib {
+        UINib(nibName: "TestsCVC", bundle: nil)
+    }
+}
+
+extension TestLessonTVC {
+    static let identifier = "TestLessonTVC"
+    static func nib() -> UINib {
+        UINib(nibName: "TestLessonTVC", bundle: nil)
     }
 }

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="85" id="KGk-i7-Jjw" customClass="PodcastPlayTVC" customModule="Birzoom" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="394" height="85"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="394" height="85"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hkm-gb-ikq">
+                        <rect key="frame" x="0.0" y="0.0" width="394" height="85"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="0Ib-f2-bKB">
+                                <rect key="frame" x="16" y="12" width="362" height="61"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="girl" translatesAutoresizingMaskIntoConstraints="NO" id="hk6-Xt-ljA">
+                                        <rect key="frame" x="0.0" y="0.0" width="61" height="61"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="hk6-Xt-ljA" secondAttribute="height" id="O52-L2-9KJ"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hFM-gi-ugp">
+                                        <rect key="frame" x="77" y="4.5" width="242.5" height="52.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aPo-fg-Up4">
+                                                <rect key="frame" x="0.0" y="0.0" width="242.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="c6F-gR-9F0">
+                                                <rect key="frame" x="0.0" y="30.5" width="242.5" height="22"/>
+                                                <subviews>
+                                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="252" horizontalCompressionResistancePriority="752" verticalCompressionResistancePriority="752" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dxH-gn-vbH">
+                                                        <rect key="frame" x="0.0" y="0.0" width="75" height="22"/>
+                                                        <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                        <state key="normal" title="1-qism" image="mic">
+                                                            <color key="titleColor" name="bBlack"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lz8-qr-bBV">
+                                                        <rect key="frame" x="83" y="0.0" width="159.5" height="22"/>
+                                                        <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                        <state key="normal" title="1-qism" image="clock">
+                                                            <color key="titleColor" name="bBlack"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3dp-1J-BLb">
+                                        <rect key="frame" x="335.5" y="0.0" width="26.5" height="61"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="3dp-1J-BLb" secondAttribute="height" multiplier="1:2.3" id="Kse-Fn-DrN"/>
+                                        </constraints>
+                                        <color key="tintColor" name="bBlack"/>
+                                        <state key="normal" image="play.fill"/>
+                                        <connections>
+                                            <action selector="playButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="jjw-rc-T0l"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="3dp-1J-BLb" firstAttribute="top" secondItem="0Ib-f2-bKB" secondAttribute="top" id="2F6-JV-fw7"/>
+                                    <constraint firstAttribute="trailing" secondItem="3dp-1J-BLb" secondAttribute="trailing" id="H5Z-pA-WbD"/>
+                                    <constraint firstAttribute="bottom" secondItem="3dp-1J-BLb" secondAttribute="bottom" id="m7V-8u-EOh"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="bHomeNavBackground"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="90" id="1BI-Ex-5gh"/>
+                            <constraint firstAttribute="width" secondItem="hkm-gb-ikq" secondAttribute="height" multiplier="337:85" priority="998" id="4PA-7l-jvJ"/>
+                            <constraint firstItem="0Ib-f2-bKB" firstAttribute="top" secondItem="hkm-gb-ikq" secondAttribute="top" constant="12" id="Fpz-8Z-UP8"/>
+                            <constraint firstAttribute="trailing" secondItem="0Ib-f2-bKB" secondAttribute="trailing" constant="16" id="b1C-Rc-ahv"/>
+                            <constraint firstItem="0Ib-f2-bKB" firstAttribute="leading" secondItem="hkm-gb-ikq" secondAttribute="leading" constant="16" id="cNw-ye-gq2"/>
+                            <constraint firstAttribute="bottom" secondItem="0Ib-f2-bKB" secondAttribute="bottom" constant="12" id="yRa-qg-ztA"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="hkm-gb-ikq" secondAttribute="trailing" priority="999" id="BjW-qw-JTt"/>
+                    <constraint firstItem="hkm-gb-ikq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="X40-bE-5Iv"/>
+                    <constraint firstAttribute="bottom" secondItem="hkm-gb-ikq" secondAttribute="bottom" id="j7K-25-h8U"/>
+                    <constraint firstItem="hkm-gb-ikq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" priority="999" id="q3D-on-Jq9"/>
+                    <constraint firstItem="hkm-gb-ikq" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="ujT-WE-rVi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="clockButton" destination="lz8-qr-bBV" id="lVR-BR-Vsj"/>
+                <outlet property="micButton" destination="dxH-gn-vbH" id="VJA-bN-yuX"/>
+                <outlet property="playPauseButton" destination="3dp-1J-BLb" id="9hG-m4-c6G"/>
+                <outlet property="podcastImageView" destination="hk6-Xt-ljA" id="o0N-Y5-66i"/>
+                <outlet property="podcastNameLabel" destination="aPo-fg-Up4" id="Ndk-DN-3ji"/>
+            </connections>
+            <point key="canvasLocation" x="36.231884057971016" y="143.63839285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="clock" width="20" height="20"/>
+        <image name="girl" width="800" height="500"/>
+        <image name="mic" width="20" height="20"/>
+        <image name="play.fill" width="48" height="48"/>
+        <namedColor name="bBlack">
+            <color red="0.070588235294117646" green="0.070588235294117646" blue="0.070588235294117646" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="bHomeNavBackground">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>
