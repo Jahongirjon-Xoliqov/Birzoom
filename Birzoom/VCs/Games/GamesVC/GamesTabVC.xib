@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GamesTabVC" customModule="Birzoom" customModuleProvider="target">
+            <connections>
+                <outlet property="navigationTitleLabel" destination="jeC-bR-plE" id="FTv-8k-S6W"/>
+                <outlet property="tableView" destination="USe-Wa-CKD" id="xRE-ff-eF6"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GvN-w1-UEa">
+                    <rect key="frame" x="0.0" y="44" width="414" height="60"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O'yin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jeC-bR-plE">
+                            <rect key="frame" x="16" y="20.5" width="35" height="19"/>
+                            <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="16"/>
+                            <color key="textColor" name="bBlack"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zGr-8X-Hb8">
+                            <rect key="frame" x="370" y="16" width="28" height="28"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="28" id="QW9-V5-FeM"/>
+                                <constraint firstAttribute="width" constant="28" id="unW-zZ-Bzy"/>
+                            </constraints>
+                            <color key="tintColor" name="bHomeNavTint"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" image="belll" title=" "/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="jeC-bR-plE" firstAttribute="leading" secondItem="GvN-w1-UEa" secondAttribute="leading" constant="16" id="4Vo-8P-9bT"/>
+                        <constraint firstAttribute="trailing" secondItem="zGr-8X-Hb8" secondAttribute="trailing" constant="16" id="Eid-bZ-1l8"/>
+                        <constraint firstItem="zGr-8X-Hb8" firstAttribute="centerY" secondItem="GvN-w1-UEa" secondAttribute="centerY" id="GW5-Ia-vN0"/>
+                        <constraint firstItem="jeC-bR-plE" firstAttribute="centerY" secondItem="GvN-w1-UEa" secondAttribute="centerY" id="NG9-PG-6Pn"/>
+                        <constraint firstAttribute="height" constant="60" id="RIW-2d-oqM"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="USe-Wa-CKD">
+                    <rect key="frame" x="0.0" y="104" width="414" height="758"/>
+                    <color key="backgroundColor" name="bHomeBackground"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="bHomeNavBackground"/>
+            <constraints>
+                <constraint firstItem="USe-Wa-CKD" firstAttribute="top" secondItem="GvN-w1-UEa" secondAttribute="bottom" id="4XP-dx-Bvq"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="USe-Wa-CKD" secondAttribute="trailing" id="6hM-Yh-RsH"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="GvN-w1-UEa" secondAttribute="trailing" id="ICQ-ix-JhS"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="USe-Wa-CKD" secondAttribute="bottom" id="ITE-ub-M5S"/>
+                <constraint firstItem="USe-Wa-CKD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Rbb-DV-qfu"/>
+                <constraint firstItem="GvN-w1-UEa" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="iY8-sd-BHF"/>
+                <constraint firstItem="GvN-w1-UEa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="vBd-Lf-bsJ"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="100.44642857142857"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="belll" width="28" height="28"/>
+        <namedColor name="bBlack">
+            <color red="0.070588235294117646" green="0.070588235294117646" blue="0.070588235294117646" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="bHomeBackground">
+            <color red="0.94900000095367432" green="0.94900000095367432" blue="0.96899998188018799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="bHomeNavBackground">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="bHomeNavTint">
+            <color red="0.74099999666213989" green="0.74099999666213989" blue="0.74099999666213989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

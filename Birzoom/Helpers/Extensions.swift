@@ -602,6 +602,7 @@ extension String {
 
 extension UITableView {
     static let lessonsRowHeight: CGFloat = (112/375)*CGFloat.scSize.width
+    static let communityRowHeight : CGFloat = (136/375) * CGFloat.scSize.width
 }
 
 
@@ -648,18 +649,6 @@ extension UICollectionView {
     }
     
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 //MARK: - Cell
 extension InterestsCVC {

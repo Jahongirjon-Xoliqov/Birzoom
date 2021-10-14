@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnlineBattleSelectCompetitorVC" customModule="Birzoom" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="7fa-3M-eiy" id="zvh-SF-S8A"/>
+                <outlet property="myImgView" destination="ey2-zv-Eq2" id="bBH-xd-RE8"/>
+                <outlet property="stackView" destination="Do3-IT-XKU" id="y8U-6K-sYr"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="vsLabel" destination="9mg-zp-Ez3" id="BNN-7Z-dxJ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hK0-K7-mqi">
+                    <rect key="frame" x="0.0" y="44" width="375" height="60"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="luz-Jy-cr4">
+                            <rect key="frame" x="16" y="16" width="28" height="28"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="28" id="dGk-1e-YQd"/>
+                                <constraint firstAttribute="width" constant="28" id="nyP-wN-q9F"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" image="OnlineBattleXMark" title=" "/>
+                            <connections>
+                                <action selector="dismissButtonTapped:" destination="-1" eventType="touchUpInside" id="mD1-zW-Xme"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Online Battle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hgz-aI-wQT">
+                            <rect key="frame" x="56.000000000000007" y="20.666666666666671" width="91.666666666666686" height="19"/>
+                            <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="16"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="luz-Jy-cr4" firstAttribute="leading" secondItem="hK0-K7-mqi" secondAttribute="leading" constant="16" id="0o4-cJ-pFB"/>
+                        <constraint firstItem="hgz-aI-wQT" firstAttribute="centerY" secondItem="hK0-K7-mqi" secondAttribute="centerY" id="3PX-mh-BEu"/>
+                        <constraint firstItem="hgz-aI-wQT" firstAttribute="leading" secondItem="luz-Jy-cr4" secondAttribute="trailing" constant="12" id="T6f-0t-rgN"/>
+                        <constraint firstAttribute="height" constant="60" id="aFe-CK-Tnh"/>
+                        <constraint firstItem="luz-Jy-cr4" firstAttribute="centerY" secondItem="hK0-K7-mqi" secondAttribute="centerY" id="fec-2B-Rc0"/>
+                    </constraints>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OnlineBattleBackground" translatesAutoresizingMaskIntoConstraints="NO" id="7s8-Dq-a0S">
+                    <rect key="frame" x="0.0" y="284.33333333333331" width="375" height="527.66666666666674"/>
+                    <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="72" translatesAutoresizingMaskIntoConstraints="NO" id="Do3-IT-XKU">
+                    <rect key="frame" x="0.0" y="210" width="375" height="392"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OnlineBattlePlaceholderImage" translatesAutoresizingMaskIntoConstraints="NO" id="ey2-zv-Eq2">
+                            <rect key="frame" x="123.66666666666669" y="0.0" width="128" height="128"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="ey2-zv-Eq2" secondAttribute="height" id="MX0-6h-Loz"/>
+                            </constraints>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kDN-zu-d74">
+                            <rect key="frame" x="156" y="200" width="63" height="48"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9mg-zp-Ez3">
+                                    <rect key="frame" x="16.666666666666657" y="9.6666666666666874" width="29.666666666666671" height="28.666666666666671"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" name="bBlue"/>
+                            <constraints>
+                                <constraint firstItem="9mg-zp-Ez3" firstAttribute="centerX" secondItem="kDN-zu-d74" secondAttribute="centerX" id="GQA-JH-UPk"/>
+                                <constraint firstItem="9mg-zp-Ez3" firstAttribute="centerY" secondItem="kDN-zu-d74" secondAttribute="centerY" id="zul-tQ-EZB"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="7fa-3M-eiy">
+                            <rect key="frame" x="0.0" y="320" width="375" height="72"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="5" minimumInteritemSpacing="0.0" id="vod-nn-33D">
+                                <size key="itemSize" width="128" height="128"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="7fa-3M-eiy" firstAttribute="leading" secondItem="Do3-IT-XKU" secondAttribute="leading" id="v2m-do-GRH"/>
+                        <constraint firstAttribute="trailing" secondItem="7fa-3M-eiy" secondAttribute="trailing" id="wni-Nd-8cd"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="bHomeNavBackground"/>
+            <constraints>
+                <constraint firstItem="Do3-IT-XKU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="0pW-Jo-t9i"/>
+                <constraint firstAttribute="bottom" secondItem="7s8-Dq-a0S" secondAttribute="bottom" id="35b-IA-K6b"/>
+                <constraint firstItem="7fa-3M-eiy" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="72/812" id="5W5-7T-WVj"/>
+                <constraint firstAttribute="trailing" secondItem="7s8-Dq-a0S" secondAttribute="trailing" id="DPi-yz-fSw"/>
+                <constraint firstItem="Do3-IT-XKU" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Kp7-8G-Nob"/>
+                <constraint firstItem="7s8-Dq-a0S" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="SlA-Qv-ufF"/>
+                <constraint firstItem="hK0-K7-mqi" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="WUq-j6-3lI"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hK0-K7-mqi" secondAttribute="trailing" id="Wwa-FX-bjE"/>
+                <constraint firstItem="ey2-zv-Eq2" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="128/812" id="eZQ-Cq-1uv"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Do3-IT-XKU" secondAttribute="trailing" id="jft-MU-qx9"/>
+                <constraint firstItem="Do3-IT-XKU" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="lWN-bB-5ZZ"/>
+                <constraint firstItem="7s8-Dq-a0S" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.65" id="uov-7g-dYb"/>
+                <constraint firstItem="hK0-K7-mqi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="vSx-RM-iQe"/>
+                <constraint firstItem="kDN-zu-d74" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="48/812" id="wBd-Bl-LeZ"/>
+                <constraint firstItem="kDN-zu-d74" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="63/375" id="yGu-Di-Wpr"/>
+            </constraints>
+            <point key="canvasLocation" x="182" y="100"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="OnlineBattleBackground" width="375" height="448"/>
+        <image name="OnlineBattlePlaceholderImage" width="72" height="72"/>
+        <image name="OnlineBattleXMark" width="28" height="28"/>
+        <namedColor name="bBlue">
+            <color red="0.0" green="0.68599998950958252" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="bHomeNavBackground">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

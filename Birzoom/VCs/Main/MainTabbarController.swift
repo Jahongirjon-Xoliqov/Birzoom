@@ -27,18 +27,23 @@ class MainTabbarController: UITabBarController {
         podcastVC.tabBarItem = podcastTabbarItem
         podcastVC.navigationBar.isHidden = true
         
-        
         let profileVC = UINavigationController(rootViewController: ProfilVC(nibName: "ProfilVC", bundle: nil))
         let profileTabbarItem = UITabBarItem(title: "Profil", image: UIImage(named: "person"), tag: 2)
         profileVC.tabBarItem = profileTabbarItem
         profileVC.navigationBar.isHidden = true
         
+        let gamesVC = UINavigationController(rootViewController: GamesTabVC(nibName: "GamesTabVC", bundle: nil))
+        let gamesTabbarItem = UITabBarItem(title: "Games", image: UIImage(named: "game"), tag: 3)
+        gamesVC.tabBarItem = gamesTabbarItem
+        gamesVC.navigationBar.isHidden = true
+        gamesVC.hidesBottomBarWhenPushed = true
         
         setViewControllers([
             
             homeVC,
             podcastVC,
-            profileVC
+            profileVC,
+            gamesVC
         
         ], animated: true)
         
