@@ -192,6 +192,8 @@ enum VControllers {
     case everyonePDetailed
     case tests
     case testLessons
+    case savedVocabulary
+    case lovedLessons
     
 }
 

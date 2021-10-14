@@ -126,6 +126,12 @@
 		C386CC232708809700D68E71 /* RDProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C386CC222708809700D68E71 /* RDProgressView.swift */; };
 		C386CC282708885000D68E71 /* ProfileEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C386CC262708885000D68E71 /* ProfileEditVC.swift */; };
 		C386CC292708885000D68E71 /* ProfileEditVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C386CC272708885000D68E71 /* ProfileEditVC.xib */; };
+		C38FD0622718083100ED963E /* SavedVocabularyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38FD0602718083100ED963E /* SavedVocabularyVC.swift */; };
+		C38FD0632718083100ED963E /* SavedVocabularyVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C38FD0612718083100ED963E /* SavedVocabularyVC.xib */; };
+		C38FD06827180AC000ED963E /* VocabularyTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38FD06627180AC000ED963E /* VocabularyTVC.swift */; };
+		C38FD06927180AC000ED963E /* VocabularyTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C38FD06727180AC000ED963E /* VocabularyTVC.xib */; };
+		C38FD06F271836E800ED963E /* LovedLessonsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38FD06D271836E800ED963E /* LovedLessonsVC.swift */; };
+		C38FD070271836E800ED963E /* LovedLessonsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C38FD06E271836E800ED963E /* LovedLessonsVC.xib */; };
 		C396DCE92713FE4F00B84810 /* ActiveSessionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C396DCE72713FE4E00B84810 /* ActiveSessionsVC.swift */; };
 		C396DCEA2713FE4F00B84810 /* ActiveSessionsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C396DCE82713FE4E00B84810 /* ActiveSessionsVC.xib */; };
 		C396DD312714237F00B84810 /* DeviceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C396DD302714237F00B84810 /* DeviceData.swift */; };
@@ -299,6 +305,12 @@
 		C386CC222708809700D68E71 /* RDProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RDProgressView.swift; sourceTree = "<group>"; };
 		C386CC262708885000D68E71 /* ProfileEditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditVC.swift; sourceTree = "<group>"; };
 		C386CC272708885000D68E71 /* ProfileEditVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileEditVC.xib; sourceTree = "<group>"; };
+		C38FD0602718083100ED963E /* SavedVocabularyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedVocabularyVC.swift; sourceTree = "<group>"; };
+		C38FD0612718083100ED963E /* SavedVocabularyVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SavedVocabularyVC.xib; sourceTree = "<group>"; };
+		C38FD06627180AC000ED963E /* VocabularyTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyTVC.swift; sourceTree = "<group>"; };
+		C38FD06727180AC000ED963E /* VocabularyTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VocabularyTVC.xib; sourceTree = "<group>"; };
+		C38FD06D271836E800ED963E /* LovedLessonsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LovedLessonsVC.swift; sourceTree = "<group>"; };
+		C38FD06E271836E800ED963E /* LovedLessonsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LovedLessonsVC.xib; sourceTree = "<group>"; };
 		C396DCE72713FE4E00B84810 /* ActiveSessionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveSessionsVC.swift; sourceTree = "<group>"; };
 		C396DCE82713FE4E00B84810 /* ActiveSessionsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActiveSessionsVC.xib; sourceTree = "<group>"; };
 		C396DD302714237F00B84810 /* DeviceData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceData.swift; sourceTree = "<group>"; };
@@ -685,6 +697,26 @@
 			path = ProfileEdit;
 			sourceTree = "<group>";
 		};
+		C38FD05F2717F61600ED963E /* Vocabulary */ = {
+			isa = PBXGroup;
+			children = (
+				C38FD0602718083100ED963E /* SavedVocabularyVC.swift */,
+				C38FD0612718083100ED963E /* SavedVocabularyVC.xib */,
+				C38FD06627180AC000ED963E /* VocabularyTVC.swift */,
+				C38FD06727180AC000ED963E /* VocabularyTVC.xib */,
+			);
+			path = Vocabulary;
+			sourceTree = "<group>";
+		};
+		C38FD06C271836C500ED963E /* LovedLessons */ = {
+			isa = PBXGroup;
+			children = (
+				C38FD06D271836E800ED963E /* LovedLessonsVC.swift */,
+				C38FD06E271836E800ED963E /* LovedLessonsVC.xib */,
+			);
+			path = LovedLessons;
+			sourceTree = "<group>";
+		};
 		C396DD332714397500B84810 /* Podcast */ = {
 			isa = PBXGroup;
 			children = (
@@ -729,6 +761,8 @@
 		C3B15A6926F3063800B9D76E /* VCs */ = {
 			isa = PBXGroup;
 			children = (
+				C38FD06C271836C500ED963E /* LovedLessons */,
+				C38FD05F2717F61600ED963E /* Vocabulary */,
 				C35EE5EC2716E6620009E346 /* Test */,
 				C35EE5D52716A4FE0009E346 /* PodcastDetailed */,
 				C36513E427156AAE0054C760 /* FM */,
@@ -893,6 +927,7 @@
 				C343CCD727104970000074EE /* AboutUsVC.xib in Resources */,
 				C33AADA226EF59E8007CF7B9 /* Roboto-Thin.ttf in Resources */,
 				C32141782705901C00865FF1 /* ProfilVC.xib in Resources */,
+				C38FD06927180AC000ED963E /* VocabularyTVC.xib in Resources */,
 				C396DD3C2714425400B84810 /* TopPodcastsCVC.xib in Resources */,
 				C36513D827155C400054C760 /* PodcastsDetailedCVC.xib in Resources */,
 				C35EE5EA2716C2A10009E346 /* PodcastPlayTVC.xib in Resources */,
@@ -905,6 +940,7 @@
 				C343CCE227105267000074EE /* FAQTVC.xib in Resources */,
 				C343CCCD270EC1BC000074EE /* ActiveLessonsTVC.xib in Resources */,
 				C396DCEA2713FE4F00B84810 /* ActiveSessionsVC.xib in Resources */,
+				C38FD0632718083100ED963E /* SavedVocabularyVC.xib in Resources */,
 				C3A203B926FDDDA900506DBC /* NewsDetailedVC.xib in Resources */,
 				C33AADA426EF59E8007CF7B9 /* LICENSE.txt in Resources */,
 				C33AAD9C26EF59E8007CF7B9 /* Roboto-Italic.ttf in Resources */,
@@ -920,6 +956,7 @@
 				C396DD412714572E00B84810 /* NewPodcastsCVC.xib in Resources */,
 				C35EE5E52716AF190009E346 /* EveryonePDetailedDescTVC.xib in Resources */,
 				C3B15A6E26F3069700B9D76E /* LanguageVC.xib in Resources */,
+				C38FD070271836E800ED963E /* LovedLessonsVC.xib in Resources */,
 				C35EE600271705D50009E346 /* TestLessonTVC.xib in Resources */,
 				C33AAD8726EF367D007CF7B9 /* WelcomeVC.xib in Resources */,
 				C38609FD270DB8A8001AA9D2 /* PayHistoryVC.xib in Resources */,
@@ -1033,6 +1070,7 @@
 				C321417D2705945300865FF1 /* ProfilTVC.swift in Sources */,
 				C33AAD6A26EF2037007CF7B9 /* AppDelegate.swift in Sources */,
 				C3B15A8526F362A200B9D76E /* InterestTag.swift in Sources */,
+				C38FD06F271836E800ED963E /* LovedLessonsVC.swift in Sources */,
 				C3F58A7526F4A1EA0039E30F /* DiscardPopupVC.swift in Sources */,
 				C3BEDF112707160E005D9024 /* ActivityTVC.swift in Sources */,
 				C3198FAA270C7FE7005090C9 /* LogoutVC.swift in Sources */,
@@ -1069,9 +1107,11 @@
 				C340C88227031FE5001A14C2 /* NotificationTVC.swift in Sources */,
 				C3F5377926F21B5E004BBF00 /* NewPasswordVC.swift in Sources */,
 				C386CC1527085AAD00D68E71 /* SavedsTVC.swift in Sources */,
+				C38FD0622718083100ED963E /* SavedVocabularyVC.swift in Sources */,
 				C396DD3B2714425400B84810 /* TopPodcastsCVC.swift in Sources */,
 				C396DCE92713FE4F00B84810 /* ActiveSessionsVC.swift in Sources */,
 				C35EE5E42716AF190009E346 /* EveryonePDetailedDescTVC.swift in Sources */,
+				C38FD06827180AC000ED963E /* VocabularyTVC.swift in Sources */,
 				C396DD362714399D00B84810 /* PodcastsVC.swift in Sources */,
 				C3F5377426F21287004BBF00 /* PasswordOTPVarifyVC.swift in Sources */,
 				C36513D727155C400054C760 /* PodcastsDetailedCVC.swift in Sources */,

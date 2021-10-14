@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
 //        let vc = UINavigationController(rootViewController: EveryonePDetailedVC(nibName: "EveryonePDetailedVC", bundle: nil))
 //        vc.navigationBar.isHidden = true
-        let vc = MainTabbarController()
+        let vc = LovedLessonsVC(nibName: "LovedLessonsVC", bundle: nil)
         window?.rootViewController = vc
         window?.makeKeyAndVisible()
         

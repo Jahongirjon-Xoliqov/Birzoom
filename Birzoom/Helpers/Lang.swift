@@ -223,6 +223,12 @@ class Lang {
         case l_tests
         case b_tests_begin
         
+        //vocabulary
+        case l_vocabulary
+        
+        //loved
+        case l_lovedLessons
+        
     }
     
     static func get(valueFor component: Component) -> String {
@@ -450,6 +456,12 @@ class Lang {
             case .l_tests: return "Testlar"
             case .b_tests_begin: return "Boshlash"
                 
+                
+            //vocabulary
+            case .l_vocabulary: return "Vocabulary"
+            
+            //loved
+            case .l_lovedLessons: return "Sevimli darslar"
                 
             }
             

@@ -62,7 +62,7 @@ extension UIColor {
     static let bProfileEditBorderGray: UIColor = UIColor(named: "bProfileEditBorderGray") ?? .gray
     static let bProfileEditBackGray: UIColor = UIColor(named: "bProfileEditBackGray") ?? .gray
     static let bProfileEditTextGray: UIColor = UIColor(named: "bProfileEditTextGray") ?? .gray
-    
+    static let bHomeSeparator: UIColor = UIColor(named: "bHomeSeparator") ?? .gray
     
     //white
     static let bBackground: UIColor = UIColor(named: "bBackground") ?? .white
@@ -403,7 +403,12 @@ extension UIViewController {
         case .testLessons:
             let vc = TestLessonsVC(nibName: "TestLessonsVC", bundle: nil)
             present(vc, animated: true)
-        
+        case .savedVocabulary:
+            let vc = SavedVocabularyVC(nibName: "SavedVocabularyVC", bundle: nil)
+            present(vc, animated: true)
+        case .lovedLessons:
+            let vc = LovedLessonsVC(nibName: "LovedLessonsVC", bundle: nil)
+            present(vc, animated: true)
         }
         
     }
@@ -535,7 +540,13 @@ extension UIViewController {
             let vc = TestLessonsVC(nibName: "TestLessonsVC", bundle: nil)
             vc.hidesBottomBarWhenPushed = true
             navController.pushViewController(vc, animated: true)
-        
+        case .savedVocabulary:
+            let vc = SavedVocabularyVC(nibName: "SavedVocabularyVC", bundle: nil)
+            vc.hidesBottomBarWhenPushed = true
+            navController.pushViewController(vc, animated: true)
+        case .lovedLessons:
+            let vc = LovedLessonsVC(nibName: "LovedLessonsVC", bundle: nil)
+            navController.pushViewController(vc, animated: true)
         }
         
     }
@@ -619,7 +630,19 @@ extension String {
 
 }
 
-
+extension UIView {
+    func addBottomShadow() {
+        layer.masksToBounds = false
+        layer.shadowRadius = 4
+        layer.shadowOpacity = 0.15
+        layer.shadowColor = UIColor.bShadowGray.cgColor
+        layer.shadowOffset = CGSize(width: 0 , height: 4)
+        layer.shadowPath = UIBezierPath(rect: CGRect(x: 0,
+                                                 y: bounds.maxY - layer.shadowRadius,
+                                                 width: bounds.width,
+                                                 height: layer.shadowRadius)).cgPath
+}
+}
 
 
 
@@ -893,5 +916,12 @@ extension TestLessonTVC {
     static let identifier = "TestLessonTVC"
     static func nib() -> UINib {
         UINib(nibName: "TestLessonTVC", bundle: nil)
+    }
+}
+
+extension VocabularyTVC {
+    static let identifier = "VocabularyTVC"
+    static func nib() -> UINib {
+        UINib(nibName: "VocabularyTVC", bundle: nil)
     }
 }
