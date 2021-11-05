@@ -16,6 +16,8 @@ class SignupVC: UIViewController {
             backButton.setTitle("", for: .normal)
             backButton.setImage(.image(name: .chevBack), for: .normal)
             backButton.tintColor = UIColor.bBlue
+            ///  back button is hidden couse it should be triggered after walkthrough
+            backButton.isHidden = true
         }
     }
     

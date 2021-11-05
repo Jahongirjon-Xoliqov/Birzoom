@@ -16,9 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow()
         
-//        let vc = UINavigationController(rootViewController: EveryonePDetailedVC(nibName: "EveryonePDetailedVC", bundle: nil))
-//        vc.navigationBar.isHidden = true
-        let vc = LovedLessonsVC(nibName: "LovedLessonsVC", bundle: nil)
+        //let vc = UINavigationController(rootViewController: EveryonePDetailedVC(nibName: "EveryonePDetailedVC", bundle: nil))
+        //vc.navigationBar.isHidden = true
+        //let vc = LovedLessonsVC(nibName: "LovedLessonsVC", bundle: nil)
+        let vc = UINavigationController(rootViewController: SignupVC(nibName: "SignupVC", bundle: nil))
+        vc.navigationBar.isHidden = true
         window?.rootViewController = vc
         window?.makeKeyAndVisible()
         
